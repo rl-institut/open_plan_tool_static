@@ -1,0 +1,62 @@
+// Colors
+$wam-primary-color-1: #002E50;
+$wam-primary-color-2: #06D6A0;
+
+$wam-secondary-color-1: #ef476f;
+$wam-secondary-color-2: #ffd166;
+
+$wam-gray-1: #F4F4F4;
+
+$white: #fff;
+
+// Media-breaks
+$small-screen: 640px;
+$medium-screen: 1024px;
+$large-screen: 1250px;
+$xlarge-screen: 1500px;
+
+// Typography {
+$header-font-family: Roboto, Arial, Helvetica, sans-serif;
+$main-font-family: Roboto, Arial, Helvetica, sans-serif;
+$font-size-xlarge: 3.998rem; // 71.96px
+$font-size-large: 2.827rem; // 50.89px
+$font-size-medium-2: 1.999rem; // 35.99px
+$font-size-medium: 1.414rem; // 25.45px
+$font-size-normal: 1rem; //18px
+$font-size-small: 0.8rem; // 14.40px
+$font-size-mobile: 0.888rem; // 16px
+
+$line-height-normal: 1.75rem;
+$letter-spacing-normal: 0.03rem;
+
+// Nav
+$top-nav-padding-xsmall: 1rem;
+$top-nav-padding-small: 2rem;
+$top-nav-padding-large: 2rem;
+$top-nav-padding-large-height: .75rem;
+
+// Logo
+$logo-height-small: 1.5rem;
+$logo-height-large: 2rem;
+
+// Buttons
+$button-border-radius: 5px;
+
+// Layout
+$section-max-width: 82rem;
+$section-text-width: 50%;
+$section-img-width: 50%;
+$section-top-padding-small: 3rem;
+$section-bottom-padding-small: 2rem;
+$section-top-padding-large: 6rem;
+$section-bottom-padding-large: 6rem;
+
+// Z-Index
+$z-index-top-nav: 10;
+
+// Showcase
+$wam-item-padding-medium: 1rem;
+$wam-item-padding-large: 3rem;
+$wam-item-padding-large-2-items: 5rem;
+$wam-item-width: 10rem;
+$wam-item-height: 10rem;

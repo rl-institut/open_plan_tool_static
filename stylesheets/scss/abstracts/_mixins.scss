@@ -1,0 +1,91 @@
+// Section-width
+@mixin section-width {
+  width: calc(100% - (#{$top-nav-padding-xsmall} * 2));
+  padding-left: $top-nav-padding-xsmall;
+  padding-right: $top-nav-padding-xsmall;
+  margin: 0 auto;
+
+  @media screen and (min-width:$small-screen) {
+    width: calc(100% - (#{$top-nav-padding-small} * 2));
+    padding-left: $top-nav-padding-small;
+    padding-right: $top-nav-padding-small;
+  }
+
+  @media screen and (min-width:$medium-screen) {
+    width: calc(100% - (#{$top-nav-padding-large} * 2));
+    padding-left: $top-nav-padding-large;
+    padding-right: $top-nav-padding-large;
+    max-width: $section-max-width;
+  }
+}
+
+// Layout
+@mixin section-img {
+  @media screen and (min-width:$medium-screen) {
+    width: $section-img-width;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@mixin section-padding-top-bottom {
+  padding-top: $section-top-padding-small;
+  padding-bottom: $section-bottom-padding-small;
+
+  @media screen and (min-width:$medium-screen) {
+    padding-top: $section-top-padding-large;
+    padding-bottom: $section-bottom-padding-large;
+  }
+}
+
+// Typography
+@mixin heading-size-normal {
+  font-size: $font-size-normal;
+  letter-spacing: 0.05rem;
+}
+
+@mixin heading-size-medium {
+  font-size: $font-size-medium;
+  letter-spacing: 0.03rem;
+}
+
+// Flex
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// Translate
+@mixin translateY($translateY-value) {
+  transform: translateY($translateY-value);
+  -webkit-transform: translateY($translateY-value);
+  -moz-transform: translateY($translateY-value);
+  -ms-transform: translateY($translateY-value);
+  -o-transform: translateY($translateY-value);
+}
+
+@mixin translateX($translateX-value) {
+  transform: translateX($translateX-value);
+  -webkit-transform: translateX($translateX-value);
+  -moz-transform: translateX($translateX-value);
+  -ms-transform: translateX($translateX-value);
+  -o-transform: translateX($translateX-value);
+}
