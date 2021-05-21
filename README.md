@@ -1,4 +1,4 @@
-# WAM-HP
+# Open_plan
 
 Static website for the open_plan tool, mostly used for the UX/UI process.
 
