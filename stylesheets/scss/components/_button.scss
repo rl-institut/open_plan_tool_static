@@ -5,8 +5,8 @@
   letter-spacing: $letter-spacing-normal;
 
   &--cta {
-    background-color: $wam-primary-color-2;
-    color: $wam-primary-color-1;
+    background-color: $primary-color-2;
+    color: $primary-color-1;
   }
 
   &--reversed {
@@ -14,7 +14,7 @@
   }
 
   &--hollow {
-    border: 1px solid $wam-primary-color-1;
+    border: 1px solid $primary-color-1;
     font-family: $main-font-family;
     font-weight: 600;
     font-size: 1rem;

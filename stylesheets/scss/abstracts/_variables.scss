@@ -1,11 +1,10 @@
 // Colors
-$wam-primary-color-1: #002E50;
-$wam-primary-color-2: #06D6A0;
+$primary-color-1: #002E50;
+$primary-color-2: #06D6A0;
 
-$wam-secondary-color-1: #ef476f;
-$wam-secondary-color-2: #ffd166;
+$secondary-color-1: #ef476f;
+$secondary-color-2: #ffd166;
 
-$wam-gray-1: #F4F4F4;
 
 $white: #fff;
 
@@ -33,30 +32,15 @@ $letter-spacing-normal: 0.03rem;
 $top-nav-padding-xsmall: 1rem;
 $top-nav-padding-small: 2rem;
 $top-nav-padding-large: 2rem;
-$top-nav-padding-large-height: .75rem;
+$top-nav-height: 4.5rem;
+$top-nav-button-height: calc(#{$top-nav-height} - (2 * 1rem));
 
 // Logo
 $logo-height-small: 1.5rem;
 $logo-height-large: 2rem;
 
 // Buttons
-$button-border-radius: 5px;
+$button-border-radius: 3px;
 
 // Layout
 $section-max-width: 82rem;
-$section-text-width: 50%;
-$section-img-width: 50%;
-$section-top-padding-small: 3rem;
-$section-bottom-padding-small: 2rem;
-$section-top-padding-large: 6rem;
-$section-bottom-padding-large: 6rem;
-
-// Z-Index
-$z-index-top-nav: 10;
-
-// Showcase
-$wam-item-padding-medium: 1rem;
-$wam-item-padding-large: 3rem;
-$wam-item-padding-large-2-items: 5rem;
-$wam-item-width: 10rem;
-$wam-item-height: 10rem;
