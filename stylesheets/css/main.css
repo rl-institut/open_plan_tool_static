@@ -1245,12 +1245,22 @@ a:visited {
 }
 
 nav {
-  background: #fff;
-  padding: 0 1rem;
+  background: grey;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   /* Mobile menu */
   /* Submenu up from mobile screens */
   /* Tablet menu */
   /* Desktop menu */
+}
+nav ul.menu {
+  width: 100%;
+  max-width: 82rem;
+  padding: 0;
+  margin: 0;
+  height: 4.5rem;
 }
 nav a {
   color: white;
@@ -1260,12 +1270,12 @@ nav .menu,
 nav .submenu {
   list-style-type: none;
 }
-nav .logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
+nav .logo img {
+  height: 2rem;
 }
 nav .item {
   padding: 10px;
+  background-color: grey;
 }
 nav .item.button {
   padding: 9px 5px;
