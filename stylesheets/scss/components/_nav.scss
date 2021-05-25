@@ -1,0 +1,18 @@
+.navbar {
+  .navbar-brand {
+    img {
+      height: $logo-height;
+    }
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}

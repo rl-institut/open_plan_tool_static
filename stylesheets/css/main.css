@@ -1243,4 +1243,18 @@ a:visited {
   -webkit-filter: blur(1.25rem);
 }
 
+.navbar .navbar-brand img {
+  height: 2rem;
+}
+.navbar .dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
