@@ -1,15 +1,15 @@
 body {
-  font-family: $header-font-family;
-  color: $primary-color-1;
+  font-family: $main-font-family;
+  color: $text-color-main;
 }
 
 h1, h2, h3, h4 {
-  font-family: $header-font-family;
+  font-family: $main-font-family;
 }
 
 h2 {
   @include heading-size-medium;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
 
   @media screen and (min-width:$medium-screen) {
@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   @include heading-size-normal;
-  font-weight: 600;
+  font-weight: 700;
 
   @media screen and (min-width:$medium-screen) {
     @include heading-size-medium;
@@ -40,19 +40,13 @@ p {
   line-height: $line-height-normal;
 }
 
-@media screen and (max-width:$medium-screen - 1) {
-  div, p, ul, li, a {
-    font-size: $font-size-mobile;
-  }
-}
-
 a,
 a:link,
 a:hover,
 a:focus,
 a:active,
 a:visited {
-  font-weight: 600;
+  font-weight: 700;
   color: $primary-color-1;
   text-decoration: none;
 } 

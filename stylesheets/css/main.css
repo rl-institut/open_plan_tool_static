@@ -1165,7 +1165,7 @@ template {
 
 body {
   font-family: lato, Arial, Helvetica, sans-serif;
-  color: #002E50;
+  color: #343434;
 }
 
 h1, h2, h3, h4 {
@@ -1175,10 +1175,10 @@ h1, h2, h3, h4 {
 h2 {
   font-size: 1.414rem;
   letter-spacing: 0.03rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h2 {
     font-size: 1.999rem;
   }
@@ -1193,9 +1193,9 @@ h2 {
 h3 {
   font-size: 1rem;
   letter-spacing: 0.05rem;
-  font-weight: 600;
+  font-weight: 700;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   h3 {
     font-size: 1.414rem;
     letter-spacing: 0.03rem;
@@ -1211,19 +1211,14 @@ p {
   line-height: 1.75rem;
 }
 
-@media screen and (max-width: 1023px) {
-  div, p, ul, li, a {
-    font-size: 0.888rem;
-  }
-}
 a,
 a:link,
 a:hover,
 a:focus,
 a:active,
 a:visited {
-  font-weight: 600;
-  color: #002E50;
+  font-weight: 700;
+  color: #1F567D;
   text-decoration: none;
 }
 
@@ -1234,14 +1229,14 @@ a:visited {
   letter-spacing: 0.03rem;
 }
 .btn--cta {
-  background-color: #06D6A0;
-  color: #002E50;
+  background-color: #343434;
+  color: #1F567D;
 }
 .btn--reversed {
   background-color: #fff;
 }
 .btn--hollow {
-  border: 1px solid #002E50;
+  border: 1px solid #1F567D;
   font-family: lato, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -1262,9 +1257,38 @@ a:visited {
   left: auto;
   right: 0;
 }
+.navbar.navbar-light .navbar-nav a,
+.navbar.navbar-light .navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.navbar.navbar-light .navbar-nav .nav-link,
+.navbar.navbar-light .navbar-nav .nav-link:link,
+.navbar.navbar-light .navbar-nav .nav-link:active,
+.navbar.navbar-light .navbar-nav .nav-link:visited,
+.navbar.navbar-light .navbar-nav .nav-link:focus,
+.navbar.navbar-light .navbar-nav a,
+.navbar.navbar-light .navbar-nav a:link,
+.navbar.navbar-light .navbar-nav a:focus,
+.navbar.navbar-light .navbar-nav a:active,
+.navbar.navbar-light .navbar-nav a:visited {
+  color: #343434;
+}
+.navbar.navbar-light .navbar-nav .nav-link:hover,
+.navbar.navbar-light .navbar-nav a:hover {
+  color: #8c8c8c;
+}
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+  background-color: #fff;
+}
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
+  .navbar.navbar-expand-lg .container-fluid {
+    width: 100%;
+    max-width: 82rem;
+    justify-content: center;
+  }
+  .navbar.navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
 }

@@ -1,29 +1,44 @@
 // Colors
-$primary-color-1: #002E50;
-$primary-color-2: #06D6A0;
+$primary-color-1: #1F567D;
+$primary-color-1-dark: #17405C;
+$primary-color-2: #343434;
+$primary-color-2-light: #8c8c8c;
 
-$secondary-color-1: #ef476f;
-$secondary-color-2: #ffd166;
-
+$primary-gray-color-1: #F4F7F9;
+$primary-gray-color-2: #E3EAEE;
+$primary-gray-color-3: #A8B5C0;
+$primary-gray-color-4: #495965;
 
 $white: #fff;
+$secondary-gray-color-1: #E4E4E4;
+$secondary-gray-color-2: #D6D6D6;
+
+$error-color: #FD3434;
+
+// Text
+$text-color-main: $primary-color-2;
+$text-color-secondary: $primary-gray-color-4;
+// Anchor/action text
+$text-color-a-main: $primary-color-1;
+$text-color-a-main-hover: $primary-color-1-dark;
+$text-color-a-sec: $primary-color-2;
+$text-color-a-sec-hover: $primary-color-2-light;
+$text-color-invert: $white;
 
 // Media-breaks
 $small-screen: 640px;
-$medium-screen: 1024px;
+$medium-screen: 992px;
 $large-screen: 1250px;
 $xlarge-screen: 1500px;
 
 // Typography {
-$header-font-family: lato, Arial, Helvetica, sans-serif;
 $main-font-family: lato, Arial, Helvetica, sans-serif;
-$font-size-xlarge: 3.998rem; // 71.96px
-$font-size-large: 2.827rem; // 50.89px
-$font-size-medium-2: 1.999rem; // 35.99px
-$font-size-medium: 1.414rem; // 25.45px
-$font-size-normal: 1rem; //18px
-$font-size-small: 0.8rem; // 14.40px
-$font-size-mobile: 0.888rem; // 16px
+$font-size-xlarge: 3.998rem;
+$font-size-large: 2.827rem;
+$font-size-medium-2: 1.999rem;
+$font-size-medium: 1.414rem;
+$font-size-normal: 1rem; // 16px
+$font-size-small: 0.8rem; 
 
 $line-height-normal: 1.75rem;
 $letter-spacing-normal: 0.03rem;

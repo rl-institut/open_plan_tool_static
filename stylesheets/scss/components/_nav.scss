@@ -1,4 +1,5 @@
 .navbar {
+
   &.navbar-light {
     background-color: $white!important;
   }
@@ -12,10 +13,49 @@
     left: auto;
     right: 0;
   }
+
+  &.navbar-light .navbar-nav {
+    a,
+    .nav-link {
+      font-size: $font-size-normal;
+      font-weight: 400;
+    }
+    .nav-link,
+    .nav-link:link,
+    .nav-link:active,
+    .nav-link:visited,
+    .nav-link:focus,
+    a,
+    a:link,
+    a:focus,
+    a:active,
+    a:visited {
+      color: $text-color-a-sec;
+    }
+    .nav-link:hover,
+    a:hover {
+      color: $text-color-a-sec-hover;
+    }
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: $white;
+  }
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
+@media (min-width: $medium-screen) {
+  .navbar {
+
+    &.navbar-expand-lg {
+      .container-fluid {
+        width: 100%;
+        max-width: $section-max-width;
+        justify-content: center;
+      }
+
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+    }
   }
 }
