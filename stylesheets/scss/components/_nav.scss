@@ -22,14 +22,12 @@ nav {
   .logo {
     img {
       height: $logo-height;
+      margin-top: calc((#{$top-nav-height} - #{$logo-height}) / 2);;
     }
   }
   .item {
-    padding: 10px;
     background-color: grey;
-  }
-  .item.button {
-    padding: 9px 5px;
+    height: $top-nav-height;
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
@@ -44,10 +42,8 @@ nav {
   }
   .menu li a {
     display: block;
-    padding: 15px 5px;
-  }
-  .menu li.subitem a {
-    padding: 15px;
+    height: $top-nav-height;
+    line-height: $top-nav-height;
   }
   .toggle {
     order: 1;
@@ -93,7 +89,7 @@ nav {
   }
   
   /* Tablet menu */
-  @media all and (min-width: 700px) {
+  @media all and (min-width: $small-screen) {
     .menu {
       justify-content: center;
     }
@@ -111,10 +107,6 @@ nav {
       order: 2;
     }
     /* Button up from tablet screen */
-    .menu li.button a {
-      padding: 10px 15px;
-      margin: 5px 0;
-    }
     .button a {
       background: #0080ff;
       border: 1px royalblue solid;
@@ -126,7 +118,7 @@ nav {
     }
   }
   /* Desktop menu */
-  @media all and (min-width: 960px) {
+  @media all and (min-width: $medium-screen) {
     .menu {
       align-items: flex-start;
       flex-wrap: nowrap;
@@ -141,8 +133,15 @@ nav {
       display: block;
       width: auto;
     }
-    .button {
+    .menu li.button {
       order: 2;
+
+      a {
+        padding: 0 1rem;
+        height: $top-nav-button-height;
+        line-height: $top-nav-button-height;
+        margin-top: calc((#{$top-nav-height} - #{$top-nav-button-height}) / 2);
+      }
     }
     .submenu-active .submenu {
       display: block;

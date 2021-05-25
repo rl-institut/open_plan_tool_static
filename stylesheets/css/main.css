@@ -1272,13 +1272,11 @@ nav .submenu {
 }
 nav .logo img {
   height: 2rem;
+  margin-top: calc((4.5rem - 2rem) / 2);
 }
 nav .item {
-  padding: 10px;
   background-color: grey;
-}
-nav .item.button {
-  padding: 9px 5px;
+  height: 4.5rem;
 }
 nav .item:not(.button) a:hover,
 nav .item a:hover::after {
@@ -1292,10 +1290,8 @@ nav .menu {
 }
 nav .menu li a {
   display: block;
-  padding: 15px 5px;
-}
-nav .menu li.subitem a {
-  padding: 15px;
+  height: 4.5rem;
+  line-height: 4.5rem;
 }
 nav .toggle {
   order: 1;
@@ -1338,7 +1334,7 @@ nav .submenu-active {
   background-color: #111;
   border-radius: 3px;
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 640px) {
   nav {
     /* Button up from tablet screen */
   }
@@ -1358,10 +1354,6 @@ nav .submenu-active {
     text-align: right;
     order: 2;
   }
-  nav .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
-  }
   nav .button a {
     background: #0080ff;
     border: 1px royalblue solid;
@@ -1372,7 +1364,7 @@ nav .submenu-active {
     border-color: darkblue;
   }
 }
-@media all and (min-width: 960px) {
+@media all and (min-width: 1024px) {
   nav .menu {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -1387,8 +1379,14 @@ nav .submenu-active {
     display: block;
     width: auto;
   }
-  nav .button {
+  nav .menu li.button {
     order: 2;
+  }
+  nav .menu li.button a {
+    padding: 0 1rem;
+    height: calc(4.5rem - (2 * 1rem));
+    line-height: calc(4.5rem - (2 * 1rem));
+    margin-top: calc((4.5rem - calc(4.5rem - (2 * 1rem))) / 2);
   }
   nav .submenu-active .submenu {
     display: block;
