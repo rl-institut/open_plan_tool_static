@@ -1243,6 +1243,9 @@ a:visited {
   -webkit-filter: blur(1.25rem);
 }
 
+.navbar.navbar-light {
+  background-color: #fff !important;
+}
 .navbar .navbar-brand img {
   height: 2rem;
 }

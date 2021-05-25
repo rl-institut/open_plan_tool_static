@@ -1,4 +1,7 @@
 .navbar {
+  &.navbar-light {
+    background-color: $white!important;
+  }
   .navbar-brand {
     img {
       height: $logo-height;
