@@ -18,12 +18,12 @@
 		@include flex-column-justify-center;
 
 		ul {
-			list-style: none;
-			margin-bottom: 0;
+			@include ul-horizontal;
 		}
 
 		li {
 			display: inline-block;
+			padding-left: 1rem;
 		}
 	}
 }

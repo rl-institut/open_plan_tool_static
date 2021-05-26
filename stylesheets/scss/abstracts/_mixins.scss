@@ -85,3 +85,10 @@
   -ms-transform: translateX($translateX-value);
   -o-transform: translateX($translateX-value);
 }
+
+// UL
+@mixin ul-horizontal {
+  list-style: none;
+	margin-bottom: 0;
+  padding-left: 0;
+}

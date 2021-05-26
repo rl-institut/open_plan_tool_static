@@ -8,17 +8,13 @@
     padding-left: 1rem;
   }
 
-  ul li {
+  &__descriptionu li {
     padding-left: 1rem;
     max-width: 60rem;
   }
 
   .component {
     padding-bottom: 2rem;
-
-    &--bg {
-      background-color: $secondary-gray-color-2;
-    }
 
     &__title {
       padding: 1rem;

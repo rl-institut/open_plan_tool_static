@@ -50,7 +50,76 @@
       img {
         height: 2rem;
         width: 2rem;
-        transform: translateY(3px);
+        @include translateY(3px);
+      }
+    }
+  }
+}
+
+.wizard {
+  user-select: none;
+  
+  &> div {
+    background-color: $primary-gray-color-1;
+	  height: $top-nav-height;
+	  @include flex-column-align-justify-center;
+  }
+
+  ul {
+    @include ul-horizontal;
+  }
+
+  li {
+    display: inline-block;
+    color: $primary-gray-color-3;
+    position: relative;
+    font-weight: 700;
+
+    &:not(:last-of-type) {
+      padding-right: 4.5rem;
+    }
+
+    &::before {
+      content: "1";
+      font-size: $font-size-small;
+      font-weight: 700;
+      margin-right: 0.5rem;
+      color: $white;
+      background-color: $primary-gray-color-3;
+      padding: 0.25rem 0.5rem;
+      width: 2rem;
+      border-radius: 100px;
+    }
+
+    &:nth-child(2)::before {
+      content: "2";
+    }
+
+    &:nth-child(3)::before {
+      content: "3";
+    }
+
+    &:nth-child(4)::before {
+      content: "4";
+    }
+
+    &:not(:first-of-type)::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 2.25rem;
+      height: 1px;
+      margin-left: -3.5rem;
+      top: .75rem;
+      background-color: $primary-gray-color-3;
+    }
+
+    &.active {
+      color: $primary-color-1;
+
+      &::before {
+        background-color: $primary-color-1;
       }
     }
   }
