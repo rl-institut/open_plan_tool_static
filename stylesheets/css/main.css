@@ -1185,7 +1185,7 @@ a:visited {
 
 a,
 .nav-link {
-  font-size: 1rem !important;
+  font-size: 1rem;
   font-weight: 400 !important;
 }
 
