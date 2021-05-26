@@ -3,50 +3,7 @@ body {
   color: $text-color-main;
 }
 
-h1, h2, h3, h4 {
-  font-family: $main-font-family;
-}
-
-h2 {
-  @include heading-size-medium;
-  font-weight: 700;
-  margin-bottom: 1rem;
-
-  @media screen and (min-width:$medium-screen) {
-    font-size: $font-size-medium-2;
-  }
-
-  @media screen and (min-width:$large-screen) {
-    font-size: $font-size-large;
-    margin-bottom: 1.5rem;
-  }
-}
-
-h3 {
-  @include heading-size-normal;
-  font-weight: 700;
-
-  @media screen and (min-width:$medium-screen) {
-    @include heading-size-medium;
-    font-weight: 400;
-  }
-}
-
-p, ul, li {
-  font-family: $main-font-family;
-}
-
 p {
   line-height: $line-height-normal;
 }
 
-a,
-a:link,
-a:hover,
-a:focus,
-a:active,
-a:visited {
-  font-weight: 700;
-  color: $primary-color-1;
-  text-decoration: none;
-} 
