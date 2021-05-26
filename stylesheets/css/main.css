@@ -1298,6 +1298,9 @@ button.btn--hollow:focus {
 .components .component {
   padding-bottom: 2rem;
 }
+.components .component--bg {
+  background-color: #F4F7F9;
+}
 .components .component__title {
   padding: 1rem;
 }

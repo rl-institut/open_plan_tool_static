@@ -16,6 +16,10 @@
   .component {
     padding-bottom: 2rem;
 
+    &--bg {
+      background-color: $primary-gray-color-1;
+    }
+
     &__title {
       padding: 1rem;
     }
