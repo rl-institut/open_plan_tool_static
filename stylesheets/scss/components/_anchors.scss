@@ -5,11 +5,11 @@ a:focus,
 a:active,
 a:visited {
   font-weight: 700;
-  color: $primary-color-1;
+  color: $primary-color-1 !important;
   text-decoration: none;
 }
 
-a,
+footer a,
 .nav-link {
   font-size: $font-size-normal;
   font-weight: 400 !important;
@@ -19,15 +19,15 @@ a,
 .nav-link:active,
 .nav-link:visited,
 .nav-link:focus,
-a,
-a:link,
-a:focus,
-a:active,
-a:visited {
+footer a,
+footer a:link,
+footer a:focus,
+footer a:active,
+footer a:visited {
   color: $text-color-a-sec !important;
 }
 .nav-link:hover,
-a:hover {
+footer a:hover {
   color: $text-color-a-sec-hover !important;
   transition: $anchor-hover-transition;
 }
