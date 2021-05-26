@@ -402,6 +402,7 @@ a:visited {
   text-decoration: none;
 }
 
+.dropdown-item,
 footer a,
 .nav-link {
   font-size: 1rem;
@@ -413,6 +414,11 @@ footer a,
 .nav-link:active,
 .nav-link:visited,
 .nav-link:focus,
+.dropdown-item,
+.dropdown-item:link,
+.dropdown-item:active,
+.dropdown-item:visited,
+.dropdown-item:focus,
 footer a,
 footer a:link,
 footer a:focus,
@@ -421,6 +427,7 @@ footer a:visited {
   color: #343434 !important;
 }
 
+.dropdown-item:hover,
 .nav-link:hover,
 footer a:hover {
   color: #8c8c8c !important;
@@ -603,6 +610,10 @@ form .form-control:-moz-placeholder {
 }
 .navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
   background-color: #fff;
+}
+.navbar .dropdown-menu li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width: 992px) {

@@ -17,6 +17,13 @@
   .dropdown-item:focus, .dropdown-item:hover {
     background-color: $white;
   }
+
+  .dropdown-menu {
+    li {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+  }
 }
 
 @media (min-width: $medium-screen) {
@@ -58,7 +65,7 @@
 
 .wizard {
   user-select: none;
-  
+
   &> div {
     background-color: $primary-gray-color-1;
 	  height: $top-nav-height;

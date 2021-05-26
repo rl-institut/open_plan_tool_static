@@ -9,6 +9,7 @@ a:visited {
   text-decoration: none;
 }
 
+.dropdown-item,
 footer a,
 .nav-link {
   font-size: $font-size-normal;
@@ -19,6 +20,11 @@ footer a,
 .nav-link:active,
 .nav-link:visited,
 .nav-link:focus,
+.dropdown-item,
+.dropdown-item:link,
+.dropdown-item:active,
+.dropdown-item:visited,
+.dropdown-item:focus,
 footer a,
 footer a:link,
 footer a:focus,
@@ -26,6 +32,7 @@ footer a:active,
 footer a:visited {
   color: $text-color-a-sec !important;
 }
+.dropdown-item:hover,
 .nav-link:hover,
 footer a:hover {
   color: $text-color-a-sec-hover !important;
