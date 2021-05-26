@@ -23,6 +23,15 @@
 
     <main class="components">
 
+      <h1>open_plan Components</h1>
+      
+      <h2>Top Navigation</h2>
+      <ul>
+        <li>Ensure accessibility by using a &lt;nav&gt; element or, if using a more generic element such as a &lt;div&gt;, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+        <li>Indicate the current item by using aria-current="page" for the current page or aria-current="true" for the current item in a set.</li>
+        <li><a href="https://getbootstrap.com/docs/5.0/components/navbar/">Bootstrap documentation</a></li>
+      </ul>
+
       <section class="component">
         <div class="component__title">
           Navigation bar LOGGED IN
@@ -72,7 +81,92 @@
           </nav>
         </div>
       </section>
+
+      <section class="component">
+        <div class="component__title">
+          Navigation bar ANON
+        </div>
+        <div class="component__snippet">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../assets/logos/open_plan_logo_horizontal.svg" alt="open_plan Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Use cases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">License</a>
+                  </li>
+                  <li class="nav-item locale">
+                    <a class="nav-link" href="#">DE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Log in</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn--small" href="#" role="button">Sign up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <h2>Buttons and anchors</h2>
+
+      <section class="component">
+        <div class="component__title">
+          Large
+        </div>
+        <div class="component__snippet">
+          <a class="btn btn--large" href="#" role="button">Link</a>
+          <button class="btn btn--large" type="submit">Button</button>
+        </div>
+      </section>
+
+      <section class="component">
+        <div class="component__title">
+          Normal
+        </div>
+        <div class="component__snippet">
+          <a class="btn btn--medium" href="#" role="button">Link</a>
+          <button class="btn btn--medium" type="submit">Button</button>
+        </div>
+      </section>
       
+      <section class="component">
+        <div class="component__title">
+          Small
+        </div>
+        <div class="component__snippet">
+          <a class="btn btn--small" href="#" role="button">Small link</a>
+          <button class="btn btn--small" type="submit">Small button</button>
+        </div>
+      </section>
+
+      <section class="component">
+        <div class="component__title">
+          Normal & hollow
+        </div>
+        <div class="component__snippet">
+          <a class="btn btn--medium btn--hollow" href="#" role="button">Link</a>
+          <button class="btn btn--medium btn--hollow" type="submit">Button</button>
+        </div>
+      </section>
+
     </main>
     
     <footer class="footer" data-aos="fade-up">

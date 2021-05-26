@@ -1,7 +1,23 @@
 .components {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: 3rem;
+    padding-left: 1rem;
+  }
+
+  ul li {
+    padding-left: 1rem;
+    max-width: 60rem;
+  }
+
   .component {
+    padding-bottom: 2rem;
+
     &__title {
-      padding: 3rem 1rem 1rem;
+      padding: 1rem;
     }
   }
 }

@@ -1,22 +1,61 @@
-.btn {
+a.btn,
+button.btn {
   display: inline-block;
-  padding: .75rem 1rem;
+  background-color: $primary-color-1;
+  color: $white;
   border-radius: $button-border-radius;
   letter-spacing: $letter-spacing-normal;
+  font-weight: 400;
 
-  &--cta {
-    background-color: $primary-color-2;
-    color: $primary-color-1;
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    color: $white !important;
   }
 
-  &--reversed {
-    background-color: $white;
+  &:hover,
+  &:focus {
+    background-color: $primary-color-1-dark !important;
+  }
+
+  &--large {
+    padding: 0.925rem;
+    width: 100%;
+    max-width: 30rem;
+    font-size: $font-size-medium;
+    text-transform: uppercase;
+  }
+
+  &--medium {
+    padding: 0.55rem 0.75rem;
+    font-size: $font-size-normal;
+    min-width: 11rem;
+  }
+
+  &--small {
+    padding: 0.4rem 0.75rem;
+    font-size: $font-size-small;
   }
 
   &--hollow {
     border: 1px solid $primary-color-1;
-    font-family: $main-font-family;
-    font-weight: 600;
-    font-size: 1rem;
+    background-color: transparent;
+    color: $primary-color-1;
+    font-weight: 700;
+
+    &:link,
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      color: $primary-color-1 !important;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $primary-color-1-dark !important;
+    }
   }
 }

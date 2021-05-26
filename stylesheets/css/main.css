@@ -1173,19 +1173,19 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  font-size: 1.414rem;
+  font-size: 1.25rem;
   letter-spacing: 0.03rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 992px) {
   h2 {
-    font-size: 1.999rem;
+    font-size: 1.563rem;
   }
 }
 @media screen and (min-width: 1250px) {
   h2 {
-    font-size: 2.827rem;
+    font-size: 1.953rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -1197,7 +1197,7 @@ h3 {
 }
 @media screen and (min-width: 992px) {
   h3 {
-    font-size: 1.414rem;
+    font-size: 1.25rem;
     letter-spacing: 0.03rem;
     font-weight: 400;
   }
@@ -1222,28 +1222,84 @@ a:visited {
   text-decoration: none;
 }
 
-.btn {
+a.btn,
+button.btn {
   display: inline-block;
-  padding: 0.75rem 1rem;
+  background-color: #1F567D;
+  color: #fff;
   border-radius: 3px;
   letter-spacing: 0.03rem;
+  font-weight: 400;
 }
-.btn--cta {
-  background-color: #343434;
-  color: #1F567D;
+a.btn:link, a.btn:hover, a.btn:focus, a.btn:visited, a.btn:active,
+button.btn:link,
+button.btn:hover,
+button.btn:focus,
+button.btn:visited,
+button.btn:active {
+  color: #fff !important;
 }
-.btn--reversed {
-  background-color: #fff;
+a.btn:hover, a.btn:focus,
+button.btn:hover,
+button.btn:focus {
+  background-color: #17405C !important;
 }
-.btn--hollow {
-  border: 1px solid #1F567D;
-  font-family: lato, Arial, Helvetica, sans-serif;
-  font-weight: 600;
+a.btn--large,
+button.btn--large {
+  padding: 0.925rem;
+  width: 100%;
+  max-width: 30rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+a.btn--medium,
+button.btn--medium {
+  padding: 0.55rem 0.75rem;
   font-size: 1rem;
+  min-width: 11rem;
+}
+a.btn--small,
+button.btn--small {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+}
+a.btn--hollow,
+button.btn--hollow {
+  border: 1px solid #1F567D;
+  background-color: transparent;
+  color: #1F567D;
+  font-weight: 700;
+}
+a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active,
+button.btn--hollow:link,
+button.btn--hollow:hover,
+button.btn--hollow:focus,
+button.btn--hollow:visited,
+button.btn--hollow:active {
+  color: #1F567D !important;
+}
+a.btn--hollow:hover, a.btn--hollow:focus,
+button.btn--hollow:hover,
+button.btn--hollow:focus {
+  background-color: #17405C !important;
 }
 
+.components h1 {
+  text-align: center;
+}
+.components h2 {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+.components ul li {
+  padding-left: 1rem;
+  max-width: 60rem;
+}
+.components .component {
+  padding-bottom: 2rem;
+}
 .components .component__title {
-  padding: 3rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .lazy-img {
