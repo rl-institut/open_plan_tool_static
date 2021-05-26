@@ -1,0 +1,33 @@
+a,
+a:link,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  font-weight: 700;
+  color: $primary-color-1;
+  text-decoration: none;
+}
+
+a,
+.nav-link {
+  font-size: $font-size-normal !important;
+  font-weight: 400 !important;
+}
+.nav-link,
+.nav-link:link,
+.nav-link:active,
+.nav-link:visited,
+.nav-link:focus,
+a,
+a:link,
+a:focus,
+a:active,
+a:visited {
+  color: $text-color-a-sec !important;
+}
+.nav-link:hover,
+a:hover {
+  color: $text-color-a-sec-hover !important;
+  transition: $anchor-hover-transition;
+}
