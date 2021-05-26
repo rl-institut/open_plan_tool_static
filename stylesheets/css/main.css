@@ -1254,7 +1254,7 @@ button.btn--hollow {
   border: 1px solid #1F567D;
   background-color: transparent;
   color: #1F567D;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active,
 button.btn--hollow:link,
