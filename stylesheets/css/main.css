@@ -1242,6 +1242,10 @@ a:visited {
   font-size: 1rem;
 }
 
+.components .component__title {
+  padding: 3rem 1rem 1rem;
+}
+
 .lazy-img {
   filter: blur(1.25rem);
   -webkit-filter: blur(1.25rem);
