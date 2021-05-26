@@ -1,0 +1,52 @@
+.header {
+  background-color: $white;
+  @include flex-row-justify-center;
+
+  &> div {
+    @include section-width;
+    position: relative;
+  }
+
+  &__title {
+    font-size: $font-size-medium-2;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__back {
+    position: absolute;
+    right: 1rem;
+
+    a {
+      font-size: $font-size-small;
+      vertical-align: sub;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url(../../assets/icons/i_arrow_left.svg);
+      width: 0.75rem;
+      height: 0.75rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0.7rem;
+      left: -1.25rem;
+    }
+  }
+
+  // Specific to project view
+  &--project-view {
+    height: 12.5rem;
+
+    .header__title {
+      padding-top: $header-title-top-position;
+    }
+
+    .header__back {
+      top: $header-title-top-position;
+    }
+  }
+}

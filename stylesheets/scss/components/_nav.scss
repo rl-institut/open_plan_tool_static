@@ -1,4 +1,6 @@
-.navbar {
+nav.navbar {
+  position: fixed;
+  width: 100%;
 
   &.navbar-light {
     background-color: $white!important;
