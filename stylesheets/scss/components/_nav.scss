@@ -57,5 +57,17 @@
         justify-content: flex-end;
       }
     }
+
+    .nav-item.locale {
+      padding-left: 3rem;
+    }
+
+    .nav-item.dropdown.profile {
+      img {
+        height: 2rem;
+        width: 2rem;
+        transform: translateY(-3px);
+      }
+    }
   }
 }

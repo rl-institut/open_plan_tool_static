@@ -1295,6 +1295,14 @@ a:visited {
   .navbar.navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
+  .navbar .nav-item.locale {
+    padding-left: 3rem;
+  }
+  .navbar .nav-item.dropdown.profile img {
+    height: 2rem;
+    width: 2rem;
+    transform: translateY(-3px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
