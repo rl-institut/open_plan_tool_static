@@ -4,9 +4,7 @@
 	@include flex-column-align-justify-center;
 
 	&> div {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		@include flex-row-space-between;
 		@include section-width;
 	}
 
@@ -18,7 +16,7 @@
 
 	&__links {
 		@include flex-column-justify-center;
-		
+
 		ul {
 			list-style: none;
 			margin-bottom: 0;
@@ -27,5 +25,15 @@
 		li {
 			display: inline-block;
 		}
+	}
+}
+
+.step-footer {
+	background-color: $white;
+	height: $top-nav-height;
+	@include flex-column-align-justify-center;
+
+	.btn--previous {
+		border: none;
 	}
 }

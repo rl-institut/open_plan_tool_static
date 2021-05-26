@@ -1267,7 +1267,7 @@ button.btn--hollow:active {
 a.btn--hollow:hover, a.btn--hollow:focus,
 button.btn--hollow:hover,
 button.btn--hollow:focus {
-  background-color: #17405C !important;
+  background-color: #fff !important;
 }
 
 .components h1 {
@@ -1322,6 +1322,18 @@ button.btn--hollow:focus {
 }
 .footer__links li {
   display: inline-block;
+}
+
+.step-footer {
+  background-color: #fff;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.step-footer .btn--previous {
+  border: none;
 }
 
 .lazy-img {
