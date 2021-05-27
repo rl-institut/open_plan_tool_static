@@ -20,6 +20,10 @@ button.btn {
     background-color: $primary-color-1-dark !important;
   }
 
+  &:focus {
+    box-shadow: none;
+  }
+
   &--large {
     padding: 0.925rem;
     width: 100%;
@@ -39,8 +43,8 @@ button.btn {
     font-size: $font-size-small;
   }
 
-  &--hollow {
-    border: 1px solid $primary-color-1;
+  &--hollow,
+  &--transparent {
     background-color: transparent;
     color: $primary-color-1;
 
@@ -57,4 +61,35 @@ button.btn {
       background-color: $white !important;
     }
   }
+
+  &--hollow {
+    border: 1px solid $primary-color-1;
+  }
+
+  &--transparent {
+    font-weight: 700;
+  }
+
+  &--icon::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: .15rem;
+    left: -.5rem;
+  }
+}
+
+// Dropdown
+ul.dropdown-menu {
+  box-shadow: $box-shadow-frame;
+  border: 1px solid $primary-gray-color-2;
+}
+
+a.dropdown-item.active, 
+a.dropdown-item:active {
+  background-color: $primary-gray-color-2;
 }

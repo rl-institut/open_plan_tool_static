@@ -457,6 +457,10 @@ button.btn:hover,
 button.btn:focus {
   background-color: #17405C !important;
 }
+a.btn:focus,
+button.btn:focus {
+  box-shadow: none;
+}
 a.btn--large,
 button.btn--large {
   padding: 0.925rem;
@@ -476,24 +480,61 @@ button.btn--small {
   padding: 0.4rem 0.75rem;
   font-size: 0.875rem;
 }
-a.btn--hollow,
-button.btn--hollow {
-  border: 1px solid #1F567D;
+a.btn--hollow, a.btn--transparent,
+button.btn--hollow,
+button.btn--transparent {
   background-color: transparent;
   color: #1F567D;
 }
-a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active,
+a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active, a.btn--transparent:link, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:visited, a.btn--transparent:active,
 button.btn--hollow:link,
 button.btn--hollow:hover,
 button.btn--hollow:focus,
 button.btn--hollow:visited,
-button.btn--hollow:active {
+button.btn--hollow:active,
+button.btn--transparent:link,
+button.btn--transparent:hover,
+button.btn--transparent:focus,
+button.btn--transparent:visited,
+button.btn--transparent:active {
   color: #1F567D !important;
 }
-a.btn--hollow:hover, a.btn--hollow:focus,
+a.btn--hollow:hover, a.btn--hollow:focus, a.btn--transparent:hover, a.btn--transparent:focus,
 button.btn--hollow:hover,
-button.btn--hollow:focus {
+button.btn--hollow:focus,
+button.btn--transparent:hover,
+button.btn--transparent:focus {
   background-color: #fff !important;
+}
+a.btn--hollow,
+button.btn--hollow {
+  border: 1px solid #1F567D;
+}
+a.btn--transparent,
+button.btn--transparent {
+  font-weight: 700;
+}
+a.btn--icon::before,
+button.btn--icon::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0.15rem;
+  left: -0.5rem;
+}
+
+ul.dropdown-menu {
+  box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
+  border: 1px solid #E3EAEE;
+}
+
+a.dropdown-item.active,
+a.dropdown-item:active {
+  background-color: #E3EAEE;
 }
 
 .components h1 {
@@ -765,6 +806,30 @@ nav.navbar .dropdown-menu li {
 }
 .wizard li.active::before {
   background-color: #1F567D;
+}
+
+.projects-empty__img {
+  text-align: center;
+}
+.projects-empty__img img {
+  width: 9rem;
+}
+.projects-empty__text {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #495965;
+  padding-top: 2rem;
+}
+.projects-empty__btn {
+  padding-top: 2rem;
+  text-align: center;
+}
+.projects-empty__btn button::before {
+  background-image: url(../../assets/icons/i_add.svg);
+}
+.projects-empty__btn button::after {
+  display: none;
 }
 
 .signup {
