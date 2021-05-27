@@ -808,28 +808,73 @@ nav.navbar .dropdown-menu li {
   background-color: #1F567D;
 }
 
-.projects-empty__img {
+.projects-empty,
+.scenario-empty {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.projects-empty > div,
+.scenario-empty > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.projects-empty__img,
+.scenario-empty__img {
   text-align: center;
 }
-.projects-empty__img img {
+.projects-empty__img img,
+.scenario-empty__img img {
   width: 9rem;
 }
-.projects-empty__text {
+.projects-empty__text,
+.scenario-empty__text {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
   color: #495965;
   padding-top: 2rem;
 }
-.projects-empty__btn {
+.projects-empty__btn,
+.scenario-empty__btn {
   padding-top: 2rem;
   text-align: center;
 }
-.projects-empty__btn button::before {
+.projects-empty__btn button::before,
+.scenario-empty__btn button::before {
   background-image: url(../../assets/icons/i_add.svg);
 }
-.projects-empty__btn button::after {
+.projects-empty__btn button::after,
+.scenario-empty__btn button::after {
   display: none;
+}
+.projects-empty__separator,
+.scenario-empty__separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.projects-empty__separator .separator,
+.scenario-empty__separator .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #F4F7F9;
+}
+.projects-empty__separator .text,
+.scenario-empty__separator .text {
+  transform: translateY(-0.75rem);
+  -webkit-transform: translateY(-0.75rem);
+  -moz-transform: translateY(-0.75rem);
+  -ms-transform: translateY(-0.75rem);
+  -o-transform: translateY(-0.75rem);
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #495965;
 }
 
 .signup {
