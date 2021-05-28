@@ -478,7 +478,7 @@ template {
 }
 
 body {
-  font-family: lato, Arial, Helvetica, sans-serif;
+  font-family: lato, Arial, Helvetica, sans-serif !important;
   color: #343434;
   letter-spacing: 0.01rem;
 }
@@ -1017,6 +1017,46 @@ nav.navbar .dropdown-menu li {
   background-size: contain;
   top: 0.5rem;
   left: 0;
+}
+.project__details {
+  padding-top: 1.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .project__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.project__details .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.project__details .detail {
+  color: #495965;
+}
+.project__details .detail:not(:last-of-type) {
+  padding-right: 1.5rem;
+}
+.project__details .detail__property {
+  font-weight: 300;
+  padding-right: 0.75rem;
+}
+.project__details .actions {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-width: 992px) {
+  .project__details .actions {
+    justify-content: flex-end;
+  }
+}
+.project__details .action:not(:first-of-type) {
+  padding-left: 1.5rem;
+}
+.project__details .action span {
+  margin-right: 0.25rem;
 }
 
 .signup {

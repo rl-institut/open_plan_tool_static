@@ -17,8 +17,8 @@
     }
 
     .name {
-      margin-right: 1.5rem;
-      padding-left: 1.5rem;
+      margin-right: $space-between-project-elements;
+      padding-left: $space-between-project-elements;
     }
 
     .name::before {
@@ -32,6 +32,50 @@
       background-size: contain;
       top: 0.5rem;
       left: 0;
+    }
+  }
+
+  &__details {
+    padding-top: $space-between-project-elements;
+
+    @media only screen and (min-width: $medium-screen) {
+      @include flex-row-space-between;
+    }
+
+    .details {
+      @include flex-row;
+      justify-content: flex-start;
+    }
+
+    .detail {
+      color: $text-color-secondary;
+
+      &:not(:last-of-type) {
+        padding-right: $space-between-project-elements;
+      }
+
+      &__property {
+        font-weight: 300;
+        padding-right: .75rem;
+      }
+    }
+
+    .actions {
+      @include flex-row;
+
+      @media only screen and (min-width: $medium-screen) {
+        justify-content: flex-end;
+      }
+    }
+
+    .action {
+      &:not(:first-of-type) {
+        padding-left: $space-between-project-elements;
+      }
+
+      span {
+        margin-right: .25rem;
+      }
     }
   }
 }
