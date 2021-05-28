@@ -1,0 +1,19 @@
+.project {
+  @include flex-row-justify-center;
+
+  &> div {
+    @include section-width;
+    position: relative;
+  }
+
+  &__top {
+    @include flex-row-flex-start;
+    align-items: baseline;
+
+    .name,
+    .location {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}

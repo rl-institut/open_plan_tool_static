@@ -403,6 +403,7 @@ a:visited {
   text-decoration: none;
 }
 
+.project a,
 .dropdown-item,
 footer a,
 .nav-link {
@@ -410,6 +411,11 @@ footer a,
   font-weight: 400 !important;
 }
 
+.project a,
+.project a:link,
+.project a:active,
+.project a:visited,
+.project a:focus,
 .nav-link,
 .nav-link:link,
 .nav-link:active,
@@ -428,6 +434,7 @@ footer a:visited {
   color: #343434 !important;
 }
 
+.project a:hover,
 .dropdown-item:hover,
 .nav-link:hover,
 footer a:hover {
@@ -875,6 +882,30 @@ nav.navbar .dropdown-menu li {
   font-size: 1rem;
   font-weight: 300;
   color: #495965;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.project > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+.project__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.project__top .name,
+.project__top .location {
+  display: inline-block;
+  margin: 0;
 }
 
 .signup {

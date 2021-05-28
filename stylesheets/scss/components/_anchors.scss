@@ -9,12 +9,19 @@ a:visited {
   text-decoration: none;
 }
 
+.project a,
 .dropdown-item,
 footer a,
 .nav-link {
   font-size: $font-size-normal;
   font-weight: 400 !important;
 }
+
+.project a,
+.project a:link,
+.project a:active,
+.project a:visited,
+.project a:focus,
 .nav-link,
 .nav-link:link,
 .nav-link:active,
@@ -32,6 +39,7 @@ footer a:active,
 footer a:visited {
   color: $text-color-a-sec !important;
 }
+.project a:hover,
 .dropdown-item:hover,
 .nav-link:hover,
 footer a:hover {
