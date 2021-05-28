@@ -1002,6 +1002,22 @@ nav.navbar .dropdown-menu li {
   display: inline-block;
   margin: 0;
 }
+.project__top .name {
+  margin-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.project__top .name::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../../assets/icons/i_cell.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0.5rem;
+  left: 0;
+}
 
 .signup {
   display: flex;
