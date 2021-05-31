@@ -78,11 +78,14 @@ button.btn {
     padding: 0;
 
     &:link,
+    &:visited {
+      color: $primary-color-2 !important;
+    }
+
     &:hover,
     &:focus,
-    &:visited,
     &:active {
-      color: $primary-color-2 !important;
+      color: $primary-color-2-light !important;
     }
   }
 

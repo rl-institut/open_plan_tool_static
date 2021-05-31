@@ -98,3 +98,23 @@
 	margin-bottom: 0;
   padding-left: 0;
 }
+
+// Project details and actions
+@mixin project-details {
+  color: $text-color-secondary;
+
+  &:not(:last-of-type) {
+    padding-right: $space-between-project-elements;
+  }
+
+  &__property {
+    font-weight: 300;
+    padding-right: .75rem;
+  }
+}
+
+@mixin project-actions {
+  &:not(:first-of-type) {
+    padding-left: $space-between-project-elements;
+  }
+}

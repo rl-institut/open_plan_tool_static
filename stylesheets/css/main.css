@@ -631,13 +631,16 @@ button.btn--action {
   width: auto;
   padding: 0;
 }
-a.btn--action:link, a.btn--action:hover, a.btn--action:focus, a.btn--action:visited, a.btn--action:active,
+a.btn--action:link, a.btn--action:visited,
 button.btn--action:link,
+button.btn--action:visited {
+  color: #343434 !important;
+}
+a.btn--action:hover, a.btn--action:focus, a.btn--action:active,
 button.btn--action:hover,
 button.btn--action:focus,
-button.btn--action:visited,
 button.btn--action:active {
-  color: #343434 !important;
+  color: #8c8c8c !important;
 }
 a.btn .icon,
 button.btn .icon {
@@ -1111,6 +1114,28 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .details {
   display: flex;
   flex-direction: row;
+}
+.project__scenarios .details .name {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+}
+.project__scenarios .details .detail {
+  color: #495965;
+}
+.project__scenarios .details .detail:not(:last-of-type) {
+  padding-right: 1.5rem;
+}
+.project__scenarios .details .detail__property {
+  font-weight: 300;
+  padding-right: 0.75rem;
+}
+.project__scenarios .actions .action:not(:first-of-type) {
+  padding-left: 1.5rem;
+}
+.project__scenarios button.export {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
 }
 
 .signup {

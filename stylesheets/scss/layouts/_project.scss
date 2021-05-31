@@ -49,16 +49,7 @@
     }
 
     .detail {
-      color: $text-color-secondary;
-
-      &:not(:last-of-type) {
-        padding-right: $space-between-project-elements;
-      }
-
-      &__property {
-        font-weight: 300;
-        padding-right: .75rem;
-      }
+      @include project-details;
     }
 
     .actions {
@@ -70,9 +61,7 @@
     }
 
     .action {
-      &:not(:first-of-type) {
-        padding-left: $space-between-project-elements;
-      }
+      @include project-actions;
     }
   }
 
@@ -101,6 +90,27 @@
 
     .details {
       @include flex-row;
+
+      .name {
+        font-weight: 700;
+        padding-left: .5rem;
+        padding-right: 2rem;
+      }
+
+      .detail {
+        @include project-details;
+      }
+    }
+
+    .actions {
+      .action {
+        @include project-actions;
+      }
+    }
+
+    button.export {
+      margin-top: .5rem;
+      margin-left: $space-between-project-elements;
     }
   }
 }
