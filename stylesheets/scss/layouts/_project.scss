@@ -77,6 +77,30 @@
   }
 
   &__scenarios {
+    padding-top: $space-between-project-elements;
     padding-left: $space-between-project-elements;
+
+    .toggle {
+      padding-bottom: .75rem;
+
+      button.btn {
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+      border: none;
+    }
+
+    .list-group-item {
+      @include flex-row-space-between;
+      padding: $space-between-project-elements;
+    }
+
+    .details {
+      @include flex-row;
+    }
   }
 }

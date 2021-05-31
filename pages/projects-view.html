@@ -119,34 +119,48 @@
             <div class="toggle">
               <button class="btn btn--action" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScenarios" aria-expanded="false" aria-controls="collapseScenarios">
                 <span class="icon-i_arrow_down icon icon--small" aria-hidden="true"></span>
-                <span class="js-toggle-scenario">Show scenario</span>
+                <span class="js-toggle-scenario">Show scenarios</span>
               </button>
             </div>
             <div class="collapse" id="collapseScenarios">
-              <div class="card card-body">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    First checkbox
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Second checkbox
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Third checkbox
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Fourth checkbox
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Fifth checkbox
-                  </li>
-                </ul>
-              </div>
+              <form>
+                <div class="card card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="details">
+                        <input class="form-check-input me-1" type="checkbox" value="scenario-01" aria-label="">
+                        <span class="name">Scenario Name 1</span>
+                        <div class="detail">
+                          <span class="detail__property">Created</span>
+                          <span class="detail__value">13.04.2021</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-results" aria-hidden="true"></span>
+                          Results
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-edit" aria-hidden="true"></span>
+                          Edit
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-duplicate" aria-hidden="true"></span>
+                          Duplicate
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-delete" aria-hidden="true"></span>
+                          Delete
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--action action" type="button">
+                  <span class="icon icon-export" aria-hidden="true"></span>
+                  Export selected
+                </button>
+              </form>
             </div>
           </div>
         </div>

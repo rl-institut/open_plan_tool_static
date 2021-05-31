@@ -1088,7 +1088,29 @@ nav.navbar .dropdown-menu li {
   padding-left: 1.5rem;
 }
 .project__scenarios {
+  padding-top: 1.5rem;
   padding-left: 1.5rem;
+}
+.project__scenarios .toggle {
+  padding-bottom: 0.75rem;
+}
+.project__scenarios .toggle button.btn {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.project__scenarios .card-body {
+  padding: 0;
+  border: none;
+}
+.project__scenarios .list-group-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.project__scenarios .details {
+  display: flex;
+  flex-direction: row;
 }
 
 .signup {
