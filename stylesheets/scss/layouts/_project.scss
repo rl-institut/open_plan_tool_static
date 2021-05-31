@@ -58,6 +58,10 @@
       @media only screen and (min-width: $medium-screen) {
         justify-content: flex-end;
       }
+
+      .btn--hollow {
+        @include project-hollow-btn;
+      }
     }
 
     .action {
@@ -91,6 +95,11 @@
 
     .details {
       @include flex-row;
+      align-items: center;
+
+      input {
+        margin-top: 0;
+      }
 
       .name {
         font-weight: 700;
@@ -104,6 +113,11 @@
     }
 
     .actions {
+      
+      .btn--hollow.action {
+        @include project-hollow-btn;
+      }
+
       .action {
         @include project-actions;
       }

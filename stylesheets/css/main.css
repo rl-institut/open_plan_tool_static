@@ -1090,6 +1090,16 @@ nav.navbar .dropdown-menu li {
     justify-content: flex-end;
   }
 }
+.project__details .actions .btn--hollow {
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  color: #1F567D;
+  border-color: #1F567D;
+}
+.project__details .actions .btn--hollow:hover, .project__details .actions .btn--hollow:focus, .project__details .actions .btn--hollow:active {
+  color: #17405C !important;
+  border-color: #17405C !important;
+}
 .project__details .action:not(:first-of-type) {
   padding-left: 1.5rem;
 }
@@ -1121,6 +1131,10 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .details {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.project__scenarios .details input {
+  margin-top: 0;
 }
 .project__scenarios .details .name {
   font-weight: 700;
@@ -1136,6 +1150,16 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .details .detail__property {
   font-weight: 300;
   padding-right: 0.75rem;
+}
+.project__scenarios .actions .btn--hollow.action {
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  color: #1F567D;
+  border-color: #1F567D;
+}
+.project__scenarios .actions .btn--hollow.action:hover, .project__scenarios .actions .btn--hollow.action:focus, .project__scenarios .actions .btn--hollow.action:active {
+  color: #17405C !important;
+  border-color: #17405C !important;
 }
 .project__scenarios .actions .action:not(:first-of-type) {
   padding-left: 1.5rem;
