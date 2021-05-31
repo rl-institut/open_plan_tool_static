@@ -66,10 +66,7 @@ nav.navbar {
 }
 
 .wizard {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  @include user-select-none;
 
   &> div {
     background-color: $primary-gray-color-1;

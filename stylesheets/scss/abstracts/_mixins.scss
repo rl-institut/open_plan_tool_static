@@ -92,6 +92,14 @@
   -o-transform: translateX($translateX-value);
 }
 
+// User select
+@mixin user-select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 // UL
 @mixin ul-horizontal {
   list-style: none;

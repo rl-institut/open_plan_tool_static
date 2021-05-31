@@ -85,6 +85,7 @@
 
     .list-group-item {
       @include flex-row-space-between;
+      @include user-select-none;
       padding: $space-between-project-elements;
     }
 

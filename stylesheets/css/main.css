@@ -1112,6 +1112,10 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   padding: 1.5rem;
 }
 .project__scenarios .details {
