@@ -37,6 +37,7 @@
 
   &__details {
     padding-top: $space-between-project-elements;
+    padding-left: $space-between-project-elements;
 
     @media only screen and (min-width: $medium-screen) {
       @include flex-row-space-between;
@@ -72,10 +73,10 @@
       &:not(:first-of-type) {
         padding-left: $space-between-project-elements;
       }
-
-      span {
-        margin-right: .25rem;
-      }
     }
+  }
+
+  &__scenarios {
+    padding-left: $space-between-project-elements;
   }
 }

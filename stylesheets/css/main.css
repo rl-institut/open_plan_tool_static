@@ -582,13 +582,14 @@ button.btn--small {
   padding: 0.4rem 0.75rem;
   font-size: 0.875rem;
 }
-a.btn--hollow, a.btn--transparent,
+a.btn--hollow, a.btn--transparent, a.btn--action,
 button.btn--hollow,
-button.btn--transparent {
+button.btn--transparent,
+button.btn--action {
   background-color: transparent;
   color: #1F567D;
 }
-a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active, a.btn--transparent:link, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:visited, a.btn--transparent:active,
+a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active, a.btn--transparent:link, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:visited, a.btn--transparent:active, a.btn--action:link, a.btn--action:hover, a.btn--action:focus, a.btn--action:visited, a.btn--action:active,
 button.btn--hollow:link,
 button.btn--hollow:hover,
 button.btn--hollow:focus,
@@ -598,14 +599,21 @@ button.btn--transparent:link,
 button.btn--transparent:hover,
 button.btn--transparent:focus,
 button.btn--transparent:visited,
-button.btn--transparent:active {
+button.btn--transparent:active,
+button.btn--action:link,
+button.btn--action:hover,
+button.btn--action:focus,
+button.btn--action:visited,
+button.btn--action:active {
   color: #1F567D !important;
 }
-a.btn--hollow:hover, a.btn--hollow:focus, a.btn--transparent:hover, a.btn--transparent:focus,
+a.btn--hollow:hover, a.btn--hollow:focus, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--action:hover, a.btn--action:focus,
 button.btn--hollow:hover,
 button.btn--hollow:focus,
 button.btn--transparent:hover,
-button.btn--transparent:focus {
+button.btn--transparent:focus,
+button.btn--action:hover,
+button.btn--action:focus {
   background-color: #fff !important;
 }
 a.btn--hollow,
@@ -615,6 +623,25 @@ button.btn--hollow {
 a.btn--transparent,
 button.btn--transparent {
   font-weight: 700;
+}
+a.btn--action,
+button.btn--action {
+  background-color: transparent;
+  color: #343434;
+  width: auto;
+  padding: 0;
+}
+a.btn--action:link, a.btn--action:hover, a.btn--action:focus, a.btn--action:visited, a.btn--action:active,
+button.btn--action:link,
+button.btn--action:hover,
+button.btn--action:focus,
+button.btn--action:visited,
+button.btn--action:active {
+  color: #343434 !important;
+}
+a.btn .icon,
+button.btn .icon {
+  padding-right: 0.25rem;
 }
 a.btn--icon::before,
 button.btn--icon::before {
@@ -787,6 +814,10 @@ form .form-control:-moz-placeholder {
 }
 .header--project-view .header__back {
   top: 7rem;
+}
+
+.icon--small {
+  font-size: 0.6rem;
 }
 
 .lazy-img {
@@ -1020,6 +1051,7 @@ nav.navbar .dropdown-menu li {
 }
 .project__details {
   padding-top: 1.5rem;
+  padding-left: 1.5rem;
 }
 @media only screen and (min-width: 992px) {
   .project__details {
@@ -1055,8 +1087,8 @@ nav.navbar .dropdown-menu li {
 .project__details .action:not(:first-of-type) {
   padding-left: 1.5rem;
 }
-.project__details .action span {
-  margin-right: 0.25rem;
+.project__scenarios {
+  padding-left: 1.5rem;
 }
 
 .signup {

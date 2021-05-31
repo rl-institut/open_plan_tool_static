@@ -44,7 +44,8 @@ button.btn {
   }
 
   &--hollow,
-  &--transparent {
+  &--transparent,
+  &--action {
     background-color: transparent;
     color: $primary-color-1;
 
@@ -68,6 +69,25 @@ button.btn {
 
   &--transparent {
     font-weight: 700;
+  }
+
+  &--action {
+    background-color: transparent;
+    color: $primary-color-2;
+    width: auto;
+    padding: 0;
+
+    &:link,
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      color: $primary-color-2 !important;
+    }
+  }
+
+  .icon {
+    padding-right: .25rem;
   }
 
   &--icon::before {
