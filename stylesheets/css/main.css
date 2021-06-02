@@ -1020,6 +1020,8 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-right: 0.5rem;
+  padding-left: 1rem;
 }
 .project > div {
   width: 100%;
@@ -1100,6 +1102,9 @@ nav.navbar .dropdown-menu li {
   color: #17405C !important;
   border-color: #17405C !important;
 }
+.project__details .action {
+  font-weight: 700;
+}
 .project__details .action:not(:first-of-type) {
   padding-left: 1.5rem;
 }
@@ -1111,7 +1116,7 @@ nav.navbar .dropdown-menu li {
   padding-bottom: 0.75rem;
 }
 .project__scenarios .toggle button.btn {
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .project__scenarios .card-body {
@@ -1162,6 +1167,9 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .actions .btn--hollow.action:hover, .project__scenarios .actions .btn--hollow.action:focus, .project__scenarios .actions .btn--hollow.action:active {
   color: #17405C !important;
   border-color: #17405C !important;
+}
+.project__scenarios .actions .action {
+  font-weight: 700;
 }
 .project__scenarios .actions .action:not(:first-of-type) {
   padding-left: 1.5rem;
