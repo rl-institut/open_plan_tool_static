@@ -1117,6 +1117,7 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .card-body {
   padding: 0;
   border: none;
+  box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
 }
 .project__scenarios .list-group-item {
   display: flex;
@@ -1127,6 +1128,7 @@ nav.navbar .dropdown-menu li {
   -ms-user-select: none;
   user-select: none;
   padding: 1.5rem;
+  border-color: #F4F7F9;
 }
 .project__scenarios .details {
   display: flex;
@@ -1136,7 +1138,7 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .details input {
   margin-top: 0;
 }
-.project__scenarios .details .name {
+.project__scenarios .details label {
   font-weight: 700;
   padding-left: 0.5rem;
   padding-right: 2rem;
@@ -1167,6 +1169,12 @@ nav.navbar .dropdown-menu li {
 .project__scenarios button.export {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
+}
+.project__scenarios .add-scenario {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transform: translateY(-1rem);
 }
 
 .signup {

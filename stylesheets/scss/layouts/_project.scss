@@ -85,12 +85,14 @@
     .card-body {
       padding: 0;
       border: none;
+      box-shadow: $box-shadow-frame;
     }
 
     .list-group-item {
       @include flex-row-space-between;
       @include user-select-none;
       padding: $space-between-project-elements;
+      border-color: $primary-gray-color-1;
     }
 
     .details {
@@ -101,7 +103,7 @@
         margin-top: 0;
       }
 
-      .name {
+      label {
         font-weight: 700;
         padding-left: .5rem;
         padding-right: 2rem;
@@ -126,6 +128,12 @@
     button.export {
       margin-top: .5rem;
       margin-left: $space-between-project-elements;
+    }
+
+    .add-scenario {
+      @include flex-row;
+      justify-content: flex-end;
+      transform: translateY(-1rem);
     }
   }
 }

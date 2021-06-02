@@ -128,8 +128,10 @@
                   <ul class="list-group">
                     <li class="list-group-item">
                       <div class="details">
-                        <input class="form-check-input me-1" type="checkbox" value="scenario-01" aria-label="">
-                        <span class="name">Scenario Name 1</span>
+                        <input class="form-check-input me-1" id="scenario-01" type="checkbox" value="scenario-01" aria-label="">
+                        <label class="form-check-label" for="scenario-01">
+                          Scenario 1
+                        </label>
                         <div class="detail">
                           <span class="detail__property">Created</span>
                           <span class="detail__value">13.04.2021</span>
@@ -142,15 +144,39 @@
                         </button>
                         <button class="btn btn--action action" type="button">
                           <span class="icon icon-edit" aria-hidden="true"></span>
-                          Edit
                         </button>
                         <button class="btn btn--action action" type="button">
                           <span class="icon icon-duplicate" aria-hidden="true"></span>
-                          Duplicate
                         </button>
                         <button class="btn btn--action action" type="button">
                           <span class="icon icon-delete" aria-hidden="true"></span>
-                          Delete
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="details">
+                        <input class="form-check-input me-1" id="scenario-02" type="checkbox" value="scenario-02" aria-label="">
+                        <label class="form-check-label" for="scenario-02">
+                          Scenario 2
+                        </label>
+                        <div class="detail">
+                          <span class="detail__property">Created</span>
+                          <span class="detail__value">15.04.2021</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <button class="btn btn--action btn--hollow action" type="button">
+                          <span class="icon icon-results" aria-hidden="true"></span>
+                          Results
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-edit" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-duplicate" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-delete" aria-hidden="true"></span>
                         </button>
                       </div>
                     </li>
@@ -161,6 +187,12 @@
                   Export selected
                 </button>
               </form>
+            </div>
+            <div class="add-scenario">
+              <button class="btn" type="button">
+                <span class="icon icon-add" aria-hidden="true"></span>
+                Create scenario
+              </button>
             </div>
           </div>
         </div>
