@@ -6,6 +6,9 @@
   &> div {
     @include section-width;
     position: relative;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid $primary-gray-color-1;
+    margin-bottom: 4rem;
   }
 
   &__top {
@@ -62,7 +65,15 @@
       }
 
       .btn--hollow {
-        @include project-hollow-btn;
+        font-weight: 700;
+        padding: 0.25rem 0.5rem;
+        color: $primary-color-1;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $primary-color-1-dark !important;
+        }
       }
     }
 
@@ -118,8 +129,8 @@
 
     .actions {
       
-      .btn--hollow.action {
-        @include project-hollow-btn;
+      .btn--action.results {
+        @include project-btn;
       }
 
       .action {
@@ -135,7 +146,14 @@
     .add-scenario {
       @include flex-row;
       justify-content: flex-end;
-      transform: translateY(-1rem);
+      
+      .dropdown {
+        transform: translateY(-1rem);
+      }
+
+      .btn::after {
+        content: none;
+      }
     }
   }
 }

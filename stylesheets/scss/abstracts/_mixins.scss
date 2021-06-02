@@ -128,16 +128,17 @@
   }
 }
 
-@mixin project-hollow-btn {
+@mixin project-btn {
   font-weight: 700;
   padding: 0.25rem 0.5rem;
-  color: $primary-color-1;
-  border-color: $primary-color-1;
+  color: $primary-color-2;
+  background-color: $primary-gray-color-1;
+  border: none;
 
   &:hover,
   &:focus,
   &:active {
-    color: $primary-color-1-dark !important;
-    border-color: $primary-color-1-dark !important;
+    color: $primary-color-2-light !important;
+    background-color: $white;
   }
 }

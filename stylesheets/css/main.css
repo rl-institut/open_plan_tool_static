@@ -1029,6 +1029,9 @@ nav.navbar .dropdown-menu li {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid #F4F7F9;
+  margin-bottom: 4rem;
 }
 .project__top {
   display: flex;
@@ -1096,11 +1099,9 @@ nav.navbar .dropdown-menu li {
   font-weight: 700;
   padding: 0.25rem 0.5rem;
   color: #1F567D;
-  border-color: #1F567D;
 }
 .project__details .actions .btn--hollow:hover, .project__details .actions .btn--hollow:focus, .project__details .actions .btn--hollow:active {
   color: #17405C !important;
-  border-color: #17405C !important;
 }
 .project__details .action {
   font-weight: 700;
@@ -1158,15 +1159,16 @@ nav.navbar .dropdown-menu li {
   font-weight: 300;
   padding-right: 0.75rem;
 }
-.project__scenarios .actions .btn--hollow.action {
+.project__scenarios .actions .btn--action.results {
   font-weight: 700;
   padding: 0.25rem 0.5rem;
-  color: #1F567D;
-  border-color: #1F567D;
+  color: #343434;
+  background-color: #F4F7F9;
+  border: none;
 }
-.project__scenarios .actions .btn--hollow.action:hover, .project__scenarios .actions .btn--hollow.action:focus, .project__scenarios .actions .btn--hollow.action:active {
-  color: #17405C !important;
-  border-color: #17405C !important;
+.project__scenarios .actions .btn--action.results:hover, .project__scenarios .actions .btn--action.results:focus, .project__scenarios .actions .btn--action.results:active {
+  color: #8c8c8c !important;
+  background-color: #fff;
 }
 .project__scenarios .actions .action {
   font-weight: 700;
@@ -1182,7 +1184,12 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+.project__scenarios .add-scenario .dropdown {
   transform: translateY(-1rem);
+}
+.project__scenarios .add-scenario .btn::after {
+  content: none;
 }
 
 .signup {
