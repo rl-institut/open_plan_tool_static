@@ -89,6 +89,27 @@ button.btn {
     }
   }
 
+  &--load {
+    font-weight: 700;
+    background-color: transparent;
+    color: $primary-color-1;
+    width: auto;
+    padding: 0;
+
+    &:link,
+    &:visited {
+      color: $primary-color-1 !important;
+      background-color: transparent !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-color-1-dark !important;
+      background-color: transparent !important;
+    }
+  }
+
   .icon {
     padding-right: .25rem;
   }

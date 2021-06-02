@@ -28,4 +28,21 @@ form {
     color: $secondary-gray-color-2;
     font-size: $font-size-normal;
   }
+
+  .input-item {
+    position: relative;
+    padding-bottom: 1rem;
+
+    &.optional label::after {
+      content: '- optional';
+      font-weight: 300;
+      font-style: italic;
+      padding-left: .5rem;
+    }
+
+    .form-text.to-right {
+      position: absolute;
+      right: 0;
+    }
+  }
 }

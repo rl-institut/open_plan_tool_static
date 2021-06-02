@@ -642,6 +642,27 @@ button.btn--action:focus,
 button.btn--action:active {
   color: #8c8c8c !important;
 }
+a.btn--load,
+button.btn--load {
+  font-weight: 700;
+  background-color: transparent;
+  color: #1F567D;
+  width: auto;
+  padding: 0;
+}
+a.btn--load:link, a.btn--load:visited,
+button.btn--load:link,
+button.btn--load:visited {
+  color: #1F567D !important;
+  background-color: transparent !important;
+}
+a.btn--load:hover, a.btn--load:focus, a.btn--load:active,
+button.btn--load:hover,
+button.btn--load:focus,
+button.btn--load:active {
+  color: #17405C !important;
+  background-color: transparent !important;
+}
 a.btn .icon,
 button.btn .icon {
   padding-right: 0.25rem;
@@ -768,6 +789,20 @@ form .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #D6D6D6;
   font-size: 1rem;
+}
+form .input-item {
+  position: relative;
+  padding-bottom: 1rem;
+}
+form .input-item.optional label::after {
+  content: "- optional";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 0.5rem;
+}
+form .input-item .form-text.to-right {
+  position: absolute;
+  right: 0;
 }
 
 .header {
@@ -1235,6 +1270,46 @@ nav.navbar .dropdown-menu li {
 }
 .signup .signup-frame button {
   margin-top: 1.5rem;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 2px solid #F4F7F9;
+}
+.two-columns .left,
+.two-columns .right {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  padding-top: 2rem;
+}
+.two-columns .left > div,
+.two-columns .right > div {
+  width: 100%;
+  max-width: calc(82rem / 2);
+}
+.two-columns .left {
+  justify-content: flex-end;
+}
+.two-columns .left > div {
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.two-columns .left .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.two-columns .right {
+  justify-content: flex-start;
+  background-color: #F4F7F9;
+}
+.two-columns .right > div {
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
