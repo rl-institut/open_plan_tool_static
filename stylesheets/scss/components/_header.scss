@@ -38,7 +38,8 @@
   }
 
   // Specific to project view
-  &--project-view {
+  &--project-view,
+  &--scenario {
     height: 12.5rem;
 
     .header__title {
@@ -47,6 +48,32 @@
 
     .header__back {
       top: $header-title-top-position;
+    }
+  }
+
+  // Specific to scenario creation
+  &--scenario {
+
+    .project-name {
+      position: absolute;
+      top: 2rem;
+      font-size: $font-size-small;
+      color: $primary-gray-color-4;
+    }
+
+    .header__title {
+      padding-top: 3.5rem;
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+
+    .header__subtitle {
+      text-align: left;
+      font-size: $font-size-normal;
+      line-height: 1.5rem;
+      color: $primary-color-2;
+      font-weight: 300;
+      max-width: 40rem;
     }
   }
 }
