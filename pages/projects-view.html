@@ -204,6 +204,142 @@
           </div>
         </div>
       </section>
+
+      <section class="project">
+        <div>
+          <div class="project__top">
+            <h2 class="name">
+              PV Potsdam
+            </h2>
+            <a href="#" class="location">
+              <span class="icon-pin" aria-hidden="true"></span>
+              Location
+            </a>
+          </div>
+          <div class="project__details">
+            <div class="details">
+              <div class="detail">
+                <span class="detail__property">Created</span>
+                <span class="detail__value">24/05/2021</span>
+              </div>
+              <div class="detail">
+                <span class="detail__property">Interest rate</span>
+                <span class="detail__value">99.999 EUR</span>
+              </div>
+              <div class="detail">
+                <span class="detail__property">Lifetime</span>
+                <span class="detail__value">2025-2050</span>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn btn--action btn--hollow action" type="button">
+                <span class="icon icon-results" aria-hidden="true"></span>
+                Results
+              </button>
+              <button class="btn btn--action action" type="button">
+                <span class="icon icon-edit" aria-hidden="true"></span>
+                Edit
+              </button>
+              <button class="btn btn--action action" type="button">
+                <span class="icon icon-duplicate" aria-hidden="true"></span>
+                Duplicate
+              </button>
+              <button class="btn btn--action action" type="button">
+                <span class="icon icon-delete" aria-hidden="true"></span>
+                Delete
+              </button>
+            </div>
+          </div>
+          <div class="project__scenarios">
+            <div class="toggle" class="js-toggle-scenario">
+              <button class="btn btn--action" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScenarios2" aria-expanded="false" aria-controls="collapseScenarios">
+                <span class="icon-i_arrow_down icon icon--small js-toggle-scenario-icon" aria-hidden="true"></span>
+                <span class="js-toggle-scenario-name">Show scenarios</span>
+              </button>
+            </div>
+            <div class="collapse" id="collapseScenarios2">
+              <form>
+                <div class="card card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="details">
+                        <input class="form-check-input me-1" id="scenario-01" type="checkbox" value="scenario-01" aria-label="">
+                        <label class="form-check-label" for="scenario-01">
+                          Scenario 1
+                        </label>
+                        <div class="detail">
+                          <span class="detail__property">Created</span>
+                          <span class="detail__value">13.04.2021</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <button class="btn btn--action results" type="button">
+                          <span class="icon icon-results" aria-hidden="true"></span>
+                          Results
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-edit" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-duplicate" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-delete" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="details">
+                        <input class="form-check-input me-1" id="scenario-02" type="checkbox" value="scenario-02" aria-label="">
+                        <label class="form-check-label" for="scenario-02">
+                          Scenario 2
+                        </label>
+                        <div class="detail">
+                          <span class="detail__property">Created</span>
+                          <span class="detail__value">15.04.2021</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <button class="btn btn--action results" type="button">
+                          <span class="icon icon-results" aria-hidden="true"></span>
+                          Results
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-edit" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-duplicate" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn--action action" type="button">
+                          <span class="icon icon-delete" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn--action action export" type="button">
+                  <span class="icon icon-export" aria-hidden="true"></span>
+                  Export selected
+                </button>
+              </form>
+            </div>
+            <div class="add-scenario">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownCreateScenario" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="icon icon-add" aria-hidden="true"></span>
+                  Create scenario
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCreateScenario">
+                  <li><a class="dropdown-item" href="#">New scenario</a></li>
+                  <li><a class="dropdown-item" href="#">From file</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
 
     <footer class="footer">
