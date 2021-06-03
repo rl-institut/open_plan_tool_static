@@ -33,7 +33,7 @@ form {
     position: relative;
     padding-bottom: 1rem;
 
-    &.optional label::after {
+    &.optional label.form-label::after {
       content: '- optional';
       font-weight: 300;
       font-style: italic;

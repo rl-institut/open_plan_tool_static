@@ -760,6 +760,7 @@ a.dropdown-item:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .step-footer .btn--previous {
   border: none;
@@ -799,7 +800,7 @@ form .input-item {
   position: relative;
   padding-bottom: 1rem;
 }
-form .input-item.optional label::after {
+form .input-item.optional label.form-label::after {
   content: "- optional";
   font-weight: 300;
   font-style: italic;
@@ -1281,6 +1282,56 @@ nav.navbar .dropdown-menu li {
 }
 .project__scenarios .add-scenario .btn::after {
   content: none;
+}
+
+.scenario-create {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 2px solid #F4F7F9;
+  padding-bottom: 6rem;
+}
+.scenario-create form {
+  width: 100%;
+}
+.scenario-create .input-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+.scenario-create__form, .scenario-create__description {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-width: 1250px) {
+  .scenario-create__form, .scenario-create__description {
+    flex: 1 1 0;
+  }
+}
+.scenario-create__form > div, .scenario-create__description > div {
+  width: 100%;
+  max-width: calc(82rem / 2);
+}
+.scenario-create__form {
+  justify-content: flex-end;
+}
+.scenario-create__form > div {
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.scenario-create__description {
+  justify-content: flex-start;
+  background-color: #F4F7F9;
+}
+.scenario-create__description > div {
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+}
+.scenario-create__description .form-text {
+  margin-top: 1.75rem;
+  font-size: 1rem;
 }
 
 .signup {

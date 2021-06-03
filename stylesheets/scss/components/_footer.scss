@@ -33,6 +33,7 @@
 	background-color: $white;
 	height: $top-nav-height;
 	@include flex-column-align-justify-center;
+	flex-shrink: 0;
 
 	.btn--previous {
 		border: none;
