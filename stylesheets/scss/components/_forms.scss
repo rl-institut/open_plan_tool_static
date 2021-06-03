@@ -40,6 +40,10 @@ form {
       padding-left: .5rem;
     }
 
+    .icon-question {
+      @include info-icon;
+    }
+
     .form-text.to-right {
       position: absolute;
       right: 0;

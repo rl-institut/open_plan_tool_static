@@ -1,4 +1,4 @@
-.two-columns {
+.project-setup.two-columns {
   @include flex-row-justify-center;
   border-top: 2px solid $primary-gray-color-1;
 
@@ -26,12 +26,15 @@
       @include flex-row-space-between;
       font-weight: 300;
       padding-bottom: 1rem;
+
+      .icon-question {
+        @include info-icon;
+      }
     }
   }
 
   .right {
     justify-content: flex-start;
-    background-color: $primary-gray-color-1;
 
     &> div {
       padding-right: 1rem;

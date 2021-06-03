@@ -142,3 +142,10 @@
     background-color: $white;
   }
 }
+
+// Info icon
+@mixin info-icon {
+  padding-left: 0.35rem;
+  cursor: pointer;
+  vertical-align: middle;
+}

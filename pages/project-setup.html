@@ -83,8 +83,8 @@
               <span>
                 <button class="btn btn--load" type="button">
                 Load parameters from file
-                <span class="icon icon-question" aria-hidden="true"></span>
                 </button>
+                <span class="icon icon-question" aria-hidden="false" title="For more details about the parameters, please check the documentation"></span>
               </span>
             </div>
             <form>
@@ -99,7 +99,10 @@
                 <div id="projectDescriptionHelp" class="form-text">Maximum of 300 characters</div>
               </div>
               <div class="input-item">
-                <label for="gpsCoordinates" class="form-label">GPS coordinates</label>
+                <label for="gpsCoordinates" class="form-label">
+                  GPS coordinates
+                  <span class="icon icon-question" aria-hidden="false" title="Point or shape"></span>
+                </label>
                 <input type="text" class="form-control" id="gpsCoordinates" required>
                 <div id="projectNameHelp" class="form-text to-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
               </div>
