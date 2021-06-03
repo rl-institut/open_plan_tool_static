@@ -160,6 +160,10 @@ body {
   flex-direction: column;
 }
 
+.main {
+  flex: 1 0 auto;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -720,6 +724,7 @@ a.dropdown-item:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .footer > div {
   display: flex;

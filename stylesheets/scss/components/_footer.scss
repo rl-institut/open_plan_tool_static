@@ -2,6 +2,7 @@
 	background-color: $primary-gray-color-1;
 	height: $top-nav-height;
 	@include flex-column-align-justify-center;
+	flex-shrink: 0;
 
 	&> div {
 		@include flex-row-space-between;

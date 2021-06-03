@@ -31,6 +31,10 @@ body {
   flex-direction: column;
 }
 
+.main {
+  flex: 1 0 auto;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
