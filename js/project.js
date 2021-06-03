@@ -9,8 +9,14 @@ AOS.init({
   disable: "mobile"
 });
 
+////////////////////////////////////////////// Enable tooltips everywhere
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
 ////////////////////////////////////////////// My projects page
-const projectWrap = document.querySelector('.projects');
+const projectWrap = document.querySelector('main');
 
 // toggle HIDE/SHOW SCENARIOS text
 projectWrap.addEventListener('click', function() {

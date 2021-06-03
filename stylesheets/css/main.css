@@ -814,6 +814,9 @@ form .input-item .form-text.to-right {
   position: absolute;
   right: 0;
 }
+form .input-item textarea {
+  max-height: 10rem;
+}
 
 .header {
   background-color: #fff;
@@ -866,6 +869,10 @@ form .input-item .form-text.to-right {
 
 .icon--small {
   font-size: 0.6rem;
+}
+
+.tooltip-inner {
+  max-width: 350px !important;
 }
 
 .lazy-img {
