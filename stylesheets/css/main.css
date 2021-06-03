@@ -871,6 +871,8 @@ form .input-item .form-text.to-right {
 nav.navbar {
   position: fixed;
   width: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
 nav.navbar.navbar-light {
   background-color: #fff !important;
@@ -902,7 +904,14 @@ nav.navbar .dropdown-menu li {
     justify-content: flex-end;
   }
   .navbar .nav-item.locale {
-    padding-left: 3rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .navbar .nav-item.locale::before {
+    content: "|";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.6rem;
   }
   .navbar .nav-item.dropdown.profile a {
     padding-top: 0;
