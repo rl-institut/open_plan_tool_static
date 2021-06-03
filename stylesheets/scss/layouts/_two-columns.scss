@@ -1,16 +1,23 @@
 .project-setup.two-columns {
   @include flex-row-justify-center;
   border-top: 2px solid $primary-gray-color-1;
+  padding-bottom: 6rem;
 
   .left,
   .right {
     @include flex-row;
-    flex: 1 1 0;
     padding-top: $padding-sides-large;
+
+    @media only screen and (min-width: $large-screen) {
+      flex: 1 1 0;
+    }
 
     &> div {
       width: 100%;
-      max-width: calc(#{$section-max-width} / 2);
+
+      @media only screen and (min-width: $large-screen) {
+        max-width: calc(#{$section-max-width} / 2);
+      }
     }
   }
 
@@ -38,6 +45,13 @@
 
     &> div {
       padding-right: 1rem;
+    }
+
+    .map {
+      margin-left: 1.5rem;
+      width: calc(100% - 1.5rem);
+      height: 100%;
+      background-color: $primary-gray-color-2;
     }
   }
 }

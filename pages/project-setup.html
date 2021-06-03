@@ -108,16 +108,33 @@
               <div class="input-item">
                 <label for="interestRate" class="form-label">
                   Interest rate
-                  <span class="icon icon-question" data-bs-toggle="tooltip" title="A guess of what the interest rate will be in during the project lifetime. Could be provided as constant or timeseries."></span>
+                  <span class="icon icon-question" data-bs-toggle="tooltip" title="A guess of what the interest rate will be in during the project lifetime. Could be provided as constant or timeseries"></span>
                 </label>
-                <input type="number" class="form-control" id="interestRate" placeholder="00.000" required>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="interestRate" placeholder="00.000" required>
+                  <span class="input-group-text">EUR</span>
+                </div>
               </div>
+              <div class="input-item">
+                <label for="projectLifetime" class="form-label">
+                  Project lifetime
+                  <span class="icon icon-question" data-bs-toggle="tooltip" title="Simulation time"></span>
+                </label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="projectLifetime" placeholder="2025-2050" required>
+                  <span class="input-group-text">Year</span>
+                </div>
+              </div>
+              <button class="btn btn--medium" type="submit">Save project</button>
             </form>
           </div>
         </div>
         <div class="right">
           <div>
-            test
+            <!-- Insert map -->
+            <div class="map">
+              Here comes a map (maybe)
+            </div>
           </div>
         </div>
       </section>

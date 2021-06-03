@@ -52,5 +52,15 @@ form {
     textarea {
       max-height: 10rem;
     }
+
+    .input-group-text {
+      background-color: $primary-gray-color-2;
+      color: $primary-color-2;
+      @include user-select-none;
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
   }
 }

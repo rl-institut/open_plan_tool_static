@@ -817,6 +817,17 @@ form .input-item .form-text.to-right {
 form .input-item textarea {
   max-height: 10rem;
 }
+form .input-item .input-group-text {
+  background-color: #E3EAEE;
+  color: #343434;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+form .btn {
+  margin-top: 1rem;
+}
 
 .header {
   background-color: #fff;
@@ -1303,18 +1314,29 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   justify-content: center;
   border-top: 2px solid #F4F7F9;
+  padding-bottom: 6rem;
 }
 .project-setup.two-columns .left,
 .project-setup.two-columns .right {
   display: flex;
   flex-direction: row;
-  flex: 1 1 0;
   padding-top: 2rem;
+}
+@media only screen and (min-width: 1250px) {
+  .project-setup.two-columns .left,
+.project-setup.two-columns .right {
+    flex: 1 1 0;
+  }
 }
 .project-setup.two-columns .left > div,
 .project-setup.two-columns .right > div {
   width: 100%;
-  max-width: calc(82rem / 2);
+}
+@media only screen and (min-width: 1250px) {
+  .project-setup.two-columns .left > div,
+.project-setup.two-columns .right > div {
+    max-width: calc(82rem / 2);
+  }
 }
 .project-setup.two-columns .left {
   justify-content: flex-end;
@@ -1340,6 +1362,12 @@ nav.navbar .dropdown-menu li {
 }
 .project-setup.two-columns .right > div {
   padding-right: 1rem;
+}
+.project-setup.two-columns .right .map {
+  margin-left: 1.5rem;
+  width: calc(100% - 1.5rem);
+  height: 100%;
+  background-color: #E3EAEE;
 }
 
 /*# sourceMappingURL=main.css.map */
