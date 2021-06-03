@@ -1,16 +1,22 @@
 .scenario-create {
   @include flex-row-justify-center;
   border-top: 2px solid $primary-gray-color-1;
-  padding-bottom: 6rem;
 
   form {
     width: 100%;
   }
 
-  .input-item {
+  .input-item,
+  .text-item {
     width: 100%;
     @include flex-row;
     padding-bottom: 0;
+  }
+
+  .input-item:last-of-type {
+    .scenario-create__description {
+      padding-bottom: 8rem;
+    }
   }
 
   &__form,
@@ -34,6 +40,27 @@
     &> div {
       padding-left: 1rem;
       padding-right: $space-between-project-elements;
+    }
+
+    .text {
+      font-weight: 300;
+      padding-top: $space-between-project-elements;
+      @include flex-row-space-between;
+
+      .heading {
+        font-size: $font-size-medium;
+        display: inline-block;
+      }
+
+      .btn {
+        margin-top: 0;
+      }
+
+      &--border-top {
+        padding-top: 2.5rem;
+        margin-top: 1rem;
+        border-top: 2px solid $primary-gray-color-1;
+      }
     }
   }
 

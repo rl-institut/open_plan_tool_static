@@ -796,29 +796,35 @@ form .form-control:-moz-placeholder {
   color: #D6D6D6;
   font-size: 1rem;
 }
-form .input-item {
+form .input-item,
+form .text-item {
   position: relative;
   padding-bottom: 1rem;
 }
-form .input-item.optional label.form-label::after {
+form .input-item.optional label.form-label::after,
+form .text-item.optional label.form-label::after {
   content: "- optional";
   font-weight: 300;
   font-style: italic;
   padding-left: 0.5rem;
 }
-form .input-item .icon-question {
+form .input-item .icon-question,
+form .text-item .icon-question {
   padding-left: 0.35rem;
   cursor: pointer;
   vertical-align: middle;
 }
-form .input-item .form-text.to-right {
+form .input-item .form-text.to-right,
+form .text-item .form-text.to-right {
   position: absolute;
   right: 0;
 }
-form .input-item textarea {
+form .input-item textarea,
+form .text-item textarea {
   max-height: 10rem;
 }
-form .input-item .input-group-text {
+form .input-item .input-group-text,
+form .text-item .input-group-text {
   background-color: #E3EAEE;
   color: #343434;
   -webkit-user-select: none;
@@ -1289,16 +1295,19 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   justify-content: center;
   border-top: 2px solid #F4F7F9;
-  padding-bottom: 6rem;
 }
 .scenario-create form {
   width: 100%;
 }
-.scenario-create .input-item {
+.scenario-create .input-item,
+.scenario-create .text-item {
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-bottom: 0;
+}
+.scenario-create .input-item:last-of-type .scenario-create__description {
+  padding-bottom: 8rem;
 }
 .scenario-create__form, .scenario-create__description {
   padding-top: 1.5rem;
@@ -1320,6 +1329,25 @@ nav.navbar .dropdown-menu li {
 .scenario-create__form > div {
   padding-left: 1rem;
   padding-right: 1.5rem;
+}
+.scenario-create__form .text {
+  font-weight: 300;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.scenario-create__form .text .heading {
+  font-size: 1.25rem;
+  display: inline-block;
+}
+.scenario-create__form .text .btn {
+  margin-top: 0;
+}
+.scenario-create__form .text--border-top {
+  padding-top: 2.5rem;
+  margin-top: 1rem;
+  border-top: 2px solid #F4F7F9;
 }
 .scenario-create__description {
   justify-content: flex-start;

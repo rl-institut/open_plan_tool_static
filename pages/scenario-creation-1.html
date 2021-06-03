@@ -35,7 +35,7 @@
     <main>
       <section class="header header--scenario">
         <div>
-          <!--<span class="project-name">PV Potsdam 2025</span>-->
+          <span class="project-name">PV Potsdam 2025</span>
           <h1 class="header__title">Scenario Setup</h1>
           <h2 class="header__subtitle">Inputs parameters to describe a Scenario. They do not contain the information about the energy system.</h2>
           <div class="header__back">
@@ -48,7 +48,7 @@
           <div class="input-item">
             <div class="scenario-create__form">
               <div>
-                <label for="projectName" class="form-label">Project</label>
+                <label class="form-label">Project</label>
                 <select class="form-select">
                   <option selected>PV Potsdam 2025</option>
                   <option value="1">open_plan test</option>
@@ -66,9 +66,6 @@
               </div>
             </div>
             <div class="scenario-create__description">
-              <div>
-                <div id="scenarioNameHelp" class="form-text">Maximum of 50 characters</div>
-              </div>
             </div>
           </div>
           <div class="input-item optional">
@@ -82,10 +79,10 @@
             <div class="scenario-create__description">
             </div>
           </div>
-          <div class="input-item optional">
+          <div class="input-item">
             <div class="scenario-create__form">
               <div>
-                <label class="form-label">Scenario description</label>
+                <label class="form-label">Energy sectors</label>
                 <div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
@@ -110,6 +107,110 @@
               <div>
                 <div class="form-text">You need to choose at least one sector. You can always change it later.</div>
               </div>
+            </div>
+          </div>
+          <div class="text-item">
+            <div class="scenario-create__form">
+              <div>
+                <div class="text text--border-top">
+                  <h3 class="heading">
+                    Parameters
+                  </h3>
+                  <span>
+                    <button class="btn btn--load" type="button">
+                    Load parameters from file
+                    </button>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                  </span>
+                </div>
+                <div class="text">
+                  <span>
+                    Duplicate the parameters from an existing scenario:
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+            </div>
+          </div>
+          <div class="input-item optional">
+            <div class="scenario-create__form">
+              <div>
+                <select class="form-select">
+                  <option selected>No scenario chosen</option>
+                  <option value="1">Scenario 1</option>
+                  <option value="2">Scenario 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+            </div>
+          </div>
+          <div class="text-item">
+            <div class="scenario-create__form">
+              <div>
+                <div class="text text--border-top">
+                  <span>
+                    Alternatively, you can fill in the parameters manually:
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+            </div>
+          </div>
+          <div class="input-item">
+            <div class="scenario-create__form">
+              <div>
+                <label for="temporalResolution" class="form-label">Temporal resolution</label>
+                <input type="text" class="form-control" id="temporalResolution" placeholder="XXXX" aria-describedby="temporalResolutionHelp" required>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+              <div>
+                <div id="temporalResolutionHelp" class="form-text">Time step of the simulation. A higher resolution requires more data and can lead to longer simulation times.</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-item">
+            <div class="scenario-create__form">
+              <div>
+                <label for="optimizationGoal" class="form-label">Optimization goal</label>
+                <input type="text" class="form-control" id="optimizationGoal" placeholder="XXXX" aria-describedby="optimizationGoalHelp" required>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+              <div>
+                <div id="optimizationGoalHelp" class="form-text">The quantities which govern the optimization (CO2, costs, renewable maximization in energy mix, degree of autonomy, multi-objectives).</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-item">
+            <div class="scenario-create__form">
+              <div>
+                <label for="gridFee" class="form-label">
+                  Grid stability fee
+                </label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="gridFee" placeholder="00.000" aria-describedby="gridFeeHelp" required>
+                  <span class="input-group-text">EUR</span>
+                </div>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+              <div>
+                <div id="gridFeeHelp" class="form-text">Fee/payment for contribution to grid stability.</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-item">
+            <div class="scenario-create__form">
+              <div>
+                <label for="startDate" class="form-label">Start date</label>
+                <input type="date" class="form-control" id="startDate" name="project-start" value="2022-07-22" min="2020-01-01" max="2050-12-31" required>
+              </div>
+            </div>
+            <div class="scenario-create__description">
             </div>
           </div>
         </form>
