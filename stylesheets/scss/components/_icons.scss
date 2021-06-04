@@ -4,6 +4,12 @@
   }
 }
 
+.icon[data-bs-toggle="tooltip"] {
+  cursor: pointer;
+  padding-left: 0.35rem;
+  vertical-align: middle;
+}
+
 .tooltip-inner {
   max-width: 350px!important;
 }

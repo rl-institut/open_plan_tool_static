@@ -125,6 +125,10 @@ button.btn {
     top: .15rem;
     left: -.5rem;
   }
+
+  &.hidden {
+    visibility: hidden;
+  }
 }
 
 // Dropdown

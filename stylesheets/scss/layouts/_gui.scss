@@ -1,0 +1,30 @@
+.system-design {
+  @include flex-row;
+
+  .components {
+    width: 22rem;
+    background-color: $primary-gray-color-1;
+    border-right: $gray-border;
+
+    &__title {
+      @include flex-column-justify-center;
+      height: 2.85rem;
+      background-color: $white;
+      padding: 1rem;
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-size: $font-size-normal;
+        color: $primary-color-2;
+        font-weight: 700;
+        display: inline-block;
+      }
+    }
+  }
+
+  .gui {
+    flex: 1;
+    height: 100%;
+  }
+}

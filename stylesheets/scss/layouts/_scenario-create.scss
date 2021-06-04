@@ -1,6 +1,6 @@
 .scenario-create {
   @include flex-row-justify-center;
-  border-top: 2px solid $primary-gray-color-1;
+  border-top: $gray-border;
 
   form {
     width: 100%;
@@ -59,7 +59,7 @@
       &--border-top {
         padding-top: 2.5rem;
         margin-top: 1rem;
-        border-top: 2px solid $primary-gray-color-1;
+        border-top: $gray-border;
       }
     }
   }

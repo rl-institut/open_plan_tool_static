@@ -683,6 +683,10 @@ button.btn--icon::before {
   top: 0.15rem;
   left: -0.5rem;
 }
+a.btn.hidden,
+button.btn.hidden {
+  visibility: hidden;
+}
 
 ul.dropdown-menu {
   box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
@@ -756,6 +760,7 @@ a.dropdown-item:active {
 .step-footer {
   background-color: #fff;
   height: 4.5rem;
+  border-top: 2px solid #F4F7F9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -906,6 +911,12 @@ form .btn {
 
 .icon--small {
   font-size: 0.6rem;
+}
+
+.icon[data-bs-toggle=tooltip] {
+  cursor: pointer;
+  padding-left: 0.35rem;
+  vertical-align: middle;
 }
 
 .tooltip-inner {
@@ -1112,6 +1123,36 @@ nav.navbar .dropdown-menu li {
   font-size: 1rem;
   font-weight: 300;
   color: #495965;
+}
+
+.system-design {
+  display: flex;
+  flex-direction: row;
+}
+.system-design .components {
+  width: 22rem;
+  background-color: #F4F7F9;
+  border-right: 2px solid #F4F7F9;
+}
+.system-design .components__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2.85rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+.system-design .components__title h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #343434;
+  font-weight: 700;
+  display: inline-block;
+}
+.system-design .gui {
+  flex: 1;
+  height: 100%;
 }
 
 .project {
