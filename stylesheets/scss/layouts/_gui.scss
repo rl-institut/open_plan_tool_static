@@ -43,6 +43,8 @@
         border-left: 4px solid #A4ADFB;
         padding: .5rem;
         margin-bottom: .5rem;
+        @include user-select-none;
+        cursor: move;
       }
 
       .img {

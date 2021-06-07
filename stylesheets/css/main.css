@@ -1190,6 +1190,11 @@ nav.navbar .dropdown-menu li {
   border-left: 4px solid #A4ADFB;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: move;
 }
 .system-design .components__content .section .img {
   height: 2rem;
