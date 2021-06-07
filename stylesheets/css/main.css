@@ -889,24 +889,43 @@ form .btn {
 .header--project-view .header__back, .header--scenario .header__back {
   top: 7rem;
 }
+.header--scenario {
+  height: 3rem;
+  border-bottom: 2px solid #F4F7F9;
+}
+.header--scenario > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .header--scenario .project-name {
-  position: absolute;
-  top: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #495965;
 }
-.header--scenario .header__title {
-  padding-top: 3.5rem;
-  text-align: left;
-  padding-bottom: 1rem;
+.header--scenario .scenario-name {
+  font-size: 0.875rem;
+  color: #495965;
+  padding-left: 1rem;
 }
-.header--scenario .header__subtitle {
+.header--scenario .scenario-name::before {
+  content: "- ";
+  position: relative;
+  left: -0.5rem;
+}
+.header--scenario .header__title {
   text-align: left;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #343434;
-  font-weight: 300;
-  max-width: 40rem;
+  padding: 0;
+}
+.header--scenario .header__back {
+  position: relative;
+  top: 0;
+}
+.header--scenario .header__back a {
+  vertical-align: middle;
+}
+.header--scenario .header__back a::before {
+  top: 0.5rem;
 }
 
 .icon--small {

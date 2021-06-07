@@ -53,27 +53,47 @@
 
   // Specific to scenario creation
   &--scenario {
+    height: 3rem;
+    border-bottom: $gray-border;
+
+    &> div {
+      @include flex-row-space-between;
+      align-items: center;
+    }
 
     .project-name {
-      position: absolute;
-      top: 2rem;
-      font-size: $font-size-small;
+      font-size: $font-size-normal;
       color: $primary-gray-color-4;
     }
 
-    .header__title {
-      padding-top: 3.5rem;
-      text-align: left;
-      padding-bottom: 1rem;
+    .scenario-name {
+      font-size: $font-size-small;
+      color: $primary-gray-color-4;
+      padding-left: 1rem;
+
+      &::before {
+        content: "- ";
+        position: relative;
+        left: -0.5rem;
+      }
     }
 
-    .header__subtitle {
+    .header__title {
       text-align: left;
-      font-size: $font-size-normal;
-      line-height: 1.5rem;
-      color: $primary-color-2;
-      font-weight: 300;
-      max-width: 40rem;
+      padding: 0;
+    }
+
+    .header__back {
+      position: relative;
+      top: 0;
+
+      a {
+        vertical-align: middle;
+      }
+
+      a::before {
+        top: 0.5rem;
+      }
     }
   }
 }
