@@ -1189,6 +1189,7 @@ nav.navbar .dropdown-menu li {
   background-color: #fff;
   border-left: 4px solid #A4ADFB;
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .system-design .components__content .section .img {
   height: 2rem;
@@ -1203,6 +1204,21 @@ nav.navbar .dropdown-menu li {
 .system-design .components__content .section .drag {
   flex: 1;
   text-align: right;
+}
+.system-design .components__content .section--production .section__component {
+  border-left-color: #FFEF9F;
+}
+.system-design .components__content .section--conversion .section__component {
+  border-left-color: #7BF1A8;
+}
+.system-design .components__content .section--storage .section__component {
+  border-left-color: #90F1EF;
+}
+.system-design .components__content .section--demand .section__component {
+  border-left-color: #FFD6E0;
+}
+.system-design .components__content .section--bus .section__component {
+  border-left-color: #F4CC9E;
 }
 .system-design .gui {
   flex: 1;
