@@ -53,8 +53,7 @@
 
   // Specific to scenario creation
   &--scenario {
-    height: 3rem;
-    border-bottom: $gray-border;
+    height: $header-scenario-height;
 
     &> div {
       @include flex-row-space-between;

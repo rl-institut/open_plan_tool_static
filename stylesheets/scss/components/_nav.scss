@@ -80,7 +80,7 @@ nav.navbar {
 
   &> div {
     background-color: $primary-gray-color-1;
-	  height: $top-nav-height;
+	  height: $wizard-height;
 	  @include flex-column-align-justify-center;
   }
 

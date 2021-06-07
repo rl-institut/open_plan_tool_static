@@ -759,7 +759,7 @@ a.dropdown-item:active {
 
 .step-footer {
   background-color: #fff;
-  height: 4.5rem;
+  height: 4rem;
   border-top: 2px solid #F4F7F9;
   display: flex;
   flex-direction: column;
@@ -891,7 +891,6 @@ form .btn {
 }
 .header--scenario {
   height: 3rem;
-  border-bottom: 2px solid #F4F7F9;
 }
 .header--scenario > div {
   display: flex;
@@ -1018,7 +1017,7 @@ nav.navbar .dropdown-menu li {
 }
 .wizard > div {
   background-color: #F4F7F9;
-  height: 4.5rem;
+  height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1148,11 +1147,14 @@ nav.navbar .dropdown-menu li {
 .system-design {
   display: flex;
   flex-direction: row;
+  height: calc(100vh - 4rem - 3rem - 4rem);
+  border-top: 2px solid #F4F7F9;
 }
 .system-design .components {
   width: 22rem;
   background-color: #F4F7F9;
   border-right: 2px solid #F4F7F9;
+  overflow-y: auto;
 }
 .system-design .components__title {
   display: flex;
@@ -1171,7 +1173,7 @@ nav.navbar .dropdown-menu li {
   display: inline-block;
 }
 .system-design .components__content {
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 .system-design .components__content .section {
   padding-bottom: 1rem;

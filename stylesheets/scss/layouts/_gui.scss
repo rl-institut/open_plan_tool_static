@@ -1,10 +1,13 @@
 .system-design {
   @include flex-row;
+  height: calc(100vh - #{$wizard-height} - #{$header-scenario-height} - #{$footer-scenario-height});
+  border-top: $gray-border;
 
   .components {
     width: 22rem;
     background-color: $primary-gray-color-1;
     border-right: $gray-border;
+    overflow-y: auto;
   }
 
   .components__title {
@@ -24,7 +27,7 @@
   }
 
   .components__content {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 
     .section {
       padding-bottom: 1rem;
