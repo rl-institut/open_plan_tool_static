@@ -5,20 +5,60 @@
     width: 22rem;
     background-color: $primary-gray-color-1;
     border-right: $gray-border;
+  }
 
-    &__title {
-      @include flex-column-justify-center;
-      height: 2.85rem;
-      background-color: $white;
-      padding: 1rem;
+  .components__title {
+    @include flex-column-justify-center;
+    height: 2.85rem;
+    background-color: $white;
+    padding: 1rem;
 
-      h2 {
-        padding: 0;
-        margin: 0;
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-size: $font-size-normal;
+      color: $primary-color-2;
+      font-weight: 700;
+      display: inline-block;
+    }
+  }
+
+  .components__content {
+    padding: 1rem;
+
+    .section {
+      padding-bottom: 1rem;
+      
+      &__title h3 {
         font-size: $font-size-normal;
+      }
+
+      &__component {
+        @include flex-row;
+        align-items: center;
+        height: 3rem;
+        border-radius: 8px;
+        box-shadow: $box-shadow-frame;
+        background-color: $white;
+        border-left: 4px solid #A4ADFB;
+        padding: .5rem;
+      }
+
+      .img {
+        height: 2rem;
+        width: 2rem;
+      }
+
+      .name {
+        font-size: 1rem;
+        font-weight: 300;
         color: $primary-color-2;
-        font-weight: 700;
-        display: inline-block;
+        padding-left: .5rem;
+      }
+
+      .drag {
+        flex: 1;
+        text-align: right;
       }
     }
   }
