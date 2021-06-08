@@ -143,6 +143,19 @@
   }
 }
 
+// GUI
+@mixin gui-component-image($img-path) {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
+  right: calc((#{$gui-component-bg-size} - #{$gui-component-img-size}) / 2);
+  transform: translateY(-50%);
+  background-image: $img-path;
+  background-size: contain;
+  height: $gui-component-img-size;
+  width: $gui-component-img-size;
+}
+
 // Info icon
 @mixin info-icon {
   padding-left: 0.35rem;

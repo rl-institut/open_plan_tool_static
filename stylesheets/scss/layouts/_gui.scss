@@ -40,7 +40,7 @@
         @include flex-row;
         align-items: center;
         height: 3rem;
-        border-radius: 8px;
+        border-radius: $gui-component-radius;
         box-shadow: $box-shadow-frame;
         background-color: $white;
         border-left: 4px solid #A4ADFB;
@@ -67,30 +67,174 @@
         text-align: right;
       }
 
+      &--providers .section__component{
+        border-left-color: $component-border-color--providers;
+      }
+
       &--production .section__component{
-        border-left-color: #FFEF9F;
+        border-left-color: $component-border-color--production;
       }
 
       &--conversion .section__component{
-        border-left-color: #7BF1A8;
+        border-left-color: $component-border-color--conversion;
       }
 
       &--storage .section__component{
-        border-left-color: #90F1EF;
+        border-left-color: $component-border-color--storage;
       }
 
       &--demand .section__component{
-        border-left-color: #FFD6E0;
+        border-left-color: $component-border-color--demand;
       }
 
       &--bus .section__component{
-        border-left-color: #F4CC9E;
+        border-left-color: $component-border-color--bus;
       }
     }
   }
 
   .gui {
+    position: relative;
     flex: 1;
     height: 100%;
+
+    &__clear {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+      background-color: $white;
+    }
+
+    &__empty-text {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+
+      span {
+        color: $primary-color-2;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .gui-component {
+    position: relative;
+    height: 8rem;
+    width: 9.5rem;
+    border-radius: $gui-component-radius;
+    background-color: $primary-gray-color-1;
+    font-size: 12px;
+    border-bottom: 4px solid #A4ADFB;
+    cursor: move;
+
+    &:hover::after {
+      content: 'X';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $white;
+      width: 1.15rem;
+      height: 1.15rem;
+      font-weight: 700;
+      line-height: 1rem;
+      padding-left: .25rem;
+      border: 1px solid $primary-gray-color-4;
+      border-radius: 100%;
+    }
+
+    &__name {
+      @include flex-column-align-justify-center;
+      height: 2.5rem;
+      padding: 0 .5rem;
+
+      span {
+        display: inline-block;
+        word-break: break-all;
+        text-align: center;
+      }
+    }
+
+    &__img {
+      position: relative;
+      width: $gui-component-bg-size;
+      height: $gui-component-bg-size;
+      background-color: $white;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+
+    // section colors
+    &--providers {
+      border-bottom-color: $component-border-color--providers;
+    }
+
+    &--production {
+      border-bottom-color: $component-border-color--production;
+    }
+
+    &--conversion {
+      border-bottom-color: $component-border-color--conversion;
+    }
+
+    &--storage {
+      border-bottom-color: $component-border-color--storage;
+    }
+
+    &--demand {
+      border-bottom-color: $component-border-color--demand;
+    }
+
+    &--bus {
+      border-bottom-color: $component-border-color--bus;
+    }
+
+    // components images
+    &--dso .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/electric_grid.svg));
+    }
+
+    &--pv .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/pv_plant.svg));
+    }
+
+    &--wind .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/wind_turbine.svg));
+    }
+
+    &--transformer_in .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/transformer_in.svg));
+    }
+
+    &--transformer_out .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/transformer_out.svg));
+    }
+
+    &--storage_in .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/storage_in.svg));
+    }
+
+    &--storage_out .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/storage_out.svg));
+    }
+
+    &--solar_inverter .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/solar_inverter.svg));
+    }
+
+    &--storage .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/battery.svg));
+    }
+
+    &--demand .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/demand.svg));
+    }
+
+    &--bus .gui-component__img::before {
+      @include gui-component-image(url(../../assets/gui/power_antenna.svg));
+    }
   }
 }

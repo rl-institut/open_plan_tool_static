@@ -33,9 +33,16 @@
     <main>
       <section class="header header--scenario">
         <div>
-          <div class="">
+          <div class="header__scenario">
             <span class="project-name">PV Potsdam 2025</span>
             <span class="scenario-name">Scenario 1</span>
+          </div>
+          <div class="header__load">
+            <select class="form-select">
+              <option selected>Load system design from existing scenario</option>
+              <option value="1">PV Potsdam 2025</option>
+              <option value="2">open_plan test</option>
+            </select>
           </div>
           <div class="header__back">
             <a href="projects-view.html">My projects</a>
@@ -151,7 +158,7 @@
                 <h3>Bus</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/power antenna.svg" alt="Bus icon">
+                <img class="img" src="../assets/gui/power_antenna.svg" alt="Bus icon">
                 <span class="name">Bus</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
@@ -161,7 +168,21 @@
           </div>
         </div>
         <div class="gui">
-          
+          <div class="gui__clear">
+            <button class="btn btn--small btn--hollow" type="submit">Clear design</button>
+          </div>
+          <div class="gui__empty-text">
+            <span>Drag and drop components to build your energy system</span>
+          </div>
+          <div class="gui-component gui-component--production gui-component--pv" style="position: absolute; left: 25%; top: 25%">
+            <div class="gui-component__name">
+              <span>
+                pv_plant_name_XYZ_
+              </span>
+            </div>
+            <div class="gui-component__img">
+            </div>
+          </div>
         </div>
       </section>
     </main>

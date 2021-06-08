@@ -9,8 +9,11 @@
   .input-item,
   .text-item {
     width: 100%;
-    @include flex-row;
     padding-bottom: 0;
+
+    @media only screen and (min-width: $medium-screen) {
+      @include flex-row;
+    }
   }
 
   .input-item:last-of-type {
@@ -24,7 +27,7 @@
     padding-top: 1.5rem;
     @include flex-row;
     
-    @media only screen and (min-width: $large-screen) {
+    @media only screen and (min-width: $medium-screen) {
       flex: 1 1 0;
     }
 

@@ -893,10 +893,12 @@ form .btn {
   height: 3rem;
 }
 .header--scenario > div {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 .header--scenario .project-name {
   font-size: 1rem;
@@ -912,13 +914,15 @@ form .btn {
   position: relative;
   left: -0.5rem;
 }
-.header--scenario .header__title {
-  text-align: left;
-  padding: 0;
+.header--scenario .header__load {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header--scenario .header__back {
   position: relative;
   top: 0;
+  right: 0;
 }
 .header--scenario .header__back a {
   vertical-align: middle;
@@ -1212,6 +1216,9 @@ nav.navbar .dropdown-menu li {
   flex: 1;
   text-align: right;
 }
+.system-design .components__content .section--providers .section__component {
+  border-left-color: #A4ADFB;
+}
 .system-design .components__content .section--production .section__component {
   border-left-color: #FFEF9F;
 }
@@ -1228,8 +1235,212 @@ nav.navbar .dropdown-menu li {
   border-left-color: #F4CC9E;
 }
 .system-design .gui {
+  position: relative;
   flex: 1;
   height: 100%;
+}
+.system-design .gui__clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+.system-design .gui__empty-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.system-design .gui__empty-text span {
+  color: #343434;
+  font-weight: 300;
+}
+.system-design .gui-component {
+  position: relative;
+  height: 8rem;
+  width: 9.5rem;
+  border-radius: 8px;
+  background-color: #F4F7F9;
+  font-size: 12px;
+  border-bottom: 4px solid #A4ADFB;
+  cursor: move;
+}
+.system-design .gui-component:hover::after {
+  content: "X";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 1.15rem;
+  height: 1.15rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding-left: 0.25rem;
+  border: 1px solid #495965;
+  border-radius: 100%;
+}
+.system-design .gui-component__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+.system-design .gui-component__name span {
+  display: inline-block;
+  word-break: break-all;
+  text-align: center;
+}
+.system-design .gui-component__img {
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.system-design .gui-component--providers {
+  border-bottom-color: #A4ADFB;
+}
+.system-design .gui-component--production {
+  border-bottom-color: #FFEF9F;
+}
+.system-design .gui-component--conversion {
+  border-bottom-color: #7BF1A8;
+}
+.system-design .gui-component--storage {
+  border-bottom-color: #90F1EF;
+}
+.system-design .gui-component--demand {
+  border-bottom-color: #FFD6E0;
+}
+.system-design .gui-component--bus {
+  border-bottom-color: #F4CC9E;
+}
+.system-design .gui-component--dso .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/electric_grid.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--pv .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/pv_plant.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--wind .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/wind_turbine.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--transformer_in .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/transformer_in.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--transformer_out .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/transformer_out.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--storage_in .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/storage_in.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--storage_out .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/storage_out.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--solar_inverter .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/solar_inverter.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--storage .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/battery.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--demand .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/demand.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+.system-design .gui-component--bus .gui-component__img::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  right: calc((4.5rem - 3rem) / 2);
+  transform: translateY(-50%);
+  background-image: url(../../assets/gui/power_antenna.svg);
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
 }
 
 .project {
@@ -1420,9 +1631,14 @@ nav.navbar .dropdown-menu li {
 .scenario-create .input-item,
 .scenario-create .text-item {
   width: 100%;
-  display: flex;
-  flex-direction: row;
   padding-bottom: 0;
+}
+@media only screen and (min-width: 992px) {
+  .scenario-create .input-item,
+.scenario-create .text-item {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .scenario-create .input-item:last-of-type .scenario-create__description {
   padding-bottom: 8rem;
@@ -1432,7 +1648,7 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
 }
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 992px) {
   .scenario-create__form, .scenario-create__description {
     flex: 1 1 0;
   }
