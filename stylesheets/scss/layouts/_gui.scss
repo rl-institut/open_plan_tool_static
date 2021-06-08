@@ -144,6 +144,7 @@
       padding-left: .25rem;
       border: 1px solid $primary-gray-color-4;
       border-radius: 100%;
+      cursor: pointer;
     }
 
     &__name {
@@ -158,13 +159,45 @@
       }
     }
 
-    &__img {
+    &__bottom {
+      @include flex-row;
+    }
+
+    .input .node {
+      background-color: #4EC4C4;
+    }
+
+    .output .node {
+      background-color: #C46A4E;
+    }
+
+    .input,
+    .output {
+      flex: 1;
+      @include flex-column-align-justify-center;
+      flex-wrap: wrap;
+      max-height: calc(#{$gui-component-bg-size} + 0.5rem);
+
+      .node {
+        width: $gui-component-node-size;
+        height: $gui-component-node-size;
+        border-radius: 100%;
+        margin: .25rem 0;
+        cursor: pointer;
+      }
+
+      .node--empty {
+        background-color: $white;
+        border: 1px solid $primary-gray-color-3;
+      }
+    }
+
+    .img {
       position: relative;
       width: $gui-component-bg-size;
       height: $gui-component-bg-size;
       background-color: $white;
       border-radius: 100%;
-      margin: 0 auto;
     }
 
     // section colors
@@ -193,47 +226,47 @@
     }
 
     // components images
-    &--dso .gui-component__img::before {
+    &--dso .img::before {
       @include gui-component-image(url(../../assets/gui/electric_grid.svg));
     }
 
-    &--pv .gui-component__img::before {
+    &--pv .img::before {
       @include gui-component-image(url(../../assets/gui/pv_plant.svg));
     }
 
-    &--wind .gui-component__img::before {
+    &--wind .img::before {
       @include gui-component-image(url(../../assets/gui/wind_turbine.svg));
     }
 
-    &--transformer_in .gui-component__img::before {
+    &--transformer_in .img::before {
       @include gui-component-image(url(../../assets/gui/transformer_in.svg));
     }
 
-    &--transformer_out .gui-component__img::before {
+    &--transformer_out .img::before {
       @include gui-component-image(url(../../assets/gui/transformer_out.svg));
     }
 
-    &--storage_in .gui-component__img::before {
+    &--storage_in .img::before {
       @include gui-component-image(url(../../assets/gui/storage_in.svg));
     }
 
-    &--storage_out .gui-component__img::before {
+    &--storage_out .img::before {
       @include gui-component-image(url(../../assets/gui/storage_out.svg));
     }
 
-    &--solar_inverter .gui-component__img::before {
+    &--solar_inverter .img::before {
       @include gui-component-image(url(../../assets/gui/solar_inverter.svg));
     }
 
-    &--storage .gui-component__img::before {
+    &--storage .img::before {
       @include gui-component-image(url(../../assets/gui/battery.svg));
     }
 
-    &--demand .gui-component__img::before {
+    &--demand .img::before {
       @include gui-component-image(url(../../assets/gui/demand.svg));
     }
 
-    &--bus .gui-component__img::before {
+    &--bus .img::before {
       @include gui-component-image(url(../../assets/gui/power_antenna.svg));
     }
   }

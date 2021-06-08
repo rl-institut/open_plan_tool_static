@@ -1281,6 +1281,7 @@ nav.navbar .dropdown-menu li {
   padding-left: 0.25rem;
   border: 1px solid #495965;
   border-radius: 100%;
+  cursor: pointer;
 }
 .system-design .gui-component__name {
   display: flex;
@@ -1295,13 +1296,45 @@ nav.navbar .dropdown-menu li {
   word-break: break-all;
   text-align: center;
 }
-.system-design .gui-component__img {
+.system-design .gui-component__bottom {
+  display: flex;
+  flex-direction: row;
+}
+.system-design .gui-component .input .node {
+  background-color: #4EC4C4;
+}
+.system-design .gui-component .output .node {
+  background-color: #C46A4E;
+}
+.system-design .gui-component .input,
+.system-design .gui-component .output {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: calc(4.5rem + 0.5rem);
+}
+.system-design .gui-component .input .node,
+.system-design .gui-component .output .node {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  margin: 0.25rem 0;
+  cursor: pointer;
+}
+.system-design .gui-component .input .node--empty,
+.system-design .gui-component .output .node--empty {
+  background-color: #fff;
+  border: 1px solid #A8B5C0;
+}
+.system-design .gui-component .img {
   position: relative;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #fff;
   border-radius: 100%;
-  margin: 0 auto;
 }
 .system-design .gui-component--providers {
   border-bottom-color: #A4ADFB;
@@ -1321,7 +1354,7 @@ nav.navbar .dropdown-menu li {
 .system-design .gui-component--bus {
   border-bottom-color: #F4CC9E;
 }
-.system-design .gui-component--dso .gui-component__img::before {
+.system-design .gui-component--dso .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1332,7 +1365,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--pv .gui-component__img::before {
+.system-design .gui-component--pv .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1343,7 +1376,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--wind .gui-component__img::before {
+.system-design .gui-component--wind .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1354,7 +1387,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--transformer_in .gui-component__img::before {
+.system-design .gui-component--transformer_in .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1365,7 +1398,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--transformer_out .gui-component__img::before {
+.system-design .gui-component--transformer_out .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1376,7 +1409,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage_in .gui-component__img::before {
+.system-design .gui-component--storage_in .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1387,7 +1420,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage_out .gui-component__img::before {
+.system-design .gui-component--storage_out .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1398,7 +1431,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--solar_inverter .gui-component__img::before {
+.system-design .gui-component--solar_inverter .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1409,7 +1442,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage .gui-component__img::before {
+.system-design .gui-component--storage .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1420,7 +1453,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--demand .gui-component__img::before {
+.system-design .gui-component--demand .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1431,7 +1464,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--bus .gui-component__img::before {
+.system-design .gui-component--bus .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
