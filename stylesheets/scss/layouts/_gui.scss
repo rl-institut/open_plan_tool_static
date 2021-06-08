@@ -131,6 +131,10 @@
     border-bottom: 4px solid #A4ADFB;
     cursor: move;
 
+    &:hover {
+      background-color: darken($primary-gray-color-1, 2%);
+    }
+
     &:hover::after {
       content: 'X';
       position: absolute;
@@ -269,5 +273,20 @@
     &--bus .img::before {
       @include gui-component-image(url(../../assets/gui/power_antenna.svg));
     }
+  }
+}
+
+.modal.modal--gui {
+  .modal-dialog {
+    min-width: 1000px;
+  }
+
+  .modal-header {
+    background-color: $primary-gray-color-1;
+    border-bottom: none;
+  }
+
+  .row {
+    margin-bottom: 1rem;
   }
 }

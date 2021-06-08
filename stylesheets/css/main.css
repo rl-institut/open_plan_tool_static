@@ -1268,6 +1268,9 @@ nav.navbar .dropdown-menu li {
   border-bottom: 4px solid #A4ADFB;
   cursor: move;
 }
+.system-design .gui-component:hover {
+  background-color: #edf2f5;
+}
 .system-design .gui-component:hover::after {
   content: "X";
   position: absolute;
@@ -1474,6 +1477,17 @@ nav.navbar .dropdown-menu li {
   background-size: contain;
   height: 3rem;
   width: 3rem;
+}
+
+.modal.modal--gui .modal-dialog {
+  min-width: 1000px;
+}
+.modal.modal--gui .modal-header {
+  background-color: #F4F7F9;
+  border-bottom: none;
+}
+.modal.modal--gui .row {
+  margin-bottom: 1rem;
 }
 
 .project {

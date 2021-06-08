@@ -19,6 +19,99 @@
 
   <body>
 
+    <!-- Modal -->
+    <div class="modal fade modal--gui" id="pvModal" tabindex="-1" aria-labelledby="pvModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="pvleModalLabel">PV Plant Properties</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <label for="pvName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="pvName" value="pv_plant_01">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="pvDevCosts" class="form-label">Development costs (EUR)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="pvDevCosts" value="857.758">
+                  </div>
+                  <div class="col">
+                    <label for="specCosts" class="form-label">Specific costs (EUR)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="specCosts" value="684.848">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="specOMCosts" class="form-label">Specific OM costs (EUR)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="specOMCosts" value="857.758">
+                  </div>
+                  <div class="col">
+                    <label for="dispatchPrice" class="form-label">Dispatch price (EUR/kWh)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="dispatchPrice" value="684.848">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="assetLifetime" class="form-label">Asset lifetime (Years)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="assetLifetime" value="30">
+                  </div>
+                  <div class="col">
+                    <label for="ageInstalled" class="form-label">Age installed (Years)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="ageInstalled" value="5">
+                  </div>
+                  <div class="col">
+                    <label for="installedCapacity" class="form-label">Installed capacity (kW)</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <input type="number" class="form-control" id="installedCapacity" value="9999">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="timeseriesVector" class="form-label">Timeseries vector</label>
+                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                    <textarea type="text" class="form-control" id="timeseriesVector" rows="2" value="[30.7, 55.47]"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="renewableAssets">Renewable assets</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input class="form-check-input" type="checkbox" id="renewableAssets">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="optimizeCap">Optimize cap</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input class="form-check-input" type="checkbox" id="optimizeCap">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn--medium" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="wizard">
       <div>
         <ul>
@@ -174,7 +267,7 @@
           <div class="gui__empty-text">
             <span>Drag and drop components to build your energy system</span>
           </div>
-          <div class="gui-component gui-component--production gui-component--pv" style="position: absolute; left: 25%; top: 25%">
+          <div class="gui-component gui-component--production gui-component--pv" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
             <div class="gui-component__name">
               <span>
                 pv_plant_name_XYZ_
