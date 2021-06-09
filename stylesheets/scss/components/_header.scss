@@ -103,6 +103,8 @@
   // Specific to results page
   &--results {
     flex-wrap: wrap;
+    height: $header-dashboard-height;
+    margin-bottom: $header-dashboard-margin-bottom;
 
     &> div {
       width: 100%;

@@ -1,0 +1,4 @@
+.dashboard {
+  background-color: $primary-gray-color-1;
+  min-height: calc(100vh - #{$main-padding-top} - #{$header-dashboard-height} - #{$header-dashboard-margin-bottom} - #{$footer-height});
+}
