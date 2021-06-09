@@ -46,6 +46,7 @@
     background-color: $white;
     border-radius: $button-border-radius;
     box-shadow: $box-shadow-frame;
+    height: $dashboard-chart-height;
 
     &__header {
       @include flex-row-space-between;
@@ -71,6 +72,14 @@
         .icon {
           padding: 0;
         }
+      }
+    }
+
+    &--small {
+      height: calc((#{$dashboard-chart-height} / 3) - ((2 * #{$dashboard-space-between-charts}) / 3));
+
+      &:not(:last-of-type) {
+        margin-bottom: $dashboard-space-between-charts;
       }
     }
   }
