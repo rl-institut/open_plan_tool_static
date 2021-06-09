@@ -1,0 +1,9 @@
+.main {
+  &--padding-top {
+    padding-top: $top-nav-height;
+
+    .header .header__title {
+      padding-top: 0;
+    }
+  }
+}

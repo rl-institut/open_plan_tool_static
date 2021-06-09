@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../stylesheets/css/main.css">
+
+    <title>Constraints - open_plan</title>
+  </head>
+
+  <body>
+
+    <section class="wizard">
+      <div>
+        <ul>
+          <li>Scenario Setup</li>
+          <li>Energy System Design</li>
+          <li class="active">Constraints</li>
+          <li>Simulation</li>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <section class="header header--scenario">
+        <div>
+          <div class="header__scenario">
+            <span class="project-name">PV Potsdam 2025</span>
+            <span class="scenario-name">Scenario 1</span>
+          </div>
+          <div class="header__back">
+            <a href="projects-view.html">My projects</a>
+          </div>
+        </div>
+      </section>
+      <section class="scenario-create">
+        <form>
+          <div class="input-item">
+            <div class="scenario-create__form">
+              <div>
+                <label for="sourcePowerMix" class="form-label">Source power mix (%)</label>
+                <input type="text" class="form-control" id="sourcePowerMix" placeholder="[25.7, 12.78, 3.78, 17.20, 23.26]" aria-describedby="sourcePowerMixHelp" required>
+              </div>
+            </div>
+            <div class="scenario-create__description">
+              <div>
+                <div id="sourcePowerMixHelp" class="form-text">Percentage of each source of power (inclusive % from grid). You can upload a file or enter the values manually in the following form: [99.99, 99.99, ..., 99.99].</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="step-footer">
+      <div>
+        <a class="btn btn--medium btn--hollow btn--previous" href="scenario-creation-2.html">Previous</a>
+        <a class="btn btn--medium" href="#">Next</a>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/vanilla-lazyload.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../js/project.js"></script>
+  </body>
+</html>

@@ -1148,6 +1148,13 @@ nav.navbar .dropdown-menu li {
   color: #495965;
 }
 
+.main--padding-top {
+  padding-top: 4.5rem;
+}
+.main--padding-top .header .header__title {
+  padding-top: 0;
+}
+
 .system-design {
   display: flex;
   flex-direction: row;
