@@ -65,11 +65,30 @@
     </nav>
 
     <main class="main--padding-top">
-      <section class="header header--scenario">
+      <section class="header header--results">
         <div>
           <h1 class="header__title">Simulation results</h1>
           <div class="header__back">
             <a href="projects-view.html">My projects</a>
+          </div>
+        </div>
+        <div>
+          <div class="header__scenario">
+            <div class="project-name">
+              PV Potsdam
+            </div>
+            <div class="scenario-name">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1" selected>PV Potsdam 2025</option>
+                <option value="2">Scenario 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="header__export">
+            <button class="btn btn--medium" type="submit">
+              <span class="icon icon-export"></span>
+              Export results
+            </button>
           </div>
         </div>
       </section>

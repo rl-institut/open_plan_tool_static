@@ -99,4 +99,44 @@
       }
     }
   }
+
+  // Specific to results page
+  &--results {
+    flex-wrap: wrap;
+
+    &> div {
+      width: 100%;
+      @include flex-row-space-between;
+    }
+
+    .header__title {
+      flex: 1;
+    }
+
+    .header__scenario,
+    .header__export {
+      padding-top: 2rem;
+    }
+
+    .header__scenario {
+      select {
+        min-width: 20rem;
+      }
+    }
+
+    .header__export {
+      @include flex-column;
+      justify-content: flex-end;
+
+      .btn .icon {
+        font-size: 1.5rem;
+        vertical-align: middle;
+      }
+    }
+
+    .project-name {
+      font-weight: 300;
+      color: $primary-color-2;
+    }
+  }
 }

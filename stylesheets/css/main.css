@@ -930,6 +930,38 @@ form .btn {
 .header--scenario .header__back a::before {
   top: 0.5rem;
 }
+.header--results {
+  flex-wrap: wrap;
+}
+.header--results > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header--results .header__title {
+  flex: 1;
+}
+.header--results .header__scenario,
+.header--results .header__export {
+  padding-top: 2rem;
+}
+.header--results .header__scenario select {
+  min-width: 20rem;
+}
+.header--results .header__export {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header--results .header__export .btn .icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.header--results .project-name {
+  font-weight: 300;
+  color: #343434;
+}
 
 .icon--small {
   font-size: 0.6rem;
@@ -1149,7 +1181,7 @@ nav.navbar .dropdown-menu li {
 }
 
 .main--padding-top {
-  padding-top: 4.5rem;
+  padding-top: 7rem;
 }
 .main--padding-top .header .header__title {
   padding-top: 0;
