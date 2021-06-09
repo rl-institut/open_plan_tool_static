@@ -123,9 +123,7 @@
 
 @mixin project-actions {
   font-weight: 700;
-  &:not(:first-of-type) {
-    padding-left: $space-between-project-elements;
-  }
+  padding-left: $space-between-project-elements;
 }
 
 @mixin project-btn {
