@@ -6,7 +6,8 @@ a:active,
 a:visited {
   font-weight: 700;
   color: $primary-color-1 !important;
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .project a,

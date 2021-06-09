@@ -52,8 +52,12 @@ nav.navbar {
         content: '|';
         position: absolute;
         top: 0.5rem;
-        left: 0.6rem;
+        left: 1.1rem;
       }
+    }
+
+    .nav-item a.nav-link {
+      padding-left: $space-between-project-elements;
     }
 
     .nav-item.dropdown.profile {

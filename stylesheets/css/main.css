@@ -499,7 +499,8 @@ a:active,
 a:visited {
   font-weight: 700;
   color: #1F567D !important;
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .project a,
@@ -960,7 +961,7 @@ form .btn {
   font-size: 1.5rem;
   vertical-align: middle;
 }
-.header--results .project-name {
+.header--results .project-title {
   font-weight: 300;
   color: #343434;
 }
@@ -1028,7 +1029,10 @@ nav.navbar .dropdown-menu li {
     content: "|";
     position: absolute;
     top: 0.5rem;
-    left: 0.6rem;
+    left: 1.1rem;
+  }
+  .navbar .nav-item a.nav-link {
+    padding-left: 1.5rem;
   }
   .navbar .nav-item.dropdown.profile a {
     padding-top: 0;
@@ -1114,8 +1118,74 @@ nav.navbar .dropdown-menu li {
 }
 
 .dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #F4F7F9;
   min-height: calc(100vh - 7rem - 8rem - 1rem - 4.5rem);
+  padding: 3rem 1rem 4rem;
+}
+.dashboard > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.dashboard__scenarios h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #495965;
+}
+.dashboard .scenario-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.dashboard .scenario-select__item {
+  background-color: #E3EAEE;
+  border-radius: 3px;
+  color: #495965;
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.dashboard .scenario-select__item.selected {
+  border: 1px solid #1F567D;
+  background-color: #fff;
+  color: #1F567D;
+  transform: translateY(-6px);
+  box-shadow: 0px 4px 8px rgba(31, 86, 125, 0.16);
+}
+.dashboard .chart {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
+}
+.dashboard .chart__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #F4F7F9;
+  padding: 0.75rem 1rem 0.5rem;
+}
+.dashboard .chart__header .view {
+  padding-left: 1.5rem;
+}
+.dashboard .chart__header .view .icon {
+  font-size: 0.75rem;
+}
+.dashboard .chart .dropdown .dropdown-toggle {
+  padding: 0 0.35rem;
+}
+.dashboard .chart .dropdown .dropdown-toggle::after {
+  display: none;
+}
+.dashboard .chart .dropdown .dropdown-toggle .icon {
+  padding: 0;
 }
 
 .projects-empty,
