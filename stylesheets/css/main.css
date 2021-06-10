@@ -986,6 +986,43 @@ form .btn {
   -webkit-filter: blur(1.25rem);
 }
 
+.modal .modal-header {
+  background-color: #F4F7F9;
+  border-bottom: none;
+  padding: 1rem 3rem 1rem;
+}
+.modal .modal-body {
+  padding: 3rem;
+}
+
+table.table {
+  box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
+  border-radius: 8px;
+}
+table.table thead {
+  background-color: #F4F7F9;
+}
+table.table thead tr {
+  text-transform: uppercase;
+}
+table.table thead th {
+  border-bottom: none;
+}
+table.table tbody td {
+  border-bottom: 1px solid #E3EAEE;
+}
+table.table tbody tr:last-of-type td,
+table.table tbody tr:last-of-type th {
+  border-bottom: none;
+}
+table.table tbody button.btn {
+  text-align: left;
+  padding: 0;
+}
+table.table > :not(caption) > * > * {
+  padding: 0.75rem;
+}
+
 nav.navbar {
   position: fixed;
   width: 100%;
@@ -1165,6 +1202,7 @@ nav.navbar .dropdown-menu li {
   border-radius: 8px;
   box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
   height: 32rem;
+  margin-bottom: 1.5rem;
 }
 .dashboard .chart__header {
   display: flex;
@@ -1175,6 +1213,10 @@ nav.navbar .dropdown-menu li {
 }
 .dashboard .chart__header .view {
   padding-left: 1.5rem;
+  font-weight: 700;
+  color: #1F567D;
+  text-decoration: none;
+  cursor: pointer;
 }
 .dashboard .chart__header .view .icon {
   font-size: 0.75rem;
@@ -1189,10 +1231,10 @@ nav.navbar .dropdown-menu li {
   padding: 0;
 }
 .dashboard .chart--small {
-  height: calc((32rem / 3) - ((2 * 1rem) / 3));
+  height: calc((32rem / 3) - ((2 * 1.5rem) / 3));
 }
 .dashboard .chart--small:not(:last-of-type) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .projects-empty,
@@ -1605,9 +1647,8 @@ nav.navbar .dropdown-menu li {
 .modal.modal--gui .modal-dialog {
   min-width: 1000px;
 }
-.modal.modal--gui .modal-header {
-  background-color: #F4F7F9;
-  border-bottom: none;
+.modal.modal--gui .modal-body .container {
+  padding: 0;
 }
 .modal.modal--gui .row {
   margin-bottom: 1rem;

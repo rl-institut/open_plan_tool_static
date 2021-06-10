@@ -21,6 +21,88 @@
 
   <body>
 
+    <div class="modal fade modal--dashboard" id="KPIModal" tabindex="-1" aria-labelledby="KPIModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="KPIModalLabel">KPI Overview</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Unit</th>
+                  <th scope="col">Definition</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Costs for CO2 emission</th>
+                  <td>EUR</td>
+                  <td>Calculated costs for CO2 emission certificates (current and future) from inputs</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">LCOE</th>
+                  <td>EUR</td>
+                  <td>Levelized costs of energy</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Emissions CO2eq</th>
+                  <td>T of CO2eq</td>
+                  <td>@Emissions of CO2eq (CO2eq/kWh, TCO2eq emitted)</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Relative emissions CO2eq</th>
+                  <td>%</td>
+                  <td>Emissions of CO2eq relative to another scenario (% reduced emissions compared to another scenario. E.g: BAU)</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Investment needed</th>
+                  <td>EUR</td>
+                  <td>Total investment needed</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Degree of sector-coupling</th>
+                  <td>Factor</td>
+                  <td>A synergy index of the energy system expressed via the DOA defined in a publication of RLI</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Degree of Autonomy (DA)</th>
+                  <td>T of CO2eq</td>
+                  <td>Degree of Autonomy or self sufficiency obtained, typically a number between 0 and 1</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Renewable energy share</th>
+                  <td>%</td>
+                  <td>The share of renewable energy produced in the output energy mix</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wasted energy</th>
+                  <td>KW</td>
+                  <td>Energy which could not be stored, or was lost in Joule effect (heating), i.e. losses in heat boilers</td>
+                  <td><button class="btn btn--small btn--transparent">+ Add to results</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn--medium" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="projects-view.html">
@@ -143,10 +225,10 @@
                 <div class="chart__header">
                   <div>
                     <span class="title">KPI Comparison</span>
-                    <a class="view">
+                    <span class="view" data-bs-toggle="modal" data-bs-target="#KPIModal">
                       <span class="icon icon-i_arrow_right"></span>
                       View KPIs
-                    </a>
+                    </span>
                   </div>
                   <div class="dropdown">
                     <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -214,6 +296,29 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <div class="chart">
+                <div class="chart__header">
+                  <div>
+                    <span class="title">Time series</span>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="icon icon-more"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="chart__plot">
+                  <div id="tester2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -244,6 +349,12 @@
     <script>
       TESTER = document.getElementById('tester');
       Plotly.newPlot( TESTER, [{
+      x: [1, 2, 3, 4, 5],
+      y: [1, 2, 4, 8, 16] }], {
+      margin: { t: 0 } } );
+
+      TESTER2 = document.getElementById('tester2');
+      Plotly.newPlot( TESTER2, [{
       x: [1, 2, 3, 4, 5],
       y: [1, 2, 4, 8, 16] }], {
       margin: { t: 0 } } );

@@ -281,9 +281,8 @@
     min-width: 1000px;
   }
 
-  .modal-header {
-    background-color: $primary-gray-color-1;
-    border-bottom: none;
+  .modal-body .container {
+    padding: 0;
   }
 
   .row {

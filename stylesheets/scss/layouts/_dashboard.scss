@@ -47,6 +47,7 @@
     border-radius: $button-border-radius;
     box-shadow: $box-shadow-frame;
     height: $dashboard-chart-height;
+    margin-bottom: $dashboard-space-between-charts;
 
     &__header {
       @include flex-row-space-between;
@@ -55,6 +56,11 @@
 
       .view {
         padding-left: $space-between-project-elements;
+        font-weight: 700;
+        color: $primary-color-1;
+        text-decoration: none;
+        cursor: pointer;
+
         .icon {
           font-size: .75rem;
         }
