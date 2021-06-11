@@ -1236,6 +1236,32 @@ nav.navbar .dropdown-menu li {
 .dashboard .chart--small:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
+.dashboard .chart--small .chart__content {
+  display: flex;
+  flex-direction: row;
+  height: calc((32rem / 3) - ((2 * 1.5rem) / 3) - 3.25rem);
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.dashboard .chart .item {
+  flex: 1;
+}
+.dashboard .chart .item__name {
+  font-size: 0.875rem;
+  color: #495965;
+  padding-bottom: 0.25rem;
+}
+.dashboard .chart .item__value {
+  font-size: 1.25rem;
+}
+.dashboard .chart .item--best .item__value {
+  font-weight: 700;
+  color: #20A10B;
+}
+.dashboard .chart .item--worst .item__value {
+  color: #A10B0B;
+}
 
 .projects-empty,
 .scenario-empty {
