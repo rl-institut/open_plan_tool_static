@@ -1974,6 +1974,72 @@ nav.navbar .dropdown-menu li {
   margin-top: 1.5rem;
 }
 
+.simulation-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F7F9;
+}
+.simulation-error .simulation-error__frame {
+  width: 100%;
+  max-width: 45rem;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
+}
+.simulation-error .heading {
+  font-size: 1.563rem;
+  color: #FD3434;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.simulation-error .img {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.simulation-error .img img {
+  width: 14rem;
+}
+.simulation-error .feedback {
+  color: #343434;
+  padding-bottom: 4rem;
+}
+.simulation-error .feedback p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.simulation-error .feedback ul li {
+  list-style: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 0.25rem;
+}
+.simulation-error .feedback ul li::before {
+  content: "•";
+  color: #D6D6D6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.simulation-error .actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.simulation-error .actions > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.simulation-error .actions > div .btn {
+  margin: 0 0.5rem;
+}
+
 .project-setup.two-columns {
   display: flex;
   flex-direction: row;
