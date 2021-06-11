@@ -32,32 +32,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Simulation results</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">New scenario</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My projects</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Documentation</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Use cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">License</a>
+            </li>
             <li class="nav-item locale">
               <a class="nav-link" href="#">DE</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Profile
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Use cases</a></li>
-                <li><a class="dropdown-item" href="#">License</a></li>
-                <li><a class="dropdown-item" href="#">Contact</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Log out</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/projects-view-empty.html">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn--small" href="pages/signup.html" role="button">Sign up</a>
             </li>
           </ul>
         </div>
@@ -65,25 +58,43 @@
     </nav>
 
     <main>
-      <section class="hero section" id="hero">
+      <section class="hero section" id="hero" data-aos="fade-up">
         <div>
-          <div class="hero__heading" data-aos="fade-up" data-aos="mobile-animation">
+          <div class="hero__text">
             <h1>
-              Content needs to be updated
+              Model your local energy system
             </h1>
-          </div>
-          <div class="hero__btn a-hero-btn" style="opacity: 0;">
-            <a href="#showcase" class="btn btn--hollow">
-              TRY THE OPEN_PLAN TOOL
+            <span>
+              Use the GUI to include sector-coupling and optimize the energy system model subject to equality constraints
+            </span>
+            <a href="pages/projects-view-empty.html" class="btn btn--medium">
+              Try out
             </a>
           </div>
+          <div class="hero__image">
+            <img src="assets/illustrations/energy_system_gui.svg" alt="Energy system GUI">
+          </div>
         </div>
-        <a class="btn btn--medium" href="pages/projects-view-empty.html">Design an energy system</a>
       </section>
     </main>
     
-    <footer class="footer" data-aos="fade-up">
-      
+    <footer class="footer">
+      <div>
+        <div class="footer__logo">
+          <img src="assets/logos/open_plan_logo_horizontal.svg" alt="open_plan logo">
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Use cases</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Imprint</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>

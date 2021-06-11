@@ -56,6 +56,10 @@ nav.navbar {
       }
     }
 
+    .nav-item .btn {
+      margin-left: 1rem;
+    }
+
     .nav-item a.nav-link {
       padding-left: $space-between-project-elements;
     }
