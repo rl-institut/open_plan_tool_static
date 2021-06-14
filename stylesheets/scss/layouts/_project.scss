@@ -75,6 +75,11 @@
           color: $primary-color-1-dark !important;
         }
       }
+
+      a.btn--action {
+        padding-top: 0.25rem;
+        font-weight: 700 !important;
+      }
     }
 
     .action {

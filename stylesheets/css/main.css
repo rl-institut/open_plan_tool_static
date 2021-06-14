@@ -647,6 +647,12 @@ button.btn--action:focus,
 button.btn--action:active {
   color: #8c8c8c !important;
 }
+a.btn--hollow.btn--action,
+button.btn--hollow.btn--action {
+  border-color: #1F567D;
+  color: #1F567D !important;
+  font-weight: 700 !important;
+}
 a.btn--load,
 button.btn--load {
   font-weight: 700;
@@ -1163,7 +1169,7 @@ nav.navbar .dropdown-menu li {
   justify-content: center;
   background-color: #F4F7F9;
   min-height: calc(100vh - 7rem - 8rem - 1rem - 4.5rem);
-  padding: 3rem 1rem 4rem;
+  padding: 3rem 0 4rem;
 }
 .dashboard > div {
   width: 100%;
@@ -1807,6 +1813,10 @@ nav.navbar .dropdown-menu li {
 }
 .project__details .actions .btn--hollow:hover, .project__details .actions .btn--hollow:focus, .project__details .actions .btn--hollow:active {
   color: #17405C !important;
+}
+.project__details .actions a.btn--action {
+  padding-top: 0.25rem;
+  font-weight: 700 !important;
 }
 .project__details .action {
   font-weight: 700;

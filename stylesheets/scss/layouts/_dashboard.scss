@@ -2,7 +2,7 @@
   @include flex-row-justify-center;
   background-color: $primary-gray-color-1;
   min-height: calc(100vh - #{$main-padding-top} - #{$header-dashboard-height} - #{$header-dashboard-margin-bottom} - #{$footer-height});
-  padding: 3rem 1rem 4rem;
+  padding: 3rem 0 4rem;
 
   &> div {
     @include section-width;

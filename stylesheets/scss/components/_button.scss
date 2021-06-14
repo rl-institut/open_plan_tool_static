@@ -89,6 +89,12 @@ button.btn {
     }
   }
 
+  &--hollow.btn--action {
+    border-color: $primary-color-1;
+    color: $primary-color-1 !important;
+    font-weight: 700 !important;
+  }
+
   &--load {
     font-weight: 700;
     background-color: transparent;
