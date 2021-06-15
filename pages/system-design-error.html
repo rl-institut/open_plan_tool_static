@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../stylesheets/css/main.css">
+
+    <title>Energy System Design - open_plan</title>
+  </head>
+
+  <body>
+
+    <!-- Modal -->
+    <div class="modal show system-design-error" id="js-system-design-error">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="pvleModalLabel">System design error</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="system-design-error__img" src="../assets/illustrations/error_hexagon.svg" alt="red hexagons - error">
+            <p class="system-design-error__message">Please check the following errors before continuing</p>
+            <ul class="system-design-error__log">
+              <li><span>electricity_grid_DSO</span> should be connected with at least one bus</li>
+              <li><span>bus_01</span> has too many outputs</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn--medium" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="wizard">
+      <div>
+        <ul>
+          <li>Scenario Setup</li>
+          <li class="active">Energy System Design</li>
+          <li>Constraints</li>
+          <li>Simulation</li>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <section class="header header--scenario">
+        <div>
+          <div class="header__scenario">
+            <span class="project-name">PV Potsdam 2025</span>
+            <span class="scenario-name">Scenario 1</span>
+          </div>
+          <div class="header__load">
+            <select class="form-select">
+              <option selected>Load system design from existing scenario</option>
+              <option value="1">PV Potsdam 2025</option>
+              <option value="2">open_plan test</option>
+            </select>
+          </div>
+          <div class="header__back">
+            <a href="projects-view.html">My projects</a>
+          </div>
+        </div>
+      </section>
+      <section class="system-design">
+        <div class="components">
+          <div class="components__title">
+            <div>
+              <h2>Energy components</h2>
+              <span class="icon icon-question" data-bs-toggle="tooltip" title="Lorem ipsum"></span>
+            </div>
+          </div>
+          <div class="components__content">
+            <div class="section section--providers">
+              <div class="section__title">
+                <h3>Providers</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/electric_grid.svg" alt="Electric grid icon">
+                <span class="name">System DSO</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+            <div class="section section--production">
+              <div class="section__title">
+                <h3>Production</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/pv_plant.svg" alt="PV plant icon">
+                <span class="name">PV plant</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/wind_turbine.svg" alt="Wind turbine icon">
+                <span class="name">Wind plant</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+            <div class="section section--conversion">
+              <div class="section__title">
+                <h3>Conversion</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/transformer_in.svg" alt="Transformer station (in) icon">
+                <span class="name">Transformer station (in)</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/transformer_out.svg" alt="Transformer station (out) icon">
+                <span class="name">Transformer station (out)</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/storage_in.svg" alt="Storage charge controller (in) icon">
+                <span class="name">Storage charge controller (in)</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/storage_out.svg" alt="Storage charge controller (out) icon">
+                <span class="name">Storage charge controller (out)</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/solar_inverter.svg" alt="Solar inverter icon">
+                <span class="name">Solar inverter</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+            <div class="section section--storage">
+              <div class="section__title">
+                <h3>Storage</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/battery.svg" alt="Battery icon">
+                <span class="name">Storage</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+            <div class="section section--demand">
+              <div class="section__title">
+                <h3>Consumption</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/demand.svg" alt="House with electricity and person icon">
+                <span class="name">Demand</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+            <div class="section section--bus">
+              <div class="section__title">
+                <h3>Bus</h3>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/power_antenna.svg" alt="Bus icon">
+                <span class="name">Bus</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gui">
+          <div class="gui__clear">
+            <button class="btn btn--small btn--hollow" type="submit">Clear design</button>
+          </div>
+          <div class="gui__empty-text">
+            <span>Drag and drop components to build your energy system</span>
+          </div>
+          <div class="gui-component gui-component--production gui-component--pv" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
+            <div class="gui-component__name">
+              <span>
+                pv_plant_name_XYZ_
+              </span>
+            </div>
+            <div class="gui-component__bottom">
+              <div class="input">
+                <div class="node"></div>
+              </div>
+              <div class="img"></div>
+              <div class="output">
+                <div class="node node--empty"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="step-footer">
+      <div>
+        <a class="btn btn--medium btn--hollow btn--previous" href="scenario-creation-1.html">Previous</a>
+        <a class="btn btn--medium" href="scenario-creation-3.html">Next</a>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/vanilla-lazyload.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../js/project.js"></script>
+  </body>
+</html>

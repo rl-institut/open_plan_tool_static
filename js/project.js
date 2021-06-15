@@ -31,3 +31,10 @@ projectWrap.addEventListener('click', function() {
     item.innerHTML = "Show scenarios";
   });
 })
+
+////////////////////////////////////////////// Show up design scenario error modal
+// replace window.onload with other event
+let systemDesignError = new bootstrap.Modal(document.getElementById("js-system-design-error"), {});
+window.onload = function () {
+  systemDesignError.show();
+};

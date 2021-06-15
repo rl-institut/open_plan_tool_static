@@ -995,6 +995,39 @@ form .btn {
   padding: 3rem;
 }
 
+.system-design-error .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.system-design-error .system-design-error__img {
+  width: 5rem;
+}
+.system-design-error .system-design-error__message {
+  padding-top: 2rem;
+}
+.system-design-error .system-design-error__log {
+  list-style: none;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+.system-design-error .system-design-error__log li {
+  position: relative;
+  color: #FD3434;
+  padding-bottom: 0.5rem;
+}
+.system-design-error .system-design-error__log li span {
+  font-weight: 700;
+}
+.system-design-error .system-design-error__log li::before {
+  font-family: "icomoon";
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -1.5rem;
+}
+
 table.table {
   box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
   border-radius: 8px;
