@@ -2135,6 +2135,26 @@ nav.navbar .dropdown-menu li {
   margin: 0 0.5rem;
 }
 
+.standard-layout {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.standard-layout > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.standard-layout h2 {
+  font-size: 1.563rem;
+}
+.standard-layout h3 {
+  font-size: 1.25rem;
+}
+
 .project-setup.two-columns {
   display: flex;
   flex-direction: row;

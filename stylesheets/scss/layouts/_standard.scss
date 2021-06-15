@@ -1,0 +1,17 @@
+.standard-layout {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  @include flex-row-justify-center;
+
+  &> div {
+    @include section-width;
+  }
+
+  h2 {
+    font-size: $font-size-medium-2;
+  }
+
+  h3 {
+    font-size: $font-size-medium;
+  }
+}

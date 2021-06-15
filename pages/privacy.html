@@ -10,31 +10,74 @@
     <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="../stylesheets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>WAM - Datenschutz</title>
+
+    <title>Privacy - open_plan</title>
   </head>
 
   <body>
 
-    <nav class="nav">
-      <div>
-        <div class="nav__logo">
-          <a href="../index.html">
-            <img src="../assets/logos/WAM_logo.png" alt="WAM Logo">
-          </a>
-        </div>
-        <div class="nav__menu">
-          <a href="https://reiner-lemoine-institut.de/forschungsfelder/sp-partizipation-und-wissenskommunikation/">Kontakt</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="projects-view.html">
+          <img src="../assets/logos/open_plan_logo_horizontal.svg" alt="open_plan Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="results.html">Simulation results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="scenario-empty.html">New scenario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects-view.html">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+            <li class="nav-item locale">
+              <a class="nav-link" href="#">DE</a>
+            </li>
+            <li class="nav-item dropdown profile">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../assets/icons/i_profile.svg" alt="Profile icon">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Use cases</a></li>
+                <li><a class="dropdown-item" href="#">License</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../index.html">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <main>
-      <section class="legal">
+      <section class="header">
         <div>
-          <h1>Datenschutzerklärung (Stand 14.03.2019)</h1>
-          <h2>I. Name und Anschrift des Verantwortlichen</h2>
+          <div class="header__left"></div>
+          <h1 class="header__title">Privacy (Stand 14.03.2019)</h1>
+          <div class="header__back"></div>
+        </div>
+      </section>
+      <section class="standard-layout">
+        <div>
+          <div class="row">
+            <div class="col">
+              <h2>I. Name und Anschrift des Verantwortlichen</h2>
           <p>Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist die:</p>
 
           <p>
@@ -219,41 +262,35 @@
 
           <h3>Gültigkeit der Datenschutzerklärung</h3>
           <p>Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu verändern oder anzupassen. Diese Erklärung wurde zuletzt geändert am 05.03.2019</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
+
     <footer class="footer">
       <div>
-        <div class="footer__logos">
-          <a href="../index.html">
-            <img src="../assets/logos/WAM_logo.png" alt="WAM Logo">
-          </a>
-          <a href="https://reiner-lemoine-institut.de/">
-            <img src="../assets/logos/rlilogo.png" alt="Reiner Lemoine Institut Logo">
-          </a>
+        <div class="footer__logo">
+          <img src="../assets/logos/open_plan_logo_horizontal.svg" alt="open_plan logo">
         </div>
         <div class="footer__links">
           <ul>
-            <li>
-              <a href="https://reiner-lemoine-institut.de/forschungsfelder/sp-partizipation-und-wissenskommunikation/">Kontakt</a>
-            </li>
-            <li>
-              <a href="https://reiner-lemoine-institut.de/">Reiner Lemoine Institut</a>
-            </li>
-            <li>
-              <a href="impressum.html">Impressum</a>
-            </li>
-            <li>
-              <a href="datenschutz.html">Datenschutz</a>
-            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Use cases</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Imprint</a></li>
+            <li><a href="#">Privacy</a></li>
           </ul>
-        </div>
-        <div class="footer__copyright">
-          <p>© Reiner Lemoine Institut gGmbH</p>
         </div>
       </div>
     </footer>
 
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/vanilla-lazyload.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../js/project.js"></script>
   </body>
 </html>
