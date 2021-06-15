@@ -14,4 +14,17 @@
   h3 {
     font-size: $font-size-medium;
   }
+
+  .account {
+    @include flex-row-justify-center;
+
+    &> div {
+      max-width: 28rem;
+      width: 100%;
+    }
+
+    &__save {
+      @include flex-row-justify-center;
+    }
+  }
 }
