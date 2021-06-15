@@ -32,9 +32,15 @@ projectWrap.addEventListener('click', function() {
   });
 })
 
-////////////////////////////////////////////// Show up design scenario error modal
+////////////////////////////////////////////// Show up system design error modal
 // replace window.onload with other event
-let systemDesignError = new bootstrap.Modal(document.getElementById("js-system-design-error"), {});
-window.onload = function () {
-  systemDesignError.show();
-};
+const systemDesignError = document.getElementById("js-system-design-error");
+
+if (systemDesignError) {
+  let designError = new bootstrap.Modal(systemDesignError, {});
+  window.onload = function () {
+    designError.show();
+  };
+}
+
+
