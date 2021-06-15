@@ -1903,6 +1903,17 @@ nav.navbar .dropdown-menu li {
   content: none;
 }
 
+.projects-new {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.projects-new button::before {
+  background-image: url(../../assets/icons/i_add.svg);
+}
+.projects-new button::after {
+  display: none;
+}
+
 .scenario-create {
   display: flex;
   flex-direction: row;
@@ -2095,7 +2106,6 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 2px solid #F4F7F9;
   padding-bottom: 6rem;
 }
 .project-setup.two-columns .left,
