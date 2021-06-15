@@ -24,7 +24,7 @@
 
   &__back {
     text-align: right;
-    
+
     a {
       position: relative;
       font-size: $font-size-small;
@@ -73,12 +73,6 @@
         left: -0.5rem;
       }
     }
-  }
-}
-
-.header {
-  // Specific to scenario creation
-  &--scenario {
 
     .header__load {
       position: absolute;
