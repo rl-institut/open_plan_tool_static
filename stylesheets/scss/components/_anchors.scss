@@ -1,49 +1,29 @@
-a,
-a:link,
-a:hover,
-a:focus,
-a:active,
-a:visited {
-  font-weight: 700;
-  color: $primary-color-1 !important;
-  text-decoration: none !important;
-  cursor: pointer;
+@each $anchor-state in $anchors-states-list {
+  a#{$anchor-state} {
+    font-weight: 700;
+    color: $primary-color-1 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
 }
 
-.project a,
-.dropdown-item,
-footer a,
-.nav-link {
-  font-size: $font-size-normal;
-  font-weight: 400 !important;
-}
+@each $anchors-item in $anchors-items-dark {
+  #{$anchors-item} {
+    font-size: $font-size-normal;
+    font-weight: 400 !important;
+  }
 
-.project a,
-.project a:link,
-.project a:active,
-.project a:visited,
-.project a:focus,
-.nav-link,
-.nav-link:link,
-.nav-link:active,
-.nav-link:visited,
-.nav-link:focus,
-.dropdown-item,
-.dropdown-item:link,
-.dropdown-item:active,
-.dropdown-item:visited,
-.dropdown-item:focus,
-footer a,
-footer a:link,
-footer a:focus,
-footer a:active,
-footer a:visited {
-  color: $text-color-a-sec !important;
-}
-.project a:hover,
-.dropdown-item:hover,
-.nav-link:hover,
-footer a:hover {
-  color: $text-color-a-sec-hover !important;
+  #{$anchors-item}:hover {
+    color: $text-color-a-sec-hover !important;
   transition: $anchor-hover-transition;
+  }
 }
+
+@each $anchor-state in $anchors-states-list {
+  @each $anchors-item in $anchors-items-dark {
+    #{$anchors-item}#{$anchor-state} {
+      color: $text-color-a-sec !important;
+    }
+  }
+}
+

@@ -491,11 +491,34 @@ p {
   line-height: 1.75rem;
 }
 
-a,
-a:link,
-a:hover,
-a:focus,
-a:active,
+a {
+  font-weight: 700;
+  color: #1F567D !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+a:link {
+  font-weight: 700;
+  color: #1F567D !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: 700;
+  color: #1F567D !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+a:active {
+  font-weight: 700;
+  color: #1F567D !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
 a:visited {
   font-weight: 700;
   color: #1F567D !important;
@@ -503,43 +526,124 @@ a:visited {
   cursor: pointer;
 }
 
-.project a,
-.dropdown-item,
-footer a,
+.project a {
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+
+.project a:hover {
+  color: #8c8c8c !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+
+.dropdown-item:hover {
+  color: #8c8c8c !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+footer a {
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+
+footer a:hover {
+  color: #8c8c8c !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 .nav-link {
   font-size: 1rem;
   font-weight: 400 !important;
 }
 
-.project a,
-.project a:link,
-.project a:active,
-.project a:visited,
-.project a:focus,
-.nav-link,
-.nav-link:link,
-.nav-link:active,
-.nav-link:visited,
-.nav-link:focus,
-.dropdown-item,
-.dropdown-item:link,
-.dropdown-item:active,
-.dropdown-item:visited,
-.dropdown-item:focus,
-footer a,
-footer a:link,
-footer a:focus,
-footer a:active,
+.nav-link:hover {
+  color: #8c8c8c !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.project a {
+  color: #343434 !important;
+}
+
+.dropdown-item {
+  color: #343434 !important;
+}
+
+footer a {
+  color: #343434 !important;
+}
+
+.nav-link {
+  color: #343434 !important;
+}
+
+.project a:link {
+  color: #343434 !important;
+}
+
+.dropdown-item:link {
+  color: #343434 !important;
+}
+
+footer a:link {
+  color: #343434 !important;
+}
+
+.nav-link:link {
+  color: #343434 !important;
+}
+
+.project a:hover {
+  color: #343434 !important;
+}
+
+.dropdown-item:hover {
+  color: #343434 !important;
+}
+
+footer a:hover {
+  color: #343434 !important;
+}
+
+.nav-link:hover {
+  color: #343434 !important;
+}
+
+.project a:active {
+  color: #343434 !important;
+}
+
+.dropdown-item:active {
+  color: #343434 !important;
+}
+
+footer a:active {
+  color: #343434 !important;
+}
+
+.nav-link:active {
+  color: #343434 !important;
+}
+
+.project a:visited {
+  color: #343434 !important;
+}
+
+.dropdown-item:visited {
+  color: #343434 !important;
+}
+
 footer a:visited {
   color: #343434 !important;
 }
 
-.project a:hover,
-.dropdown-item:hover,
-.nav-link:hover,
-footer a:hover {
-  color: #8c8c8c !important;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+.nav-link:visited {
+  color: #343434 !important;
 }
 
 a.btn,
