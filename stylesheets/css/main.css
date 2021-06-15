@@ -853,13 +853,21 @@ form .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 .header > div {
+  padding-top: 7rem;
   width: 100%;
   max-width: 82rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: relative;
+}
+.header__left, .header__back {
+  width: 10rem;
 }
 .header__title {
   font-size: 1.563rem;
@@ -868,12 +876,12 @@ form .btn {
   margin: 0;
 }
 .header__back {
-  position: absolute;
-  right: 1rem;
+  text-align: right;
 }
 .header__back a {
+  position: relative;
   font-size: 0.875rem;
-  vertical-align: sub;
+  vertical-align: middle;
 }
 .header__back a::before {
   content: "";
@@ -884,28 +892,21 @@ form .btn {
   height: 0.75rem;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0.7rem;
+  top: 0.15rem;
   left: -1.25rem;
-}
-.header--project-view, .header--scenario {
-  height: 12.5rem;
-}
-.header--project-view .header__title, .header--scenario .header__title {
-  padding-top: 7rem;
-}
-.header--project-view .header__back, .header--scenario .header__back {
-  top: 7rem;
 }
 .header--scenario {
   height: 3rem;
 }
 .header--scenario > div {
+  padding-top: 0;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
+  height: 3rem;
 }
 .header--scenario .project-name {
   font-size: 1rem;
@@ -921,53 +922,47 @@ form .btn {
   position: relative;
   left: -0.5rem;
 }
+
 .header--scenario .header__load {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.header--scenario .header__back {
-  position: relative;
-  top: 0;
-  right: 0;
-}
-.header--scenario .header__back a {
-  vertical-align: middle;
-}
-.header--scenario .header__back a::before {
-  top: 0.5rem;
-}
-.header--results {
-  flex-wrap: wrap;
-  height: 8rem;
+
+.header-results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 4rem;
   margin-bottom: 1rem;
 }
-.header--results > div {
+.header-results > div {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: flex-end;
 }
-.header--results .header__title {
+.header-results .header__title {
   flex: 1;
 }
-.header--results .header__scenario,
-.header--results .header__export {
-  padding-top: 2rem;
-}
-.header--results .header__scenario select {
+.header-results .header__scenario select {
   min-width: 20rem;
 }
-.header--results .header__export {
+.header-results .header__export {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.header--results .header__export .btn .icon {
+.header-results .header__export .btn .icon {
   font-size: 1.5rem;
   vertical-align: middle;
 }
-.header--results .project-title {
+.header-results .project-title {
   font-weight: 300;
   color: #343434;
 }
@@ -1168,7 +1163,7 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   justify-content: center;
   background-color: #F4F7F9;
-  min-height: calc(100vh - 7rem - 8rem - 1rem - 4.5rem);
+  min-height: calc(100vh - 7rem - 4rem - 1rem - 4.5rem);
   padding: 3rem 0 4rem;
 }
 .dashboard > div {

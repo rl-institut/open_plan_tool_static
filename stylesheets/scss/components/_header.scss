@@ -1,10 +1,18 @@
 .header {
   background-color: $white;
   @include flex-row-justify-center;
+  padding-bottom: 2rem;
 
   &> div {
+    padding-top: 7rem;
     @include section-width;
+    @include flex-row-space-between;
     position: relative;
+  }
+
+  &__left,
+  &__back {
+    width: 10rem;
   }
 
   &__title {
@@ -15,12 +23,12 @@
   }
 
   &__back {
-    position: absolute;
-    right: 1rem;
-
+    text-align: right;
+    
     a {
+      position: relative;
       font-size: $font-size-small;
-      vertical-align: sub;
+      vertical-align: middle;
     }
 
     a::before {
@@ -32,34 +40,21 @@
       height: 0.75rem;
       background-repeat: no-repeat;
       background-size: cover;
-      top: 0.7rem;
+      top: 0.15rem;
       left: -1.25rem;
     }
   }
 
-  // Specific to project view
-  &--project-view,
-  &--scenario {
-    height: 12.5rem;
-
-    .header__title {
-      padding-top: $header-title-top-position;
-    }
-
-    .header__back {
-      top: $header-title-top-position;
-    }
-  }
-
-  // Specific to scenario creation
   &--scenario {
     height: $header-scenario-height;
 
     &> div {
+      padding-top: 0;
       position: relative;
       @include flex-row-space-between;
       align-items: center;
       max-width: 100%;
+      height: $header-scenario-height;
     }
 
     .project-name {
@@ -78,67 +73,56 @@
         left: -0.5rem;
       }
     }
+  }
+}
+
+.header {
+  // Specific to scenario creation
+  &--scenario {
 
     .header__load {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
 
-    .header__back {
-      position: relative;
-      top: 0;
-      right: 0;
+// Specific to results page
+.header-results {
+  @include flex-row-justify-center;
+  height: $header-dashboard-height;
+  margin-bottom: $header-dashboard-margin-bottom;
 
-      a {
-        vertical-align: middle;
-      }
+  &> div {
+    width: 100%;
+    @include flex-row-space-between;
+    @include section-width;
+    align-items: flex-end;
+  }
 
-      a::before {
-        top: 0.5rem;
-      }
+  .header__title {
+    flex: 1;
+  }
+
+  .header__scenario {
+    select {
+      min-width: 20rem;
     }
   }
 
-  // Specific to results page
-  &--results {
-    flex-wrap: wrap;
-    height: $header-dashboard-height;
-    margin-bottom: $header-dashboard-margin-bottom;
+  .header__export {
+    @include flex-column;
+    justify-content: flex-end;
 
-    &> div {
-      width: 100%;
-      @include flex-row-space-between;
+    .btn .icon {
+      font-size: 1.5rem;
+      vertical-align: middle;
     }
+  }
 
-    .header__title {
-      flex: 1;
-    }
-
-    .header__scenario,
-    .header__export {
-      padding-top: 2rem;
-    }
-
-    .header__scenario {
-      select {
-        min-width: 20rem;
-      }
-    }
-
-    .header__export {
-      @include flex-column;
-      justify-content: flex-end;
-
-      .btn .icon {
-        font-size: 1.5rem;
-        vertical-align: middle;
-      }
-    }
-
-    .project-title {
-      font-weight: 300;
-      color: $primary-color-2;
-    }
+  .project-title {
+    font-weight: 300;
+    color: $primary-color-2;
   }
 }
