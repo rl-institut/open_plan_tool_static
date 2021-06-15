@@ -2098,6 +2098,12 @@ nav.navbar .dropdown-menu li {
   font-size: 1.25rem;
   text-align: center;
 }
+.simulation-error .feedback p.red {
+  color: #FD3434;
+}
+.simulation-error .feedback p span {
+  font-weight: 700;
+}
 .simulation-error .feedback ul li {
   list-style: none;
   text-align: left;

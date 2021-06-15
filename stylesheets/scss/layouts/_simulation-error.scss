@@ -33,6 +33,14 @@
     p {
       font-size: $font-size-medium;
       text-align: center;
+
+      &.red {
+        color: $error-color;
+      }
+
+      span {
+        font-weight: 700;
+      }
     }
 
     ul {
