@@ -73,6 +73,9 @@ $gray-border: 2px solid $primary-gray-color-1;
 
 // Anchors
 $anchor-hover-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; // from Bootstrap
+$anchor-pseudo-classes: "&:link, &:hover, &:focus, &:visited, &:active";
+$anchor-pseudo-classes-active-state: "&:hover, &:focus, &:active";
+$anchor-pseudo-classes-inactive-state: "&:link, &:visited";
 
 // Layout
 $section-max-width: 82rem;

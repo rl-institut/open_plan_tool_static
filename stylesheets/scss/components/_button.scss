@@ -7,16 +7,11 @@ button.btn {
   letter-spacing: $letter-spacing-normal;
   font-weight: 400;
 
-  &:link,
-  &:hover,
-  &:focus,
-  &:visited,
-  &:active {
+  #{$anchor-pseudo-classes} {
     color: $white !important;
   }
 
-  &:hover,
-  &:focus {
+  #{$anchor-pseudo-classes-active-state} {
     background-color: $primary-color-1-dark !important;
   }
 
@@ -49,16 +44,11 @@ button.btn {
     background-color: transparent;
     color: $primary-color-1;
 
-    &:link,
-    &:hover,
-    &:focus,
-    &:visited,
-    &:active {
+    #{$anchor-pseudo-classes} {
       color: $primary-color-1 !important;
     }
 
-    &:hover,
-    &:focus {
+    #{$anchor-pseudo-classes-active-state} {
       background-color: $white !important;
     }
   }
@@ -77,14 +67,11 @@ button.btn {
     width: auto;
     padding: 0;
 
-    &:link,
-    &:visited {
+    #{$anchor-pseudo-classes-inactive-state} {
       color: $primary-color-2 !important;
     }
 
-    &:hover,
-    &:focus,
-    &:active {
+    #{$anchor-pseudo-classes-active-state} {
       color: $primary-color-2-light !important;
     }
   }
@@ -102,15 +89,12 @@ button.btn {
     width: auto;
     padding: 0;
 
-    &:link,
-    &:visited {
+    #{$anchor-pseudo-classes-inactive-state} {
       color: $primary-color-1 !important;
       background-color: transparent !important;
     }
 
-    &:hover,
-    &:focus,
-    &:active {
+    #{$anchor-pseudo-classes-active-state} {
       color: $primary-color-1-dark !important;
       background-color: transparent !important;
     }

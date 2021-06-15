@@ -559,9 +559,10 @@ button.btn:visited,
 button.btn:active {
   color: #fff !important;
 }
-a.btn:hover, a.btn:focus,
+a.btn:hover, a.btn:focus, a.btn:active,
 button.btn:hover,
-button.btn:focus {
+button.btn:focus,
+button.btn:active {
   background-color: #17405C !important;
 }
 a.btn:focus,
@@ -612,13 +613,16 @@ button.btn--action:visited,
 button.btn--action:active {
   color: #1F567D !important;
 }
-a.btn--hollow:hover, a.btn--hollow:focus, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--action:hover, a.btn--action:focus,
+a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:active, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:active, a.btn--action:hover, a.btn--action:focus, a.btn--action:active,
 button.btn--hollow:hover,
 button.btn--hollow:focus,
+button.btn--hollow:active,
 button.btn--transparent:hover,
 button.btn--transparent:focus,
+button.btn--transparent:active,
 button.btn--action:hover,
-button.btn--action:focus {
+button.btn--action:focus,
+button.btn--action:active {
   background-color: #fff !important;
 }
 a.btn--hollow,
@@ -1373,6 +1377,40 @@ nav.navbar .dropdown-menu li {
 }
 .main--padding-top .header .header__title {
   padding-top: 0;
+}
+
+.standard-layout {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.standard-layout > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.standard-layout h2 {
+  font-size: 1.563rem;
+}
+.standard-layout h3 {
+  font-size: 1.25rem;
+}
+.standard-layout .account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.standard-layout .account > div {
+  max-width: 28rem;
+  width: 100%;
+}
+.standard-layout .account__save {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .system-design {
@@ -2133,40 +2171,6 @@ nav.navbar .dropdown-menu li {
 }
 .simulation-error .actions > div .btn {
   margin: 0 0.5rem;
-}
-
-.standard-layout {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.standard-layout > div {
-  width: 100%;
-  max-width: 82rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.standard-layout h2 {
-  font-size: 1.563rem;
-}
-.standard-layout h3 {
-  font-size: 1.25rem;
-}
-.standard-layout .account {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.standard-layout .account > div {
-  max-width: 28rem;
-  width: 100%;
-}
-.standard-layout .account__save {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .project-setup.two-columns {
