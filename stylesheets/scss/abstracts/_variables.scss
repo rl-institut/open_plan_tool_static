@@ -102,6 +102,27 @@ $component-border-color--conversion: #7BF1A8;
 $component-border-color--storage: #90F1EF;
 $component-border-color--demand: #FFD6E0;
 $component-border-color--bus: #F4CC9E;
+$component-categories: (
+  'providers': $component-border-color--providers, 
+  'production': $component-border-color--production, 
+  'conversion': $component-border-color--conversion, 
+  'storage': $component-border-color--storage, 
+  'demand': $component-border-color--demand, 
+  'bus': $component-border-color--bus
+);
+$component-images: (
+  'dso': 'electric_grid',
+  'pv': 'pv_plant',
+  'wind_turbine': 'wind_turbine',
+  'transformer_in': 'transformer_in',
+  'transformer_out': 'transformer_out',
+  'storage_in': 'storage_in',
+  'storage_out': 'storage_out',
+  'solar_inverter': 'solar_inverter',
+  'storage': 'battery',
+  'demand': 'demand',
+  'bus': 'power_antenna'
+);
 $gui-component-bg-size: 4.5rem;
 $gui-component-img-size: 3rem;
 $gui-component-node-size: 0.75rem;

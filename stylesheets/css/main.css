@@ -1088,11 +1088,6 @@ form .btn {
   max-width: 350px !important;
 }
 
-.lazy-img {
-  filter: blur(1.25rem);
-  -webkit-filter: blur(1.25rem);
-}
-
 .modal .modal-header {
   background-color: #F4F7F9;
   border-bottom: none;
@@ -1260,7 +1255,6 @@ nav.navbar .dropdown-menu li {
   padding-right: 4.5rem;
 }
 .wizard li::before {
-  content: "1";
   font-size: 0.875rem;
   font-weight: 700;
   margin-right: 0.5rem;
@@ -1269,6 +1263,9 @@ nav.navbar .dropdown-menu li {
   padding: 0.25rem 0.5rem;
   width: 2rem;
   border-radius: 100px;
+}
+.wizard li:nth-child(1)::before {
+  content: "1";
 }
 .wizard li:nth-child(2)::before {
   content: "2";
@@ -1731,7 +1728,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/electric_grid.svg);
+  background-image: url("../../assets/gui/electric_grid.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1742,18 +1739,18 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/pv_plant.svg);
+  background-image: url("../../assets/gui/pv_plant.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--wind .img::before {
+.system-design .gui-component--wind_turbine .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/wind_turbine.svg);
+  background-image: url("../../assets/gui/wind_turbine.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1764,7 +1761,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/transformer_in.svg);
+  background-image: url("../../assets/gui/transformer_in.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1775,7 +1772,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/transformer_out.svg);
+  background-image: url("../../assets/gui/transformer_out.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1786,7 +1783,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/storage_in.svg);
+  background-image: url("../../assets/gui/storage_in.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1797,7 +1794,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/storage_out.svg);
+  background-image: url("../../assets/gui/storage_out.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1808,7 +1805,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/solar_inverter.svg);
+  background-image: url("../../assets/gui/solar_inverter.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1819,7 +1816,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/battery.svg);
+  background-image: url("../../assets/gui/battery.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1830,7 +1827,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/demand.svg);
+  background-image: url("../../assets/gui/demand.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;
@@ -1841,7 +1838,7 @@ nav.navbar .dropdown-menu li {
   top: 2.2rem;
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/power_antenna.svg);
+  background-image: url("../../assets/gui/power_antenna.svg");
   background-size: contain;
   height: 3rem;
   width: 3rem;

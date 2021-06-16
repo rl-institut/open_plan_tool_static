@@ -107,7 +107,6 @@ nav.navbar {
     }
 
     &::before {
-      content: "1";
       font-size: $font-size-small;
       font-weight: 700;
       margin-right: 0.5rem;
@@ -118,16 +117,10 @@ nav.navbar {
       border-radius: 100px;
     }
 
-    &:nth-child(2)::before {
-      content: "2";
-    }
-
-    &:nth-child(3)::before {
-      content: "3";
-    }
-
-    &:nth-child(4)::before {
-      content: "4";
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i})::before {
+        content: "#{$i}";
+      }
     }
 
     &:not(:first-of-type)::after {
