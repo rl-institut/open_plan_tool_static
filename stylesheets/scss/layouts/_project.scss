@@ -133,9 +133,14 @@
     }
 
     .actions {
+
+      .btn--action {
+        margin-top: 0;
+      }
       
       .btn--action.results {
         @include project-btn;
+        margin-top: 0;
       }
 
       .action {

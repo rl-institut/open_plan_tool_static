@@ -2037,12 +2037,16 @@ nav.navbar .dropdown-menu li {
   font-weight: 300;
   padding-right: 0.75rem;
 }
+.project__scenarios .actions .btn--action {
+  margin-top: 0;
+}
 .project__scenarios .actions .btn--action.results {
   font-weight: 700;
   padding: 0.25rem 0.5rem;
   color: #343434;
   background-color: #F4F7F9;
   border: none;
+  margin-top: 0;
 }
 .project__scenarios .actions .btn--action.results:hover, .project__scenarios .actions .btn--action.results:focus, .project__scenarios .actions .btn--action.results:active {
   color: #8c8c8c !important;
@@ -2226,7 +2230,7 @@ nav.navbar .dropdown-menu li {
   padding-bottom: 4rem;
 }
 .simulation-error .img img {
-  width: 14rem;
+  height: 6.125rem;
 }
 .simulation-error .feedback {
   color: #343434;
