@@ -44,42 +44,6 @@
       left: -1.25rem;
     }
   }
-
-  &--scenario {
-    height: $header-scenario-height;
-
-    &> div {
-      padding-top: 0;
-      position: relative;
-      @include flex-row-space-between;
-      align-items: center;
-      max-width: 100%;
-      height: $header-scenario-height;
-    }
-
-    .project-name {
-      font-size: $font-size-normal;
-      color: $primary-gray-color-4;
-    }
-
-    .scenario-name {
-      font-size: $font-size-small;
-      color: $primary-gray-color-4;
-      padding-left: 1rem;
-
-      &::before {
-        content: "- ";
-        position: relative;
-        left: -0.5rem;
-      }
-    }
-
-    .header__load {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
 }
 
 // Specific to results page

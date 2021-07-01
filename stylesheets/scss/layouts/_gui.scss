@@ -1,6 +1,6 @@
 .system-design {
   @include flex-row;
-  height: calc(100vh - #{$wizard-height} - #{$header-scenario-height} - #{$footer-scenario-height});
+  height: calc(100vh - #{$top-nav-height} - #{$wizard-height} - #{$footer-scenario-height});
   border-top: $gray-border;
 
   .components {
@@ -81,11 +81,16 @@
     height: 100%;
 
     &__clear {
+      @include flex-row;
       position: absolute;
       top: 0;
       right: 0;
       padding: 1rem;
       background-color: $white;
+
+      .load-scenario {
+        padding-right: 1rem;
+      }
     }
 
     &__empty-text {

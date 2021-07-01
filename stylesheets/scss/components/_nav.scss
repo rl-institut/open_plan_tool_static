@@ -80,67 +80,97 @@ nav.navbar {
         @include translateY(3px);
       }
     }
+
+    &.navbar--signup .nav-item.locale::before {
+      content: '';
+    }
+
+    &.navbar--scenario {
+      position: relative;
+
+      .nav-item.locale::before {
+        content: '';
+      }
+    }
   }
 }
 
 .wizard {
+  @include flex-column-align-justify-center;
   @include user-select-none;
+  background-color: $primary-gray-color-1;
+  height: $wizard-height;
+  min-height: $wizard-height;
 
-  &> div {
-    background-color: $primary-gray-color-1;
-	  height: $wizard-height;
-	  @include flex-column-align-justify-center;
-  }
+  &__name {
+    @include flex-row-justify-center;
+    padding-bottom: .5rem;
 
-  ul {
-    @include ul-horizontal;
-  }
-
-  li {
-    display: inline-block;
-    color: $primary-gray-color-3;
-    position: relative;
-    font-weight: 700;
-
-    &:not(:last-of-type) {
-      padding-right: 4.5rem;
-    }
-
-    &::before {
-      font-size: $font-size-small;
+    .project {
       font-weight: 700;
-      margin-right: 0.5rem;
-      color: $white;
-      background-color: $primary-gray-color-3;
-      padding: 0.25rem 0.5rem;
-      width: 2rem;
-      border-radius: 100px;
     }
 
-    @for $i from 1 through 4 {
-      &:nth-child(#{$i})::before {
-        content: "#{$i}";
+    .scenario {
+      font-size: $font-size-small;
+      @include translateY(3px);
+    }
+  }
+
+  &__steps {
+	  @include flex-column-align-justify-center;
+
+    ul {
+      @include ul-horizontal;
+    }
+  
+    li {
+      display: inline-block;
+      color: $primary-gray-color-3;
+      position: relative;
+      font-weight: 700;
+  
+      &:not(:last-of-type) {
+        padding-right: 4.5rem;
       }
-    }
-
-    &:not(:first-of-type)::after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 2.25rem;
-      height: 1px;
-      margin-left: -3.5rem;
-      top: .75rem;
-      background-color: $primary-gray-color-3;
-    }
-
-    &.active {
-      color: $primary-color-1;
-
+  
       &::before {
-        background-color: $primary-color-1;
+        font-size: $font-size-small;
+        font-weight: 700;
+        margin-right: 0.5rem;
+        color: $white;
+        background-color: $primary-gray-color-3;
+        padding: 0.25rem 0.5rem;
+        width: 2rem;
+        border-radius: 100px;
+      }
+  
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i})::before {
+          content: "#{$i}";
+        }
+      }
+  
+      &:not(:first-of-type)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 2.25rem;
+        height: 1px;
+        margin-left: -3.5rem;
+        top: .75rem;
+        background-color: $primary-gray-color-3;
+      }
+  
+      &.active {
+        color: $primary-color-1;
+  
+        &::before {
+          background-color: $primary-color-1;
+        }
       }
     }
   }
+
+  
 }
