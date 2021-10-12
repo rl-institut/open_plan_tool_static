@@ -1627,7 +1627,7 @@ nav.navbar .dropdown-menu li {
   color: #343434;
   font-weight: 300;
 }
-.system-design .gui-component {
+.system-design .drawflow-node {
   position: relative;
   height: 8rem;
   width: 9.5rem;
@@ -1637,10 +1637,10 @@ nav.navbar .dropdown-menu li {
   border-bottom: 4px solid #A4ADFB;
   cursor: move;
 }
-.system-design .gui-component:hover {
+.system-design .drawflow-node:hover {
   background-color: #edf2f5;
 }
-.system-design .gui-component:hover::after {
+.system-design .drawflow-node:hover::after {
   content: "X";
   position: absolute;
   top: 0;
@@ -1655,78 +1655,69 @@ nav.navbar .dropdown-menu li {
   border-radius: 100%;
   cursor: pointer;
 }
-.system-design .gui-component__name {
+.system-design .drawflow-node .drawflow_content_node {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 2.5rem;
-  padding: 0 0.5rem;
 }
-.system-design .gui-component__name span {
-  display: inline-block;
-  word-break: break-all;
-  text-align: center;
+.system-design .drawflow-node .inputs {
+  bottom: 2rem;
+  left: 0.9rem;
 }
-.system-design .gui-component__bottom {
-  display: flex;
-  flex-direction: row;
+.system-design .drawflow-node .outputs {
+  bottom: 2rem;
+  right: 0.9rem;
 }
-.system-design .gui-component .input .node {
-  background-color: #4EC4C4;
+.system-design .drawflow-node .inputs,
+.system-design .drawflow-node .outputs {
+  position: absolute;
 }
-.system-design .gui-component .output .node {
-  background-color: #C46A4E;
-}
-.system-design .gui-component .input,
-.system-design .gui-component .output {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-height: calc(4.5rem + 0.5rem);
-}
-.system-design .gui-component .input .node,
-.system-design .gui-component .output .node {
+.system-design .drawflow-node .inputs .input,
+.system-design .drawflow-node .inputs .output,
+.system-design .drawflow-node .outputs .input,
+.system-design .drawflow-node .outputs .output {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 100%;
   margin: 0.25rem 0;
   cursor: pointer;
 }
-.system-design .gui-component .input .node--empty,
-.system-design .gui-component .output .node--empty {
-  background-color: #fff;
-  border: 1px solid #A8B5C0;
+.system-design .drawflow-node .inputs .input,
+.system-design .drawflow-node .outputs .input {
+  background-color: #4EC4C4;
 }
-.system-design .gui-component .img {
+.system-design .drawflow-node .inputs .output,
+.system-design .drawflow-node .outputs .output {
+  background-color: #C46A4E;
+}
+.system-design .drawflow-node .img {
   position: relative;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #fff;
   border-radius: 100%;
 }
-.system-design .gui-component--providers {
+.system-design .drawflow-node--providers {
   border-bottom-color: #A4ADFB;
 }
-.system-design .gui-component--production {
+.system-design .drawflow-node--production {
   border-bottom-color: #FFEF9F;
 }
-.system-design .gui-component--conversion {
+.system-design .drawflow-node--conversion {
   border-bottom-color: #7BF1A8;
 }
-.system-design .gui-component--storage {
+.system-design .drawflow-node--storage {
   border-bottom-color: #90F1EF;
 }
-.system-design .gui-component--demand {
+.system-design .drawflow-node--demand {
   border-bottom-color: #FFD6E0;
 }
-.system-design .gui-component--bus {
+.system-design .drawflow-node--bus {
   border-bottom-color: #F4CC9E;
 }
-.system-design .gui-component--dso .img::before {
+.system-design .drawflow-node--dso .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1737,7 +1728,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--pv .img::before {
+.system-design .drawflow-node--pv .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1748,7 +1739,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--wind_turbine .img::before {
+.system-design .drawflow-node--wind_turbine .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1759,7 +1750,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--transformer_in .img::before {
+.system-design .drawflow-node--transformer_in .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1770,7 +1761,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--transformer_out .img::before {
+.system-design .drawflow-node--transformer_out .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1781,7 +1772,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage_in .img::before {
+.system-design .drawflow-node--storage_in .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1792,7 +1783,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage_out .img::before {
+.system-design .drawflow-node--storage_out .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1803,7 +1794,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--solar_inverter .img::before {
+.system-design .drawflow-node--solar_inverter .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1814,7 +1805,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--storage .img::before {
+.system-design .drawflow-node--storage .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1825,7 +1816,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--demand .img::before {
+.system-design .drawflow-node--demand .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
@@ -1836,7 +1827,7 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .gui-component--bus .img::before {
+.system-design .drawflow-node--bus .img::before {
   content: "";
   position: absolute;
   top: 2.2rem;
