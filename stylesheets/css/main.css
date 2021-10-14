@@ -1627,20 +1627,27 @@ nav.navbar .dropdown-menu li {
   color: #343434;
   font-weight: 300;
 }
-.system-design .drawflow-node {
+.system-design .drawflow .connection .main-path {
+  width: 2px;
+}
+.system-design .drawflow .drawflow-node {
   position: relative;
   height: 8rem;
   width: 9.5rem;
   border-radius: 8px;
   background-color: #F4F7F9;
   font-size: 12px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   border-bottom: 4px solid #A4ADFB;
   cursor: move;
+  padding: 0 0.5rem 0.5rem;
 }
-.system-design .drawflow-node:hover {
+.system-design .drawflow .drawflow-node:hover {
   background-color: #edf2f5;
 }
-.system-design .drawflow-node:hover::after {
+.system-design .drawflow .drawflow-node:hover::after {
   content: "X";
   position: absolute;
   top: 0;
@@ -1655,72 +1662,76 @@ nav.navbar .dropdown-menu li {
   border-radius: 100%;
   cursor: pointer;
 }
-.system-design .drawflow-node .drawflow_content_node {
+.system-design .drawflow .drawflow-node.selected {
+  background-color: #E3EAEE;
+}
+.system-design .drawflow .drawflow-node .drawflow_content_node {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.system-design .drawflow-node .inputs {
+.system-design .drawflow .drawflow-node .inputs {
   bottom: 2rem;
   left: 0.9rem;
 }
-.system-design .drawflow-node .outputs {
+.system-design .drawflow .drawflow-node .outputs {
   bottom: 2rem;
   right: 0.9rem;
 }
-.system-design .drawflow-node .inputs,
-.system-design .drawflow-node .outputs {
+.system-design .drawflow .drawflow-node .inputs,
+.system-design .drawflow .drawflow-node .outputs {
   position: absolute;
 }
-.system-design .drawflow-node .inputs .input,
-.system-design .drawflow-node .inputs .output,
-.system-design .drawflow-node .outputs .input,
-.system-design .drawflow-node .outputs .output {
+.system-design .drawflow .drawflow-node .inputs .input,
+.system-design .drawflow .drawflow-node .inputs .output,
+.system-design .drawflow .drawflow-node .outputs .input,
+.system-design .drawflow .drawflow-node .outputs .output {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 100%;
   margin: 0.25rem 0;
+  border: 1px solid #fff;
   cursor: pointer;
 }
-.system-design .drawflow-node .inputs .input,
-.system-design .drawflow-node .outputs .input {
+.system-design .drawflow .drawflow-node .inputs .input,
+.system-design .drawflow .drawflow-node .outputs .input {
   background-color: #4EC4C4;
 }
-.system-design .drawflow-node .inputs .output,
-.system-design .drawflow-node .outputs .output {
+.system-design .drawflow .drawflow-node .inputs .output,
+.system-design .drawflow .drawflow-node .outputs .output {
   background-color: #C46A4E;
 }
-.system-design .drawflow-node .img {
+.system-design .drawflow .drawflow-node .img {
   position: relative;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #fff;
   border-radius: 100%;
 }
-.system-design .drawflow-node--providers {
+.system-design .drawflow .drawflow-node--providers {
   border-bottom-color: #A4ADFB;
 }
-.system-design .drawflow-node--production {
+.system-design .drawflow .drawflow-node--production {
   border-bottom-color: #FFEF9F;
 }
-.system-design .drawflow-node--conversion {
+.system-design .drawflow .drawflow-node--conversion {
   border-bottom-color: #7BF1A8;
 }
-.system-design .drawflow-node--storage {
+.system-design .drawflow .drawflow-node--storage {
   border-bottom-color: #90F1EF;
 }
-.system-design .drawflow-node--demand {
+.system-design .drawflow .drawflow-node--demand {
   border-bottom-color: #FFD6E0;
 }
-.system-design .drawflow-node--bus {
+.system-design .drawflow .drawflow-node--bus {
   border-bottom-color: #F4CC9E;
 }
-.system-design .drawflow-node--dso .img::before {
+.system-design .drawflow .drawflow-node--dso .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/electric_grid.svg");
@@ -1728,10 +1739,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--pv .img::before {
+.system-design .drawflow .drawflow-node--pv .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/pv_plant.svg");
@@ -1739,10 +1750,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--wind_turbine .img::before {
+.system-design .drawflow .drawflow-node--wind_turbine .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/wind_turbine.svg");
@@ -1750,10 +1761,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--transformer_in .img::before {
+.system-design .drawflow .drawflow-node--transformer_in .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/transformer_in.svg");
@@ -1761,10 +1772,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--transformer_out .img::before {
+.system-design .drawflow .drawflow-node--transformer_out .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/transformer_out.svg");
@@ -1772,10 +1783,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--storage_in .img::before {
+.system-design .drawflow .drawflow-node--storage_in .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/storage_in.svg");
@@ -1783,10 +1794,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--storage_out .img::before {
+.system-design .drawflow .drawflow-node--storage_out .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/storage_out.svg");
@@ -1794,10 +1805,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--solar_inverter .img::before {
+.system-design .drawflow .drawflow-node--solar_inverter .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/solar_inverter.svg");
@@ -1805,10 +1816,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--storage .img::before {
+.system-design .drawflow .drawflow-node--storage .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/battery.svg");
@@ -1816,10 +1827,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--demand .img::before {
+.system-design .drawflow .drawflow-node--demand .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/demand.svg");
@@ -1827,10 +1838,10 @@ nav.navbar .dropdown-menu li {
   height: 3rem;
   width: 3rem;
 }
-.system-design .drawflow-node--bus .img::before {
+.system-design .drawflow .drawflow-node--bus .img::before {
   content: "";
   position: absolute;
-  top: 2.2rem;
+  top: calc(4.5rem / 2);
   right: calc((4.5rem - 3rem) / 2);
   transform: translateY(-50%);
   background-image: url("../../assets/gui/power_antenna.svg");

@@ -108,15 +108,23 @@
     }
   }
 
-  .drawflow-node {
+  .drawflow .connection .main-path {
+    width: 2px;
+  }
+
+  .drawflow .drawflow-node {
     position: relative;
     height: 8rem;
     width: 9.5rem;
     border-radius: $gui-component-radius;
     background-color: $primary-gray-color-1;
     font-size: 12px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
     border-bottom: 4px solid #A4ADFB;
     cursor: move;
+    padding: 0 0.5rem 0.5rem;
 
     &:hover {
       background-color: darken($primary-gray-color-1, 2%);
@@ -136,6 +144,10 @@
       border: 1px solid $primary-gray-color-4;
       border-radius: 100%;
       cursor: pointer;
+    }
+
+    &.selected {
+      background-color: $primary-gray-color-2;
     }
 
     .drawflow_content_node {
@@ -165,6 +177,7 @@
         height: $gui-component-node-size;
         border-radius: 100%;
         margin: .25rem 0;
+        border: 1px solid $white;
         cursor: pointer;
       }
 
