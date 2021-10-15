@@ -202,17 +202,17 @@
       border-radius: 100%;
     }
 
-    // section colors
-    @each $component-category, $component-color in $component-categories {
-      &--#{$component-category} {
-        border-bottom-color: $component-color;
-      }
-    }
+    /* section colors */
+
 
     // components images
-    @each $component-name, $component-image in $component-images {
+    @each $component-name, $component-category in $component-categories-mapping {
+              &.#{$component-category} {
+                      border-bottom-color: map-get($component-categories, $component-category);
+                    }
+
       &.#{$component-name} .img::before {
-        @include gui-component-image(url('/static/assets/gui/#{$component-image}.svg'));
+        @include gui-component-image(url('/static/assets/gui/#{$component-name}.svg'));
       }
     }
   }
