@@ -185,13 +185,31 @@
       .input {
         background-color: #4EC4C4;
         left: -22px;
+
       }
 
       .output {
         background-color: #C46A4E;
         right: -10px;
+
       }
     }
+
+     @each $component-name, $component-category in $component-categories-mapping {
+              @if $component-category == "providers" or $component-category == "production" {
+                  &.#{$component-name} .input{
+                    display: none;
+                  }
+              }
+            }
+
+    @each $component-name, $component-category in $component-categories-mapping {
+              @if $component-category == "demand" {
+                &.#{$component-name} .output {
+                  display: none;
+                }
+              }
+            }
 
 
     .img {
