@@ -113,7 +113,7 @@
   }
 
   .drawflow .drawflow-node {
-    position: relative;
+    position: absolute;
     height: 8rem;
     width: 9.5rem;
     border-radius: $gui-component-radius;
@@ -207,8 +207,8 @@
 
     // components images
     @each $component-name, $component-image in $component-images {
-      &--#{$component-name} .img::before {
-        @include gui-component-image(url('../../assets/gui/#{$component-image}.svg'));
+      &.#{$component-name} .img::before {
+        @include gui-component-image(url('/static/assets/gui/#{$component-image}.svg'));
       }
     }
   }
