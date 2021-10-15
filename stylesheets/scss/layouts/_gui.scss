@@ -112,6 +112,23 @@
     width: 2px;
   }
 
+  .parent-node .drawflow-delete {
+        content: 'X';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $white;
+        color: black;
+        width: 1.15rem;
+        height: 1.15rem;
+        font-weight: 700;
+        line-height: 1rem;
+        padding-left: .25rem;
+        border: 1px solid $primary-gray-color-4;
+        border-radius: 100%;
+        cursor: pointer;
+  }
+
   .drawflow .drawflow-node {
     position: absolute;
     height: 8rem;
@@ -128,22 +145,6 @@
 
     &:hover {
       background-color: darken($primary-gray-color-1, 2%);
-    }
-
-    &:hover::after {
-      content: 'X';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: $white;
-      width: 1.15rem;
-      height: 1.15rem;
-      font-weight: 700;
-      line-height: 1rem;
-      padding-left: .25rem;
-      border: 1px solid $primary-gray-color-4;
-      border-radius: 100%;
-      cursor: pointer;
     }
 
     &.selected {
