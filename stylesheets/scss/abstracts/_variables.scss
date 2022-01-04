@@ -13,7 +13,10 @@ $white: #fff;
 $secondary-gray-color-1: #E4E4E4;
 $secondary-gray-color-2: #D6D6D6;
 
-$error-color: #FD3434;
+$error-color: #9A031E;
+$success-color: #09BC8A;
+$pending-color: #EC9A29;
+$disabled-color: $primary-gray-color-3;
 
 $dashboard-profitable-value: #20A10B;
 $dashboard-inadequate-value: #A10B0B;
@@ -29,7 +32,7 @@ $text-color-a-sec-hover: $primary-color-2-light;
 $text-color-invert: $white;
 
 $box-shadow-frame: 0px 0px 16px rgba(31, 86, 125, 0.08);
-$box-shadow-form: 0 0 0 0.25rem rgb(31 86 125 / 10%);
+$box-shadow-form: 0 0 0 0.25rem rgba(31, 86, 125, 0.1);
 
 // Media-breaks
 $small-screen: 640px;
