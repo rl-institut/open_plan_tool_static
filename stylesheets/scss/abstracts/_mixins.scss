@@ -107,6 +107,15 @@
   padding-left: 0;
 }
 
+// Buttons
+@mixin btn-background-color($btn-background-color) {
+  background-color: $btn-background-color;
+
+  #{$anchor-pseudo-classes-active-state} {
+    background-color: darken($btn-background-color, 10%) !important;
+  }
+}
+
 // Project details and actions
 @mixin project-details {
   color: $text-color-secondary;
