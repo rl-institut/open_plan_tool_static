@@ -1453,6 +1453,7 @@ nav.navbar .dropdown-menu li {
 }
 
 .wizard {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1473,6 +1474,41 @@ nav.navbar .dropdown-menu li {
   background-color: #F4F7F9;
   height: 5.5rem;
   min-height: 5.5rem;
+}
+
+.wizard__back {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+
+.wizard__back::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../../assets/icons/i_arrow_left.svg);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0.15rem;
+  left: -1.25rem;
+  top: 0.4rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .wizard__back {
+    font-size: 0.875rem;
+  }
+  .wizard__back::before {
+    top: 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .wizard__back {
+    display: none;
+  }
 }
 
 .wizard__name {
@@ -1580,6 +1616,23 @@ nav.navbar .dropdown-menu li {
 
 .wizard__steps li.active::before {
   background-color: #1F567D;
+}
+
+@media only screen and (max-width: 1300px) {
+  .wizard__steps li {
+    font-size: 0.875rem;
+  }
+  .wizard__steps li:not(:last-of-type) {
+    padding-right: 3.5rem;
+  }
+  .wizard__steps li::before {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.45rem;
+  }
+  .wizard__steps li:not(:first-of-type)::after {
+    width: 1.25rem;
+    margin-left: -2.5rem;
+  }
 }
 
 .dashboard {
