@@ -1,5 +1,5 @@
 // Section-width
-@mixin section-width {
+@mixin nav-section-width {
   width: calc(100% - (#{$top-nav-padding-xsmall} * 2));
   padding-left: $top-nav-padding-xsmall;
   padding-right: $top-nav-padding-xsmall;
@@ -13,9 +13,9 @@
 
   @media screen and (min-width:$medium-screen) {
     width: calc(100% - (#{$top-nav-padding-large} * 2));
-    padding-left: $top-nav-padding-large;
-    padding-right: $top-nav-padding-large;
-    max-width: $section-max-width;
+    padding-left: $padding-sides-normal;
+    padding-right: $padding-sides-normal;
+    max-width: 100%;
   }
 }
 

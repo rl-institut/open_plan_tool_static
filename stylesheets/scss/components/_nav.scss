@@ -35,13 +35,17 @@ nav.navbar {
 
     &.navbar-expand-lg {
       .container-fluid {
-        @include section-width;
+        @include nav-section-width;
         justify-content: center;
       }
 
       .navbar-collapse {
         justify-content: flex-end;
       }
+    }
+
+    &.navbar-expand-lg.navbar--website .container-fluid {
+      max-width: $section-max-width;
     }
 
     .nav-item.locale {
