@@ -1159,8 +1159,29 @@ a.dropdown-item:active {
       flex-shrink: 0;
 }
 
+.step-footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.step-footer__left, .step-footer__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .step-footer .btn--previous {
   border: none;
+}
+
+.step-footer__right a {
+  float: right;
 }
 
 form .form-control:focus {
