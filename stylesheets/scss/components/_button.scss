@@ -70,6 +70,10 @@ button.btn {
     #{$anchor-pseudo-classes-active-state} {
       color: $primary-color-2-light !important;
     }
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    }
   }
 
   &--hollow.btn--action {

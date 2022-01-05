@@ -80,6 +80,7 @@ $gray-border: 2px solid $primary-gray-color-1;
 $anchor-hover-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; // from Bootstrap
 $anchor-pseudo-classes: "&:link, &:hover, &:focus, &:visited, &:active";
 $anchor-pseudo-classes-active-state: "&:hover, &:focus, &:active";
+$anchor-pseudo-classes-active-states: ":hover, :focus, :active";
 $anchor-pseudo-classes-inactive-state: "&:link, &:visited";
 $anchors-states-list: '', ':link', ':hover', ':active', ':visited';
 $anchors-items-dark: '.project a', '.dropdown-item', 'footer a', '.nav-link';
