@@ -1031,6 +1031,25 @@ form .form-check-input:checked {
 }
 
 form .form-control {
+  color: #343434;
+}
+
+form .form-control::-webkit-input-placeholder {
+  color: #D6D6D6;
+  font-size: 1rem;
+}
+
+form .form-control:-ms-input-placeholder {
+  color: #D6D6D6;
+  font-size: 1rem;
+}
+
+form .form-control::-ms-input-placeholder {
+  color: #D6D6D6;
+  font-size: 1rem;
+}
+
+form .form-control::placeholder {
   color: #D6D6D6;
   font-size: 1rem;
 }

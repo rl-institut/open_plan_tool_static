@@ -143,7 +143,7 @@ $dashboard-space-between-charts: 1.5rem;
 $simulation-error-padding: 4rem;
 
 // Forms
-$form-control-placeholders: '', '::-webkit-input-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', ':-moz-placeholder';
+$form-control-placeholders: '::placeholder', '::-webkit-input-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', ':-moz-placeholder';
 
 // Z-index
 $z-index-nav: 9;
