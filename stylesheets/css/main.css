@@ -646,7 +646,9 @@ footer a:visited {
 }
 
 a.btn,
-button.btn {
+button.btn,
+footer a.btn,
+footer button.btn {
   display: inline-block;
   background-color: #1F567D;
   color: #fff;
@@ -660,19 +662,37 @@ button.btn:link,
 button.btn:hover,
 button.btn:focus,
 button.btn:visited,
-button.btn:active {
+button.btn:active,
+footer a.btn:link,
+footer a.btn:hover,
+footer a.btn:focus,
+footer a.btn:visited,
+footer a.btn:active,
+footer button.btn:link,
+footer button.btn:hover,
+footer button.btn:focus,
+footer button.btn:visited,
+footer button.btn:active {
   color: #fff !important;
 }
 
 a.btn:hover, a.btn:focus, a.btn:active,
 button.btn:hover,
 button.btn:focus,
-button.btn:active {
+button.btn:active,
+footer a.btn:hover,
+footer a.btn:focus,
+footer a.btn:active,
+footer button.btn:hover,
+footer button.btn:focus,
+footer button.btn:active {
   background-color: #17405C !important;
 }
 
 a.btn--large,
-button.btn--large {
+button.btn--large,
+footer a.btn--large,
+footer button.btn--large {
   padding: 0.925rem;
   width: 100%;
   max-width: 30rem;
@@ -681,14 +701,18 @@ button.btn--large {
 }
 
 a.btn--medium,
-button.btn--medium {
+button.btn--medium,
+footer a.btn--medium,
+footer button.btn--medium {
   padding: 0.55rem 0.75rem;
   font-size: 1rem;
   min-width: 11rem;
 }
 
 a.btn--small,
-button.btn--small {
+button.btn--small,
+footer a.btn--small,
+footer button.btn--small {
   padding: 0.4rem 0.75rem;
   font-size: 0.875rem;
 }
@@ -696,7 +720,13 @@ button.btn--small {
 a.btn--hollow, a.btn--transparent, a.btn--action,
 button.btn--hollow,
 button.btn--transparent,
-button.btn--action {
+button.btn--action,
+footer a.btn--hollow,
+footer a.btn--transparent,
+footer a.btn--action,
+footer button.btn--hollow,
+footer button.btn--transparent,
+footer button.btn--action {
   background-color: transparent;
   color: #1F567D;
 }
@@ -716,7 +746,37 @@ button.btn--action:link,
 button.btn--action:hover,
 button.btn--action:focus,
 button.btn--action:visited,
-button.btn--action:active {
+button.btn--action:active,
+footer a.btn--hollow:link,
+footer a.btn--hollow:hover,
+footer a.btn--hollow:focus,
+footer a.btn--hollow:visited,
+footer a.btn--hollow:active,
+footer a.btn--transparent:link,
+footer a.btn--transparent:hover,
+footer a.btn--transparent:focus,
+footer a.btn--transparent:visited,
+footer a.btn--transparent:active,
+footer a.btn--action:link,
+footer a.btn--action:hover,
+footer a.btn--action:focus,
+footer a.btn--action:visited,
+footer a.btn--action:active,
+footer button.btn--hollow:link,
+footer button.btn--hollow:hover,
+footer button.btn--hollow:focus,
+footer button.btn--hollow:visited,
+footer button.btn--hollow:active,
+footer button.btn--transparent:link,
+footer button.btn--transparent:hover,
+footer button.btn--transparent:focus,
+footer button.btn--transparent:visited,
+footer button.btn--transparent:active,
+footer button.btn--action:link,
+footer button.btn--action:hover,
+footer button.btn--action:focus,
+footer button.btn--action:visited,
+footer button.btn--action:active {
   color: #1F567D !important;
 }
 
@@ -729,22 +789,46 @@ button.btn--transparent:focus,
 button.btn--transparent:active,
 button.btn--action:hover,
 button.btn--action:focus,
-button.btn--action:active {
+button.btn--action:active,
+footer a.btn--hollow:hover,
+footer a.btn--hollow:focus,
+footer a.btn--hollow:active,
+footer a.btn--transparent:hover,
+footer a.btn--transparent:focus,
+footer a.btn--transparent:active,
+footer a.btn--action:hover,
+footer a.btn--action:focus,
+footer a.btn--action:active,
+footer button.btn--hollow:hover,
+footer button.btn--hollow:focus,
+footer button.btn--hollow:active,
+footer button.btn--transparent:hover,
+footer button.btn--transparent:focus,
+footer button.btn--transparent:active,
+footer button.btn--action:hover,
+footer button.btn--action:focus,
+footer button.btn--action:active {
   background-color: #fff !important;
 }
 
 a.btn--hollow,
-button.btn--hollow {
+button.btn--hollow,
+footer a.btn--hollow,
+footer button.btn--hollow {
   border: 1px solid #1F567D;
 }
 
 a.btn--transparent,
-button.btn--transparent {
+button.btn--transparent,
+footer a.btn--transparent,
+footer button.btn--transparent {
   font-weight: 700;
 }
 
 a.btn--action,
-button.btn--action {
+button.btn--action,
+footer a.btn--action,
+footer button.btn--action {
   background-color: transparent;
   color: #343434;
   width: auto;
@@ -753,32 +837,48 @@ button.btn--action {
 
 a.btn--action:link, a.btn--action:visited,
 button.btn--action:link,
-button.btn--action:visited {
+button.btn--action:visited,
+footer a.btn--action:link,
+footer a.btn--action:visited,
+footer button.btn--action:link,
+footer button.btn--action:visited {
   color: #343434 !important;
 }
 
 a.btn--action:hover, a.btn--action:focus, a.btn--action:active,
 button.btn--action:hover,
 button.btn--action:focus,
-button.btn--action:active {
+button.btn--action:active,
+footer a.btn--action:hover,
+footer a.btn--action:focus,
+footer a.btn--action:active,
+footer button.btn--action:hover,
+footer button.btn--action:focus,
+footer button.btn--action:active {
   color: #8c8c8c !important;
 }
 
 a.btn--action:focus,
-button.btn--action:focus {
+button.btn--action:focus,
+footer a.btn--action:focus,
+footer button.btn--action:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 a.btn--hollow.btn--action,
-button.btn--hollow.btn--action {
+button.btn--hollow.btn--action,
+footer a.btn--hollow.btn--action,
+footer button.btn--hollow.btn--action {
   border-color: #1F567D;
   color: #1F567D !important;
   font-weight: 700 !important;
 }
 
 a.btn--load,
-button.btn--load {
+button.btn--load,
+footer a.btn--load,
+footer button.btn--load {
   font-weight: 700;
   background-color: transparent;
   color: #1F567D;
@@ -788,7 +888,11 @@ button.btn--load {
 
 a.btn--load:link, a.btn--load:visited,
 button.btn--load:link,
-button.btn--load:visited {
+button.btn--load:visited,
+footer a.btn--load:link,
+footer a.btn--load:visited,
+footer button.btn--load:link,
+footer button.btn--load:visited {
   color: #1F567D !important;
   background-color: transparent !important;
 }
@@ -796,18 +900,28 @@ button.btn--load:visited {
 a.btn--load:hover, a.btn--load:focus, a.btn--load:active,
 button.btn--load:hover,
 button.btn--load:focus,
-button.btn--load:active {
+button.btn--load:active,
+footer a.btn--load:hover,
+footer a.btn--load:focus,
+footer a.btn--load:active,
+footer button.btn--load:hover,
+footer button.btn--load:focus,
+footer button.btn--load:active {
   color: #17405C !important;
   background-color: transparent !important;
 }
 
 a.btn--disabled,
-button.btn--disabled {
+button.btn--disabled,
+footer a.btn--disabled,
+footer button.btn--disabled {
   background-color: #A8B5C0;
 }
 
 a.btn--pending,
-button.btn--pending {
+button.btn--pending,
+footer a.btn--pending,
+footer button.btn--pending {
   background-color: #EC9A29;
   color: #000;
 }
@@ -815,18 +929,28 @@ button.btn--pending {
 a.btn--pending:hover, a.btn--pending:focus, a.btn--pending:active,
 button.btn--pending:hover,
 button.btn--pending:focus,
-button.btn--pending:active {
+button.btn--pending:active,
+footer a.btn--pending:hover,
+footer a.btn--pending:focus,
+footer a.btn--pending:active,
+footer button.btn--pending:hover,
+footer button.btn--pending:focus,
+footer button.btn--pending:active {
   background-color: #d08012 !important;
 }
 
 a.btn--pending:focus,
-button.btn--pending:focus {
+button.btn--pending:focus,
+footer a.btn--pending:focus,
+footer button.btn--pending:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(236, 154, 41, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(236, 154, 41, 0.25);
 }
 
 a.btn--success,
-button.btn--success {
+button.btn--success,
+footer a.btn--success,
+footer button.btn--success {
   background-color: #09BC8A;
   color: #000;
 }
@@ -834,18 +958,28 @@ button.btn--success {
 a.btn--success:hover, a.btn--success:focus, a.btn--success:active,
 button.btn--success:hover,
 button.btn--success:focus,
-button.btn--success:active {
+button.btn--success:active,
+footer a.btn--success:hover,
+footer a.btn--success:focus,
+footer a.btn--success:active,
+footer button.btn--success:hover,
+footer button.btn--success:focus,
+footer button.btn--success:active {
   background-color: #078b66 !important;
 }
 
 a.btn--success:focus,
-button.btn--success:focus {
+button.btn--success:focus,
+footer a.btn--success:focus,
+footer button.btn--success:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(9, 188, 138, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(9, 188, 138, 0.25);
 }
 
 a.btn--error,
-button.btn--error {
+button.btn--error,
+footer a.btn--error,
+footer button.btn--error {
   background-color: #9A031E;
   color: #fff;
 }
@@ -853,23 +987,35 @@ button.btn--error {
 a.btn--error:hover, a.btn--error:focus, a.btn--error:active,
 button.btn--error:hover,
 button.btn--error:focus,
-button.btn--error:active {
+button.btn--error:active,
+footer a.btn--error:hover,
+footer a.btn--error:focus,
+footer a.btn--error:active,
+footer button.btn--error:hover,
+footer button.btn--error:focus,
+footer button.btn--error:active {
   background-color: #680214 !important;
 }
 
 a.btn--error:focus,
-button.btn--error:focus {
+button.btn--error:focus,
+footer a.btn--error:focus,
+footer button.btn--error:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(154, 3, 30, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(154, 3, 30, 0.25);
 }
 
 a.btn .icon,
-button.btn .icon {
+button.btn .icon,
+footer a.btn .icon,
+footer button.btn .icon {
   padding-right: .25rem;
 }
 
 a.btn--icon::before,
-button.btn--icon::before {
+button.btn--icon::before,
+footer a.btn--icon::before,
+footer button.btn--icon::before {
   content: "";
   position: relative;
   display: inline-block;
@@ -882,7 +1028,9 @@ button.btn--icon::before {
 }
 
 a.btn.hidden,
-button.btn.hidden {
+button.btn.hidden,
+footer a.btn.hidden,
+footer button.btn.hidden {
   visibility: hidden;
 }
 
