@@ -1996,6 +1996,10 @@ nav.navbar .dropdown-menu li {
   color: #A10B0B;
 }
 
+.dashboard__create button {
+  float: right;
+}
+
 .projects-empty,
 .scenario-empty {
   display: -webkit-box;
