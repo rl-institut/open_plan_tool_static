@@ -523,7 +523,7 @@ a {
 }
 
 a:hover, :focus, :active {
-  color: #000 !important;
+  color: #000;
 }
 
 .project a {
@@ -663,21 +663,31 @@ footer button.btn {
 }
 
 a.btn:link, a.btn:hover, a.btn:focus, a.btn:visited, a.btn:active,
+a.btn .icon:hover, a.btn :focus, a.btn :active,
 button.btn:link,
 button.btn:hover,
 button.btn:focus,
 button.btn:visited,
 button.btn:active,
+button.btn .icon:hover,
+button.btn :focus,
+button.btn :active,
 footer a.btn:link,
 footer a.btn:hover,
 footer a.btn:focus,
 footer a.btn:visited,
 footer a.btn:active,
+footer a.btn .icon:hover,
+footer a.btn :focus,
+footer a.btn :active,
 footer button.btn:link,
 footer button.btn:hover,
 footer button.btn:focus,
 footer button.btn:visited,
-footer button.btn:active {
+footer button.btn:active,
+footer button.btn .icon:hover,
+footer button.btn :focus,
+footer button.btn :active {
   color: #fff !important;
 }
 

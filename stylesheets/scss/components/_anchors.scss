@@ -7,7 +7,7 @@ a {
 
 @each $anchor-state in $anchor-pseudo-classes-active-states {
   a#{$anchor-state} {
-    color: $black !important;
+    color: $black;
   }
 }
 
