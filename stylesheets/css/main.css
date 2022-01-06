@@ -136,6 +136,11 @@
   content: "\e910";
 }
 
+.list-group-item.scenario-duplicated {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
