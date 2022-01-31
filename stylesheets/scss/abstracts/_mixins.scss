@@ -145,7 +145,7 @@
 @mixin gui-component-image($img-path) {
   content: '';
   position: absolute;
-  top: 2.2rem;
+  top: calc(#{$gui-component-bg-size} / 2);
   right: calc((#{$gui-component-bg-size} - #{$gui-component-img-size}) / 2);
   transform: translateY(-50%);
   background-image: $img-path;
