@@ -1803,10 +1803,11 @@ nav.navbar .dropdown-menu li {
   color: #A8B5C0;
   position: relative;
   font-weight: 700;
+  font-size: 0.875rem;
 }
 
 .wizard__steps li:not(:last-of-type) {
-  padding-right: 4.5rem;
+  padding-right: 2rem;
 }
 
 .wizard__steps li::before {
@@ -1836,18 +1837,6 @@ nav.navbar .dropdown-menu li {
   content: "4";
 }
 
-.wizard__steps li:not(:first-of-type)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 2.25rem;
-  height: 1px;
-  margin-left: -3.5rem;
-  top: .75rem;
-  background-color: #A8B5C0;
-}
-
 .wizard__steps li.active {
   color: #1F567D;
 }
@@ -1857,12 +1846,6 @@ nav.navbar .dropdown-menu li {
 }
 
 @media only screen and (max-width: 1300px) {
-  .wizard__steps li {
-    font-size: 0.875rem;
-  }
-  .wizard__steps li:not(:last-of-type) {
-    padding-right: 3.5rem;
-  }
   .wizard__steps li::before {
     font-size: 0.75rem;
     padding: 0.25rem 0.45rem;
