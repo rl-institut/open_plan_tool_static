@@ -116,18 +116,36 @@ $component-categories: (
   'demand': $component-border-color--demand, 
   'bus': $component-border-color--bus
 );
-$component-images: (
-  'dso': 'electric_grid',
-  'pv': 'pv_plant',
-  'wind_turbine': 'wind_turbine',
-  'transformer_in': 'transformer_in',
-  'transformer_out': 'transformer_out',
-  'storage_in': 'storage_in',
-  'storage_out': 'storage_out',
-  'solar_inverter': 'solar_inverter',
-  'storage': 'battery',
-  'demand': 'demand',
-  'bus': 'power_antenna'
+
+$component-categories-mapping: (
+    "dso": "providers",
+    "gas_dso": "providers",
+    "h2_dso": "providers",
+    "heat_dso": "providers",
+    "pv_plant": "production",
+    "wind_plant": "production",
+    "biogas_plant": "production",
+    "geothermal_conversion": "production",
+    "solar_thermal_plant": "production",
+    "transformer_station_in": "conversion",
+    "transformer_station_out": "conversion",
+    "storage_charge_controller_in": "conversion",
+    "storage_charge_controller_out": "conversion",
+    "solar_inverter": "conversion",
+    "diesel_generator": "conversion",
+    "fuel_cell": "conversion",
+    "gas_boiler": "conversion",
+    "electrolyzer": "conversion",
+    "heat_pump": "conversion",
+    "bess": "storage",
+    "gess": "storage",
+    "h2ess": "storage",
+    "hess": "storage",
+    "demand": "demand",
+    "gas_demand": "demand",
+    "h2_demand": "demand",
+    "heat_demand": "demand",
+    "bus": "bus",
 );
 $gui-component-bg-size: 4.5rem;
 $gui-component-img-size: 3rem;
