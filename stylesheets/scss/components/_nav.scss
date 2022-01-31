@@ -109,12 +109,13 @@ nav.navbar {
 
   &__back {
     position: absolute;
-    left: 2rem;
+    right: 2rem;
     bottom: $padding-sides-normal;
+    font-size: $font-size-small;
 
     &::before {
       @include back-icon;
-      top: 0.4rem;
+      top: 0.3rem;
     }
 
     @media only screen and (max-width: 1300px) {

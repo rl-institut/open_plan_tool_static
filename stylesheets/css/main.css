@@ -1686,8 +1686,9 @@ nav.navbar .dropdown-menu li {
 
 .wizard__back {
   position: absolute;
-  left: 2rem;
+  right: 2rem;
   bottom: 1rem;
+  font-size: 0.875rem;
 }
 
 .wizard__back::before {
@@ -1701,7 +1702,7 @@ nav.navbar .dropdown-menu li {
   background-size: cover;
   top: 0.15rem;
   left: -1.25rem;
-  top: 0.4rem;
+  top: 0.3rem;
 }
 
 @media only screen and (max-width: 1300px) {
