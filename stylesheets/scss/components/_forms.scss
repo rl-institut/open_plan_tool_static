@@ -12,6 +12,10 @@ form {
     background-color: $primary-color-1;
   }
 
+  .form-control {
+    color: $primary-color-2;
+  }
+
   @each $placeholder in $form-control-placeholders {
     .form-control#{$placeholder} {
       color: $secondary-gray-color-2;

@@ -36,7 +36,21 @@
 	@include flex-column-align-justify-center;
 	flex-shrink: 0;
 
+	& > div {
+		@include flex-row;
+		width: 100%;
+	}
+
+	&__left,
+	&__right {
+		flex: 1;
+	}
+
 	.btn--previous {
 		border: none;
+	}
+
+	&__right a {
+		float: right;
 	}
 }
