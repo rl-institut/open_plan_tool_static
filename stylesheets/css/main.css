@@ -1452,6 +1452,14 @@ form .btn {
   color: #1F567D;
 }
 
+.actions .btn--action .icon:not(.icon-results)::before {
+  color: #343434;
+}
+
+.actions .btn--action:hover .icon:not(.icon-results)::before {
+  color: #8c8c8c;
+}
+
 .tooltip-inner {
   max-width: 350px !important;
 }
