@@ -515,6 +515,12 @@ p {
   line-height: 1.75rem;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 0.03rem;
+}
+
 a {
   font-weight: 700;
   color: #1F567D !important;
@@ -1199,6 +1205,45 @@ a.dropdown-item:active {
   float: right;
 }
 
+.simulation-footer {
+  background-color: #fff;
+  height: 4rem;
+  border-top: 2px solid #F4F7F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.simulation-footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.simulation-footer .btn {
+  margin: 0 0.25rem;
+}
+
 form .form-control:focus {
   border-color: #1F567D;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(31, 86, 125, 0.1);
@@ -1761,6 +1806,7 @@ nav.navbar .dropdown-menu li {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: .5rem;
+  font-size: 0.875rem;
 }
 
 .wizard__name .project {
@@ -1769,11 +1815,6 @@ nav.navbar .dropdown-menu li {
 
 .wizard__name .scenario {
   font-size: 0.875rem;
-  transform: translateY(3px);
-  -webkit-transform: translateY(3px);
-  -moz-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  -o-transform: translateY(3px);
 }
 
 .wizard__steps {
@@ -3532,100 +3573,7 @@ nav.navbar .dropdown-menu li {
   margin-top: 1.5rem;
 }
 
-.simulation-error {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F4F7F9;
-}
-
-.simulation-error .simulation-error__frame {
-  width: 100%;
-  max-width: 45rem;
-  padding: 4rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
-          box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
-}
-
-.simulation-error .heading {
-  font-size: 1.563rem;
-  color: #9A031E;
-  text-align: center;
-  padding-bottom: 4rem;
-}
-
-.simulation-error .img {
-  text-align: center;
-  padding-bottom: 4rem;
-}
-
-.simulation-error .img img {
-  height: 6.125rem;
-}
-
-.simulation-error .feedback {
-  color: #343434;
-  padding-bottom: 4rem;
-}
-
-.simulation-error .feedback p {
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.simulation-error .feedback p.red {
-  color: #9A031E;
-}
-
-.simulation-error .feedback p span {
-  font-weight: 700;
-}
-
-.simulation-error .feedback ul li {
-  list-style: none;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 300;
-  padding-bottom: .25rem;
-}
-
-.simulation-error .feedback ul li::before {
-  content: "\2022";
-  color: #D6D6D6;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.simulation-error .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.simulation-error .actions > div {
+.simulation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3636,11 +3584,142 @@ nav.navbar .dropdown-menu li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 1rem;
 }
 
-.simulation-error .actions > div .btn {
-  margin: 0 .5rem;
+.simulation__heading {
+  height: 16.5rem;
+  width: 100%;
+  background-image: url(../../assets/illustrations/open_plan_hero_hexagon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 6.125rem;
+}
+
+.simulation__content {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .simulation__content {
+    width: calc(82rem / 2);
+  }
+}
+
+.simulation__content h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.simulation__id {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.simulation__feedback {
+  width: 100%;
+}
+
+.simulation__feedback .item {
+  text-align: left;
+}
+
+.simulation__feedback .item:first-of-type {
+  padding-top: 2rem;
+}
+
+.simulation__feedback .item p {
+  position: relative;
+  font-weight: 300;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.simulation__feedback .item p::before {
+  content: "";
+  position: absolute;
+  top: 0.33rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../assets/icons/i_cell_blue.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.simulation__feedback .item ul {
+  padding-bottom: 2rem;
+}
+
+.simulation__feedback .item ul li {
+  padding-left: 0.5rem;
+  list-style: none;
+}
+
+.simulation__feedback .item a {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.simulation__feedback .item a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../../assets/icons/i_arrow_right.svg);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0.5rem;
+  top: 0.2rem;
+}
+
+.simulation__feedback .item--success p::before {
+  background-image: url(../../assets/icons/i_cell_blue.svg);
+}
+
+.simulation__feedback .item--warning p::before {
+  background-image: url(../../assets/icons/i_cell_yellow.svg);
+}
+
+.simulation__feedback .item--error p::before {
+  background-image: url(../../assets/icons/i_cell_red.svg);
+}
+
+.simulation--ns .simulation__heading {
+  background-image: url(../../assets/illustrations/disabled_hexagon.svg);
+}
+
+.simulation--pending .simulation__heading {
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.simulation--pending .spinner-border {
+  border-top-color: #1F567D;
+  border-bottom-color: #1F567D;
+  border-left-color: #1F567D;
+}
+
+.simulation--error .simulation__heading {
+  background-image: url(../../assets/illustrations/error_hexagon.svg);
+}
+
+.simulation--successful .simulation__heading {
+  background-image: url(../../assets/illustrations/open_plan_hero_hexagon.svg);
 }
 
 .project-setup.two-columns {

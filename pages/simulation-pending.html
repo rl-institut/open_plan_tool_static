@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 
-    <title>Simulation error - open_plan</title>
+    <title>Simulation pending - open_plan</title>
   </head>
 
   <body>
@@ -75,28 +75,27 @@
       </div>
     </section>
 
-    <main class="simulation simulation--error">
+    <main class="simulation simulation--pending">
       <div>
-        <div class="simulation__heading" aria-hidden="true">
+        <div class="simulation__heading">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Simulating...</span>
+          </div>
         </div>
         <div class="simulation__content">
-          <h2>Simulation error</h2>
+          <h2>Simulation pending</h2>
           <div class="simulation__id">
             <a href="#">ef2c8f69-39df-40fe-afa4-7bc01298a8a6</a>
           </div>
           <div class="simulation__feedback">
-            <div class="item item--error">
-              <p>The following input parameters contain errors:</p>
-              <ul>
-                <li>Specific costs (€) <a href="#">Scenario Setup</a></li>
-                <li>Installed capacity (kW) <a href="#">Scenario Setup</a></li>
-                <li>Degree of self-sufficiency (factor) <a href="#">Constraints</a></li>
-              </ul>
+            <div class="item item--successful">
+              <p>Your simulation is complete.</p>
             </div>
             <div class="item item--warning">
               <p>The following input parameters are different than the simulated ones:</p>
               <ul>
-                <li>Evaluated period (day) <a href="#">Scenario Setup</a></li>
+                <li>Specific costs (€) <a href="#">Scenario Setup</a></li>
+                <li>Installed capacity (kW) <a href="#">Scenario Setup</a></li>
               </ul>
             </div>
           </div>
@@ -106,7 +105,8 @@
 
     <footer class="simulation-footer">
       <div>
-        <a class="btn btn--medium btn--hollow" href="#">Send feedback</a>
+        <a class="btn btn--medium btn--hollow" href="#">Check status</a>
+        <a class="btn btn--medium btn--transparent" href="#">Cancel simulation</a>
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

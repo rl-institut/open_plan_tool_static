@@ -144,6 +144,7 @@ nav.navbar {
   &__name {
     @include flex-row-justify-center;
     padding-bottom: .5rem;
+    font-size: $font-size-small;
 
     .project {
       font-weight: 700;
@@ -151,7 +152,6 @@ nav.navbar {
 
     .scenario {
       font-size: $font-size-small;
-      @include translateY(3px);
     }
   }
 
