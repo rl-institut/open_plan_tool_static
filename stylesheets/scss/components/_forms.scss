@@ -14,6 +14,21 @@ form {
 
   .form-control {
     color: $primary-color-2;
+
+    &.input-updated {
+      position: relative;
+      background-color: #FFF9EB;
+      border-color: #FDC534;
+      border-width: 2px;
+      background-image: url(../../assets/icons/i_edit_yellow.svg);
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: auto 1rem;
+
+      &:focus {
+        box-shadow: 0 0 0.5rem rgba(253, 197, 52, 0.8);
+      }
+    }
   }
 
   @each $placeholder in $form-control-placeholders {

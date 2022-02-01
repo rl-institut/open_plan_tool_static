@@ -53,18 +53,24 @@
     </nav>
 
     <section class="wizard">
-      <div class="wizard__name">
-        <span class="project">PV Potsdam 2025</span>
+      <div>
+        <h1 class="wizard__name">
+          <span class="project">PV Potsdam 2025</span>
+        </h1>
+        <div class="wizard__steps">
+          <ul>
+            <li class="active">Scenario Setup</li>
+            <li>Energy System Design</li>
+            <li>Constraints</li>
+            <li>Simulation</li>
+          </ul>
+        </div>
+        <div class="wizard__back">
+          <div>
+            <a href="projects-view.html">My projects</a>
+          </div>
+        </div>
       </div>
-      <div class="wizard__steps">
-        <ul>
-          <li class="active">Scenario Setup</li>
-          <li>Energy System Design</li>
-          <li>Constraints</li>
-          <li>Simulation</li>
-        </ul>
-      </div>
-      <div></div>
     </section>
 
     <main>
@@ -188,7 +194,7 @@
             <div class="scenario-create__form">
               <div>
                 <label for="temporalResolution" class="form-label">Temporal resolution</label>
-                <input type="text" class="form-control" id="temporalResolution" placeholder="XXXX" aria-describedby="temporalResolutionHelp" required>
+                <input type="text" class="form-control input-updated" id="temporalResolution" placeholder="XXXX" aria-describedby="temporalResolutionHelp" title="Input data has been updated" required>
               </div>
             </div>
             <div class="scenario-create__description">
