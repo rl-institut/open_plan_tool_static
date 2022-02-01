@@ -1263,6 +1263,22 @@ form .form-control {
   color: #343434;
 }
 
+form .form-control.input-updated {
+  position: relative;
+  background-color: #FFF9EB;
+  border-color: #FDC534;
+  border-width: 2px;
+  background-image: url(../../assets/icons/i_edit_yellow.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 1rem;
+}
+
+form .form-control.input-updated:focus {
+  -webkit-box-shadow: 0 0 0.5rem rgba(253, 197, 52, 0.8);
+          box-shadow: 0 0 0.5rem rgba(253, 197, 52, 0.8);
+}
+
 form .form-control::-webkit-input-placeholder {
   color: #D6D6D6;
   font-size: 1rem;
