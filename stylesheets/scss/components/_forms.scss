@@ -74,3 +74,28 @@ form {
     margin-top: 1rem;
   }
 }
+
+// CSS for https://github.com/Choices-js/Choices
+.choices {
+  width: 100%;
+
+  .choices__inner {
+    background-color: $white;
+    border-radius: 0.25rem;
+  }
+
+  .choices__input {
+    background-color: $white;
+  }
+
+  .choices__list--multiple .choices__item {
+    background-color: $white;
+    border-color: $primary-color-1;
+    color: $primary-color-1;
+  }
+
+  &[data-type*=select-multiple] .choices__inner .choices__button,
+  &[data-type*=text] .choices__inner.choices__button {
+    background-image: url(../../assets/icons/i_close.svg);
+  }
+}
