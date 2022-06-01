@@ -59,7 +59,6 @@ testDuplicateScenario.addEventListener("click", () => {
 */
 
 ////////////////////////////////////////////// Design saved animation
-console.log('test');
 const saveDesignBtn = document.getElementById('js-saveDesign');
 const designSavedFeedback = document.getElementById('js-designSaved');
 
