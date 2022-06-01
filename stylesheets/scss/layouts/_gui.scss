@@ -84,13 +84,30 @@
       @include flex-row;
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       padding: 1rem;
       background-color: $white;
 
       .load-scenario {
         padding-right: 1rem;
       }
+
+      .form-select {
+        font-size: $font-size-small;
+      }
+
+      button.btn {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__save {
+      @include flex-row;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
     }
 
     &__empty-text {

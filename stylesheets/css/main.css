@@ -2450,13 +2450,36 @@ nav.navbar .dropdown-menu li {
           flex-direction: row;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   padding: 1rem;
   background-color: #fff;
 }
 
 .system-design .gui__clear .load-scenario {
   padding-right: 1rem;
+}
+
+.system-design .gui__clear .form-select {
+  font-size: 0.875rem;
+}
+
+.system-design .gui__clear button.btn {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.system-design .gui__save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
 }
 
 .system-design .gui__empty-text {
