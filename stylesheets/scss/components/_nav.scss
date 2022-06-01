@@ -119,8 +119,7 @@ nav.navbar {
   &__back {
     position: absolute;
     right: 2rem;
-    top: 3rem;
-    bottom: $padding-sides-normal;
+    bottom: -1.5rem;
     font-size: $font-size-small;
 
     &::before {
