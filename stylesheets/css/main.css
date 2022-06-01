@@ -1785,6 +1785,14 @@ nav.navbar .dropdown-menu li {
     top: 0.5rem;
     left: 1.1rem;
   }
+  .navbar .nav-item.locale select {
+    width: auto;
+    border: none;
+    margin: 0.6rem 0 0 1.25rem;
+    padding-right: 0.25rem;
+    color: #1F567D;
+    background-color: #fff;
+  }
   .navbar .nav-item .btn {
     margin-left: 1rem;
   }

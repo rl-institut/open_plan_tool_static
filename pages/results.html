@@ -126,8 +126,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Documentation</a>
             </li>
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

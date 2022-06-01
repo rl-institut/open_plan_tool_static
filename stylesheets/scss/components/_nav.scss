@@ -58,6 +58,15 @@ nav.navbar {
         top: 0.5rem;
         left: 1.1rem;
       }
+
+      select {
+        width: auto;
+        border: none;
+        margin: 0.6rem 0 0 1.25rem;
+        padding-right: 0.25rem;
+        color: $primary-color-1;
+        background-color: $white;
+      }
     }
 
     .nav-item .btn {
