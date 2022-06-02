@@ -2307,6 +2307,7 @@ nav.navbar .dropdown-menu li {
 }
 
 .standard-layout {
+  position: relative;
   padding-top: 2rem;
   padding-bottom: 4rem;
   display: -webkit-box;
@@ -2323,6 +2324,20 @@ nav.navbar .dropdown-menu li {
 
 .standard-layout > div {
   max-width: 50rem;
+  padding-top: 10rem;
+}
+
+.standard-layout > div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 10rem;
+  background-image: url(../../assets/illustrations/open_plan_EC_explained.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .standard-layout h2 {
