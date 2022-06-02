@@ -2322,10 +2322,7 @@ nav.navbar .dropdown-menu li {
 }
 
 .standard-layout > div {
-  width: 100%;
-  max-width: 82rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 50rem;
 }
 
 .standard-layout h2 {
