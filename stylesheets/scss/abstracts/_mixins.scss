@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // Section-width
 @mixin nav-section-width {
   width: calc(100% - (#{$top-nav-padding-xsmall} * 2));

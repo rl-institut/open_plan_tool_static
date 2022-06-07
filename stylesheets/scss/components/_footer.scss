@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .footer {
 	background-color: $primary-gray-color-1;
 	height: $footer-height;

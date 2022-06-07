@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 form {
   .form-control:focus {
     border-color: $primary-color-1;

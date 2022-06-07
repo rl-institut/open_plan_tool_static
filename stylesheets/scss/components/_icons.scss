@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .icon {
   &--small {
     font-size: .6rem;

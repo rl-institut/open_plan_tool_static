@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .system-design {
   @include flex-row;
   height: calc(100vh - #{$top-nav-height} - #{$wizard-height} - #{$footer-scenario-height});
