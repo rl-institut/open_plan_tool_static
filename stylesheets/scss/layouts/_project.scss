@@ -9,9 +9,9 @@
   &> div {
     @include section-width;
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     border-bottom: 2px solid $primary-gray-color-1;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   &__top {
@@ -27,6 +27,12 @@
     .name {
       margin-right: $space-between-project-elements;
       padding-left: $space-between-project-elements;
+      font-size: $font-size-medium-2;
+      font-weight: 700;
+    }
+
+    .location {
+      font-size: $font-size-normal;
     }
 
     .name::before {
@@ -91,7 +97,6 @@
   }
 
   &__scenarios {
-    padding-top: $space-between-project-elements;
     padding-left: $space-between-project-elements;
 
     .toggle {

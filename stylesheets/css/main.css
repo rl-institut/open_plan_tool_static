@@ -2665,9 +2665,9 @@ nav.navbar .dropdown-menu li {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid #F4F7F9;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .project__top {
   display: flex;
@@ -2683,6 +2683,11 @@ nav.navbar .dropdown-menu li {
 .project__top .name {
   margin-right: 1.5rem;
   padding-left: 1.5rem;
+  font-size: 1.563rem;
+  font-weight: 700;
+}
+.project__top .location {
+  font-size: 1rem;
 }
 .project__top .name::before {
   content: "";
@@ -2748,7 +2753,6 @@ nav.navbar .dropdown-menu li {
   padding-left: 1.5rem;
 }
 .project__scenarios {
-  padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
 .project__scenarios .toggle {
