@@ -759,6 +759,12 @@ footer button.btn--small {
   padding: 0.4rem 0.75rem;
   font-size: 0.875rem;
 }
+a.btn--filled,
+button.btn--filled,
+footer a.btn--filled,
+footer button.btn--filled {
+  color: #fff !important;
+}
 a.btn--hollow, a.btn--transparent, a.btn--action,
 button.btn--hollow,
 button.btn--transparent,
@@ -2681,6 +2687,10 @@ nav.navbar .dropdown-menu li {
   margin: 0;
 }
 .project__top .name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin-right: 1.5rem;
   padding-left: 1.5rem;
   font-size: 1.563rem;
@@ -2702,6 +2712,10 @@ nav.navbar .dropdown-menu li {
   left: 0;
 }
 .project__details {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -2726,6 +2740,9 @@ nav.navbar .dropdown-menu li {
 .project__details .detail__property {
   font-weight: 300;
   padding-right: 0.75rem;
+}
+.project__details .detail__value:active {
+  color: #495965;
 }
 .project__details .actions {
   display: flex;
@@ -2752,7 +2769,12 @@ nav.navbar .dropdown-menu li {
   font-weight: 700;
   padding-left: 1.5rem;
 }
+.project__description {
+  max-width: 52rem;
+  padding-left: 1.5rem;
+}
 .project__scenarios {
+  padding-top: 0.5rem;
   padding-left: 1.5rem;
 }
 .project__scenarios .toggle {
@@ -2775,8 +2797,22 @@ nav.navbar .dropdown-menu li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-color: #F4F7F9;
+}
+.project__scenarios .list-group-item--uc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  user-select: text;
+}
+.project__scenarios .list-group-item__name {
+  font-weight: 700;
+}
+.project__scenarios .list-group-item__description {
+  padding-left: 1.5rem;
+  font-weight: 300;
+  max-width: 48rem;
 }
 .project__scenarios .details {
   display: flex;
@@ -2800,6 +2836,9 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .details .detail__property {
   font-weight: 300;
   padding-right: 0.75rem;
+}
+.project__scenarios .details .detail__value:active {
+  color: #495965;
 }
 .project__scenarios .actions .btn--action {
   margin-top: 0;

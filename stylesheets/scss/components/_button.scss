@@ -40,6 +40,10 @@ footer button.btn {
     font-size: $font-size-small;
   }
 
+  &--filled {
+    color: $white !important;
+  }
+
   &--hollow,
   &--transparent,
   &--action {
