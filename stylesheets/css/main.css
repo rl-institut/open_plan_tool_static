@@ -1481,7 +1481,7 @@ table.table tbody button.btn {
   padding: 0;
 }
 table.table > :not(caption) > * > * {
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
 }
 
 nav.navbar {
@@ -1792,7 +1792,6 @@ nav.navbar .dropdown-menu li {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
-  height: 32rem;
   margin-bottom: 1.5rem;
 }
 .dashboard .chart__header {
@@ -1811,6 +1810,14 @@ nav.navbar .dropdown-menu li {
 }
 .dashboard .chart__header .view .icon {
   font-size: 0.75rem;
+}
+.dashboard .chart__plot .table-add {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: #1F567D;
+}
+.dashboard .chart__plot .table-add__text {
+  padding-left: 0.25rem;
 }
 .dashboard .chart .dropdown .dropdown-toggle {
   padding: 0 0.35rem;

@@ -58,7 +58,6 @@
     background-color: $white;
     border-radius: $button-border-radius;
     box-shadow: $box-shadow-frame;
-    height: $dashboard-chart-height;
     margin-bottom: $dashboard-space-between-charts;
 
     &__header {
@@ -75,6 +74,18 @@
 
         .icon {
           font-size: .75rem;
+        }
+      }
+    }
+
+    &__plot {
+      .table-add {
+        display: inline-block;
+        padding: $dashboard-table-cell-padding;
+        color: $primary-color-1;
+
+        &__text {
+          padding-left: 0.25rem;
         }
       }
     }
