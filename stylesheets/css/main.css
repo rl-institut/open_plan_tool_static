@@ -776,7 +776,7 @@ footer button.btn--hollow,
 footer button.btn--transparent,
 footer button.btn--action {
   background-color: transparent;
-  color: #1F567D;
+  color: #1F567D !important;
 }
 a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active, a.btn--transparent:link, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:visited, a.btn--transparent:active, a.btn--action:link, a.btn--action:hover, a.btn--action:focus, a.btn--action:visited, a.btn--action:active,
 button.btn--hollow:link,
@@ -855,6 +855,36 @@ footer button.btn--action:hover,
 footer button.btn--action:focus,
 footer button.btn--action:active {
   background-color: #fff !important;
+}
+a.btn--hollow span.icon:hover, a.btn--hollow :focus, a.btn--hollow :active, a.btn--transparent span.icon:hover, a.btn--transparent :focus, a.btn--transparent :active, a.btn--action span.icon:hover, a.btn--action :focus, a.btn--action :active,
+button.btn--hollow span.icon:hover,
+button.btn--hollow :focus,
+button.btn--hollow :active,
+button.btn--transparent span.icon:hover,
+button.btn--transparent :focus,
+button.btn--transparent :active,
+button.btn--action span.icon:hover,
+button.btn--action :focus,
+button.btn--action :active,
+footer a.btn--hollow span.icon:hover,
+footer a.btn--hollow :focus,
+footer a.btn--hollow :active,
+footer a.btn--transparent span.icon:hover,
+footer a.btn--transparent :focus,
+footer a.btn--transparent :active,
+footer a.btn--action span.icon:hover,
+footer a.btn--action :focus,
+footer a.btn--action :active,
+footer button.btn--hollow span.icon:hover,
+footer button.btn--hollow :focus,
+footer button.btn--hollow :active,
+footer button.btn--transparent span.icon:hover,
+footer button.btn--transparent :focus,
+footer button.btn--transparent :active,
+footer button.btn--action span.icon:hover,
+footer button.btn--action :focus,
+footer button.btn--action :active {
+  color: #fff !important;
 }
 a.btn--hollow,
 button.btn--hollow,
