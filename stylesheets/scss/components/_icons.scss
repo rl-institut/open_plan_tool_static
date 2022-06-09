@@ -2,7 +2,7 @@
 
 .icon {
   &--small {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -25,4 +25,26 @@
 
 .tooltip-inner {
   max-width: 350px!important;
+}
+
+.info-icon--left::before,
+.info-icon--right::after {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../assets/icons/info.svg);
+  background-size: cover;
+  position: relative;
+  vertical-align: text-bottom;
+}
+
+.info-icon {
+  &--left::before {
+    margin-right: 0.25rem;
+  }
+
+  &--right::after {
+    margin-left: 0.25rem;
+  }
 }

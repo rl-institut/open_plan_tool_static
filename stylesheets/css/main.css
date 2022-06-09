@@ -1414,6 +1414,25 @@ form .btn {
   max-width: 350px !important;
 }
 
+.info-icon--left::before,
+.info-icon--right::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../assets/icons/info.svg);
+  background-size: cover;
+  position: relative;
+  vertical-align: text-bottom;
+}
+
+.info-icon--left::before {
+  margin-right: 0.25rem;
+}
+.info-icon--right::after {
+  margin-left: 0.25rem;
+}
+
 .modal .modal-header {
   background-color: #F4F7F9;
   border-bottom: none;
