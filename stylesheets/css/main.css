@@ -1745,6 +1745,20 @@ nav.navbar .dropdown-menu li {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.dashboard-tabs .nav-tabs {
+  border-bottom: 0;
+}
+.dashboard-tabs .nav-tabs .nav-link {
+  margin-bottom: -2px;
+}
+.dashboard-tabs .nav-tabs .nav-link.active {
+  background-color: #F4F7F9;
+  border: 0;
+  font-weight: 700 !important;
+}
+.dashboard-tabs .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
 
 .dashboard {
   display: flex;

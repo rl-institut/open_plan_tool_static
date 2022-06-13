@@ -7,6 +7,24 @@
   &> div {
     @include section-width;
   }
+
+  .nav-tabs {
+    border-bottom: 0;
+
+    .nav-link {
+      margin-bottom: -2px;
+    }
+
+    .nav-link.active {
+      background-color: $primary-gray-color-1;
+      border: 0;
+      font-weight: 700 !important;
+    }
+
+    .nav-link:hover {
+      border-color: transparent;
+    }
+  }
 }
 
 .dashboard {
