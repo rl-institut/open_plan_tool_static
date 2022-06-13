@@ -1734,6 +1734,18 @@ nav.navbar .dropdown-menu li {
   }
 }
 
+.dashboard-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dashboard-tabs > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .dashboard {
   display: flex;
   flex-direction: row;
