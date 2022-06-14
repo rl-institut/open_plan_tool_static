@@ -221,8 +221,25 @@
                     </div>
                     <div class="dashboard__btn-scenarios">
                       <button class="btn btn--medium" type="submit">
-                        <span class="icon icon-export"></span>
+                        <span class="icon icon-results"></span>
                         Compare results
+                      </button>
+                    </div>
+                  </div>
+                  <div class="dashboard__scenarios dashboard__scenarios--small">
+                    <div class="dashboard__select-scenarios">
+                      <label for="results-single-scenario" class="form-label">Scenario</label>
+                      <select name="results-single-scenario" id="results-single-scenario" placeholder="This is a placeholder">
+                        <option value="Dropdown item 1">A+F+G</option>
+                        <option value="Dropdown item 2">A+F+G test constraints</option>
+                        <option value="Dropdown item 3" selected>Dropdown item 3</option>
+                        <option value="Dropdown item 4" selected>Dropdown item 4</option>
+                      </select>
+                    </div>
+                    <div class="dashboard__btn-scenarios">
+                      <button class="btn btn--medium" type="submit">
+                        <span class="icon icon-results"></span>
+                        Show results
                       </button>
                     </div>
                   </div>
@@ -446,6 +463,11 @@
       var secondElement = new Choices('#results-scenarios', { 
         removeItemButton: true,
         allowHTML: true
+      });
+
+      var thirdElement = new Choices('#results-single-scenario', { 
+        allowHTML: true,
+        itemSelectText: '',
       });
 
       TESTER = document.getElementById('tester');
