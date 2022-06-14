@@ -484,11 +484,55 @@
         itemSelectText: '',
       });
 
+      // Plotly
+      const energyColors = {
+        electricity: 'rgb(255, 215, 0)',
+        gas: 'rgb(250, 135, 117)',
+        hydrogen: 'rgb(234, 95, 148)',
+        heat: 'rgb(205, 52, 181)',
+        fossil: 'rgb(0, 0, 255)'
+      }
+
+      const energyColorsOpacity = {
+        electricity: 'rgba(255, 215, 0, 0.1)',
+        gas: 'rgba(250, 135, 117, 0.1)',
+        hydrogen: 'rgba(234, 95, 148, 0.1)',
+        heat: 'rgba(205, 52, 181, 0.1)',
+        fossil: 'rgba(0, 0, 255, 0.1)'
+      }
+
+      var data = {
+        type: "sankey",
+        orientation: "h",
+        node: {
+          pad: 15,
+          thickness: 30,
+          line: {
+            color: "black",
+            width: 0
+          },
+        label: ["Electricity", "Gas", "Hydrogen", "Heat", "Fossil fuel", "Electricity"],
+        color: [energyColors.electricity, energyColors.gas, energyColors.hydrogen, energyColors.heat, energyColors.fossil, energyColors.electricity]
+            },
+        link: {
+          color: [energyColorsOpacity.electricity, energyColorsOpacity.gas, energyColorsOpacity.electricity, energyColorsOpacity.hydrogen, energyColorsOpacity.heat, energyColorsOpacity.heat],
+          source: [0,1,0,2,3,3],
+          target: [2,3,3,4,4,5],
+          value:  [8,4,2,8,4,2]
+        }
+      }
+
+      var data = [data]
+
+      var layout = {
+        title: "Basic Sankey",
+        font: {
+          size: 10
+        }
+      }
+
       TESTER = document.getElementById('tester');
-      Plotly.newPlot( TESTER, [{
-      x: [1, 2, 3, 4, 5],
-      y: [1, 2, 4, 8, 16] }], {
-      margin: { t: 0 } } );
+      Plotly.newPlot(TESTER, data, layout)
 
       TESTER2 = document.getElementById('tester2');
       Plotly.newPlot( TESTER2, [{
