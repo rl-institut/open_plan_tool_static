@@ -204,30 +204,13 @@
             </ul>
           </div>
         </div>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content" id="js-db-top-section">
           <div class="tab-pane fade show active" id="single-scenario" role="tabpanel" aria-labelledby="single-scenario-tab">
-            <div class="dashboard">
+            <div class="dashboard-options sticky-top">
               <div>
                 <div class="row">
                   <div class="dashboard__scenarios">
-                    <div class="dashboard__select-scenarios">
-                      <label for="results-scenarios" class="form-label">Scenarios</label>
-                      <select name="results-scenarios" id="results-scenarios" placeholder="This is a placeholder" multiple>
-                        <option value="Dropdown item 1">A+F+G</option>
-                        <option value="Dropdown item 2">A+F+G test constraints</option>
-                        <option value="Dropdown item 3" selected>Dropdown item 3</option>
-                        <option value="Dropdown item 4" selected>Dropdown item 4</option>
-                      </select>
-                    </div>
-                    <div class="dashboard__btn-scenarios">
-                      <button class="btn btn--medium" type="submit">
-                        <span class="icon icon-results"></span>
-                        Compare results
-                      </button>
-                    </div>
-                  </div>
-                  <div class="dashboard__scenarios dashboard__scenarios--small">
-                    <div class="dashboard__select-scenarios">
+                    <div class="dashboard__select-scenarios dashboard__select-scenarios--small">
                       <label for="results-single-scenario" class="form-label">Scenario</label>
                       <select name="results-single-scenario" id="results-single-scenario" placeholder="This is a placeholder">
                         <option value="Dropdown item 1">A+F+G</option>
@@ -242,8 +225,18 @@
                         Show results
                       </button>
                     </div>
+                    <div class="dashboard__add">
+                      <button class="btn btn--small btn--transparent" type="submit">
+                        <span class="icon icon-add"></span>
+                        Add chart
+                      </button>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="dashboard">
+              <div>
                 <div class="row">
                   <div class="col col-md-8">
                     <div class="chart">
@@ -404,18 +397,39 @@
                     </div>
                   </div>
                 </div>
-                <div class="row dashboard__create">
-                  <div class="col">
-                    <button class="btn btn--medium" type="submit">
-                      <span class="icon icon-add"></span>
-                      Create graph
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="comparison" role="tabpanel" aria-labelledby="comparison-tab">
+            <div class="dashboard-options sticky-top">
+              <div>
+                <div class="row">
+                  <div class="dashboard__scenarios">
+                    <div class="dashboard__select-scenarios">
+                      <label for="results-scenarios" class="form-label"></label>
+                      <select name="results-scenarios" id="results-scenarios" placeholder="This is a placeholder" multiple>
+                        <option value="Dropdown item 1">A+F+G</option>
+                        <option value="Dropdown item 2">A+F+G test constraints</option>
+                        <option value="Dropdown item 3" selected>Dropdown item 3</option>
+                        <option value="Dropdown item 4" selected>Dropdown item 4</option>
+                      </select>
+                    </div>
+                    <div class="dashboard__btn-scenarios">
+                      <button class="btn btn--medium" type="submit">
+                        <span class="icon icon-results"></span>
+                        Compare results
+                      </button>
+                    </div>
+                    <div class="dashboard__add">
+                      <button class="btn btn--small btn--transparent" type="submit">
+                        <span class="icon icon-add"></span>
+                        Add chart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="dashboard">
               <div>
                 <div class="row">
