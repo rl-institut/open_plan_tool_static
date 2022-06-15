@@ -35,6 +35,10 @@
     }
   }
 
+  &--license div:before {
+    background-image: url(../../assets/illustrations/balance.svg);
+  }
+
   h2 {
     font-size: $font-size-medium-2;
   }

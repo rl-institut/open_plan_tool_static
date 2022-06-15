@@ -2018,6 +2018,9 @@ nav.navbar .dropdown-menu li {
   background-repeat: no-repeat;
   background-position: center;
 }
+.standard-layout--license div:before {
+  background-image: url(../../assets/illustrations/balance.svg);
+}
 .standard-layout h2 {
   font-size: 1.563rem;
 }
