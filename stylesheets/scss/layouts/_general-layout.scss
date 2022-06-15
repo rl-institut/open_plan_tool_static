@@ -52,6 +52,9 @@
 
     &--foreground {
       background-color: $primary-gray-color-1;
+      background-image: url(../../assets/illustrations/background-img.svg);
+      background-size: cover;
+      background-position: center;
       padding: 4rem;
       margin-top: 2rem;
       margin-bottom: 4rem;

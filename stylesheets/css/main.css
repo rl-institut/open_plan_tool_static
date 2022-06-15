@@ -2032,6 +2032,9 @@ nav.navbar .dropdown-menu li {
 }
 .standard-layout__paragraph--foreground {
   background-color: #F4F7F9;
+  background-image: url(../../assets/illustrations/background-img.svg);
+  background-size: cover;
+  background-position: center;
   padding: 4rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
