@@ -198,6 +198,30 @@
       }
     }
   }
+
+  &--uc > div {
+    @include flex-row;
+  }
+
+  &__img {
+    width: 11rem;
+
+    img {
+      width: 9rem;
+    }
+  }
+
+  &__content {
+    flex: 1;
+
+    .name:before {
+      display: none;
+    }
+
+    .project__description {
+      max-width: 40rem;
+    }
+  }
 }
 
 .projects-new {

@@ -2986,6 +2986,25 @@ nav.navbar .dropdown-menu li {
 .project__scenarios .add-scenario .btn::after {
   content: none;
 }
+.project--uc > div {
+  display: flex;
+  flex-direction: row;
+}
+.project__img {
+  width: 11rem;
+}
+.project__img img {
+  width: 9rem;
+}
+.project__content {
+  flex: 1;
+}
+.project__content .name:before {
+  display: none;
+}
+.project__content .project__description {
+  max-width: 40rem;
+}
 
 .projects-new {
   padding-bottom: 4rem;
