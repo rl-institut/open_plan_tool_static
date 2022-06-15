@@ -28,7 +28,7 @@
       right: 0;
       left: 0;
       height: 10rem;
-      background-image: url(../../assets/illustrations/open_plan_EC_explained.svg);
+      background-image: url(../../assets/illustrations/computer.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -49,6 +49,23 @@
 
   &__paragraph {
     padding-bottom: 1rem;
+
+    &--foreground {
+      background-color: $primary-gray-color-1;
+      padding: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    &--small {
+      h2 {
+        font-size: $font-size-medium;
+      }
+
+      p {
+        font-size: $font-size-small;
+      }
+    }
   }
 
   .account {

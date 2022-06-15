@@ -2013,7 +2013,7 @@ nav.navbar .dropdown-menu li {
   right: 0;
   left: 0;
   height: 10rem;
-  background-image: url(../../assets/illustrations/open_plan_EC_explained.svg);
+  background-image: url(../../assets/illustrations/computer.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2029,6 +2029,18 @@ nav.navbar .dropdown-menu li {
 }
 .standard-layout__paragraph {
   padding-bottom: 1rem;
+}
+.standard-layout__paragraph--foreground {
+  background-color: #F4F7F9;
+  padding: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.standard-layout__paragraph--small h2 {
+  font-size: 1.25rem;
+}
+.standard-layout__paragraph--small p {
+  font-size: 0.875rem;
 }
 .standard-layout .account {
   display: flex;
