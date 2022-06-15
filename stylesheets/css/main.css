@@ -2024,6 +2024,9 @@ nav.navbar .dropdown-menu li {
 .standard-layout h3 {
   font-size: 1.25rem;
 }
+.standard-layout__paragraph {
+  padding-bottom: 1rem;
+}
 .standard-layout .account {
   display: flex;
   flex-direction: row;

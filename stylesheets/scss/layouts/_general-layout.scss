@@ -15,7 +15,6 @@
   position: relative;
   padding-top: 2rem;
   padding-bottom: 4rem;
-  //border-top: $gray-border;
   @include flex-row-justify-center;
 
   &> div {
@@ -42,6 +41,10 @@
 
   h3 {
     font-size: $font-size-medium;
+  }
+
+  &__paragraph {
+    padding-bottom: 1rem;
   }
 
   .account {
