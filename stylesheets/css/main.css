@@ -1456,6 +1456,10 @@ form .btn {
   left: -1.5rem;
 }
 
+.modal-uc__body img {
+  width: 100%;
+}
+
 table.table {
   box-shadow: 0px 0px 16px rgba(31, 86, 125, 0.08);
   border-radius: 8px;
@@ -2991,10 +2995,20 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
 }
 .project__img {
-  width: 11rem;
+  width: 12rem;
 }
-.project__img img {
-  width: 9rem;
+.project__img > img {
+  width: 12rem;
+}
+.project__img > span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1F567D;
+  cursor: pointer;
+}
+.project__img .icon {
+  vertical-align: middle;
+  padding-right: 0.25rem;
 }
 .project__content {
   flex: 1;

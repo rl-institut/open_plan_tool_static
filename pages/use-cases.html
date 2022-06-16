@@ -21,6 +21,34 @@
 
   <body>
 
+    <div class="modal fade modal-uc" id="es-modal-1" tabindex="-1" aria-labelledby="es-modal-1-label" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="es-modal-1-label">Design system Test project 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-uc__body">
+            <img src="../assets/illustrations/use-cases-bg1.png" alt="Energy system diagram">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-uc" id="es-modal-2" tabindex="-1" aria-labelledby="es-modal-2-label" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="es-modal-2-label">Design system Test project 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-uc__body">
+            <img src="../assets/illustrations/use-cases-bg2.png" alt="Energy system diagram">
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -85,12 +113,16 @@
       <section class="project project--uc">
         <div>
           <div class="project__img" aria-hidden="true">
-            <img src="../assets/illustrations/use-cases-bg.svg" alt="Illustration">
+            <img src="../assets/illustrations/use-cases-bg1.png" alt="Illustration">
+            <span data-bs-toggle="modal" data-bs-target="#es-modal-1">
+              <span class="icon icon-eye" aria-hidden="true"></span>
+              Show
+            </span>
           </div>
           <div class="project__content">
             <div class="project__top">
               <h2 class="name">
-                PV Potsdam
+                Test project 1
               </h2>
               <a href="#" class="location">
                 <span class="icon-pin" aria-hidden="true"></span>
@@ -159,12 +191,16 @@
       <section class="project project--uc">
         <div>
           <div class="project__img" aria-hidden="true">
-            <img src="../assets/illustrations/use-cases-bg2.svg" alt="Illustration">
+            <img src="../assets/illustrations/use-cases-bg2.png" alt="Illustration">
+            <span data-bs-toggle="modal" data-bs-target="#es-modal-2">
+              <span class="icon icon-eye" aria-hidden="true"></span>
+              Show
+            </span>
           </div>
           <div class="project__content">
             <div class="project__top">
               <h2 class="name">
-                Test project
+                Test project 2
               </h2>
               <a href="#" class="location">
                 <span class="icon-pin" aria-hidden="true"></span>

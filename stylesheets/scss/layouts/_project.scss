@@ -204,10 +204,22 @@
   }
 
   &__img {
-    width: 11rem;
+    width: 12rem;
 
-    img {
-      width: 9rem;
+    & > img {
+      width: 12rem;
+    }
+
+    & > span {
+      font-size: $font-size-xsmall;
+      font-weight: 700;
+      color: $primary-color-1;
+      cursor: pointer;
+    }
+
+    .icon {
+      vertical-align: middle;
+      padding-right: 0.25rem;
     }
   }
 
