@@ -1,8 +1,18 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .icon {
   &--small {
     font-size: 0.6rem;
+  }
+  
+  &--info {
+    display: inline-block;
+    background-image: url(../../assets/icons/i_info.svg);
+    background-size: cover;
+    height: 1.25rem;
+    width: 1.25rem;
+    @include translateY(-2px);
   }
 }
 
