@@ -90,13 +90,52 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Accordion Item #1
+                          Calculate from temperature
                         </button>
                       </h2>
                       <form>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> 
+                            <form>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Asset lifetime (Year)</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input type="number" class="form-control" id="pvDevCosts" value="20">
+                                    </div>
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Optimize capacity</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input class="form-control" id="pvDevCosts" value="Yes">
+                                    </div>
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Installed capacity (kWp)</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input type="number" class="form-control" id="pvDevCosts" value="4000">
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">
+                                      <div class="category__item">
+                                        <label for="pvDevCosts" class="form-label">Asset lifetime (Year)</label>
+                                        <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                        <input type="number" class="form-control" id="pvDevCosts" value="20">
+                                      </div>
+                                      <div class="category__item">
+                                        <label for="pvDevCosts" class="form-label">Optimize capacity</label>
+                                        <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                        <input class="form-control" id="pvDevCosts" value="Yes">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <button type="button" class="btn btn--hollow" data-bs-dismiss="modal">Calculate COP</button>
+                                </div>
+                              </div>
+                            </form>
                           </div>
                         </div>
                       </form>
