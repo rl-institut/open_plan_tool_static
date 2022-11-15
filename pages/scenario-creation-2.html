@@ -24,7 +24,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="pvleModalLabel">PV Plant Properties</h4>
+            <h4 class="modal-title" id="pvleModalLabel">Heat pump</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -33,77 +33,117 @@
                 <div class="row">
                   <div class="col">
                     <label for="pvName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="pvName" value="pv_plant_01">
+                    <input type="text" class="form-control" id="pvName" value="heat_pump_0">
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col">
-                    <label for="pvDevCosts" class="form-label">Development costs (EUR)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="pvDevCosts" value="857.758">
-                  </div>
-                  <div class="col">
-                    <label for="specCosts" class="form-label">Specific costs (EUR)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="specCosts" value="684.848">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="specOMCosts" class="form-label">Specific OM costs (EUR)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="specOMCosts" value="857.758">
-                  </div>
-                  <div class="col">
-                    <label for="dispatchPrice" class="form-label">Dispatch price (EUR/kWh)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="dispatchPrice" value="684.848">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="assetLifetime" class="form-label">Asset lifetime (Years)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="assetLifetime" value="30">
-                  </div>
-                  <div class="col">
-                    <label for="ageInstalled" class="form-label">Age installed (Years)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="ageInstalled" value="5">
-                  </div>
-                  <div class="col">
-                    <label for="installedCapacity" class="form-label">Installed capacity (kW)</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="installedCapacity" value="9999">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="timeseriesVector" class="form-label">Timeseries vector</label>
-                    <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <textarea type="text" class="form-control" id="timeseriesVector" rows="2" value="[30.7, 55.47]"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="form-check form-switch">
-                      <label class="form-check-label" for="renewableAssets">Renewable assets</label>
+                  <div class="col category">
+                    <h5 class="category__title">Economical parameters</h5>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">Specific costs (€/unit)</label>
                       <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                      <input class="form-check-input" type="checkbox" id="renewableAssets">
+                      <input type="number" class="form-control" id="pvDevCosts" value="4000">
+                    </div>
+                    <div>
+                      <label for="pvDevCosts" class="form-label">Operation and management costs (€/unit/year)</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input type="number" class="form-control" id="pvDevCosts" value="120">
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="form-check form-switch">
-                      <label class="form-check-label" for="optimizeCap">Optimize cap</label>
+                  <div class="col category">
+                    <h5 class="category__title">Technical parameters</h5>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">Asset lifetime (Year)</label>
                       <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                      <input class="form-check-input" type="checkbox" id="optimizeCap">
+                      <input type="number" class="form-control" id="pvDevCosts" value="20">
+                    </div>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">Optimize capacity</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input class="form-control" id="pvDevCosts" value="Yes">
+                    </div>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">Installed capacity (kWp)</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input type="number" class="form-control" id="pvDevCosts" value="4000">
+                    </div>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">Previous years of operations (Year)</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input type="number" class="form-control" id="pvDevCosts" value="20">
+                    </div>
+                    <div class="category__item">
+                      <label for="pvDevCosts" class="form-label">COP</label>
+                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                      <input type="number" class="form-control" id="pvDevCosts" value="120">
                     </div>
                   </div>
                 </div>
               </div>
             </form>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                  <div class="accordion cop-accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Calculate from temperature
+                        </button>
+                      </h2>
+                      <form>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"> 
+                            <form>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Asset lifetime (Year)</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input type="number" class="form-control" id="pvDevCosts" value="20">
+                                    </div>
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Optimize capacity</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input class="form-control" id="pvDevCosts" value="Yes">
+                                    </div>
+                                    <div class="category__item">
+                                      <label for="pvDevCosts" class="form-label">Installed capacity (kWp)</label>
+                                      <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                      <input type="number" class="form-control" id="pvDevCosts" value="4000">
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">
+                                      <div class="category__item">
+                                        <label for="pvDevCosts" class="form-label">Asset lifetime (Year)</label>
+                                        <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                        <input type="number" class="form-control" id="pvDevCosts" value="20">
+                                      </div>
+                                      <div class="category__item">
+                                        <label for="pvDevCosts" class="form-label">Optimize capacity</label>
+                                        <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
+                                        <input class="form-control" id="pvDevCosts" value="Yes">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <button type="button" class="btn btn--hollow" data-bs-dismiss="modal">Calculate COP</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn--medium" data-bs-dismiss="modal">OK</button>
