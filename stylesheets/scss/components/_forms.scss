@@ -2,6 +2,16 @@
 @use '../abstracts/mixins' as *;
 
 form {
+  .category {
+    &__title {
+      font-size: $font-size-medium-2;
+    }
+
+    &__item {
+      margin-bottom: 1rem;
+    }
+  }
+
   .form-control:focus {
     border-color: $primary-color-1;
     box-shadow: $box-shadow-form;
@@ -76,6 +86,10 @@ form {
   .btn {
     margin-top: 1rem;
   }
+}
+
+.cop-accordion {
+  @include translateY(-10px);
 }
 
 // CSS for https://github.com/Choices-js/Choices
