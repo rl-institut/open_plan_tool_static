@@ -2808,6 +2808,17 @@ nav.navbar .dropdown-menu li {
   font-size: 1.563rem;
   font-weight: 700;
 }
+.project__top .role {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 1.5rem;
+  font-size: 0.875rem;
+  background-color: #F4F7F9;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+}
 .project__top .location {
   font-size: 1rem;
 }
@@ -2816,12 +2827,18 @@ nav.navbar .dropdown-menu li {
   position: absolute;
   display: block;
   background-image: url(../../assets/icons/i_cell.svg);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
-  top: 0.5rem;
+  top: 0;
   left: 0;
+}
+.project--shared .name::before {
+  background-image: url(../../assets/icons/i_cell_shared_edit.svg);
+}
+.project--shared-noedit .name::before {
+  background-image: url(../../assets/icons/i_cell_blue.svg);
 }
 .project__details {
   -webkit-user-select: none;
