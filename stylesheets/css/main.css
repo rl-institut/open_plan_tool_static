@@ -2731,6 +2731,26 @@ nav.navbar .dropdown-menu li {
 .modal.modal--gui .row {
   margin-bottom: 1rem;
 }
+.modal.modal--gui ul.nav.nav-pills {
+  padding-bottom: 1rem;
+}
+.modal.modal--gui ul.nav.nav-pills button {
+  border-radius: 0;
+  border: 1px solid #E3EAEE;
+}
+.modal.modal--gui ul.nav.nav-pills button.active {
+  background-color: #1F567D;
+  color: #fff !important;
+  border-color: #1F567D;
+}
+.modal.modal--gui ul.nav.nav-pills li:first-of-type button {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.modal.modal--gui ul.nav.nav-pills li:last-of-type button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
 .hero {
   padding-top: 4.5rem;
@@ -3337,6 +3357,7 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .simulation .table-changed__item {
   width: 100%;
@@ -3353,6 +3374,14 @@ nav.navbar .dropdown-menu li {
   background-color: #F4F7F9;
   padding: 0.25rem 1rem;
 }
+.simulation .table-changed__header--create {
+  background-color: #EBFFF9;
+  color: #13825F;
+}
+.simulation .table-changed__header--delete {
+  background-color: #FFEBED;
+  color: #AB2134;
+}
 .simulation .table-changed__content {
   display: flex;
   flex-direction: row;
@@ -3361,6 +3390,8 @@ nav.navbar .dropdown-menu li {
 }
 .simulation .table-changed__content .key {
   width: 66.6%;
+  padding-right: 1rem;
+  word-break: break-all;
 }
 
 .project-setup.two-columns {
