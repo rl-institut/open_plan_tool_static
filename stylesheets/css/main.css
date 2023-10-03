@@ -1609,6 +1609,7 @@ nav.navbar .dropdown-menu li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 .wizard > div {
   display: flex;
@@ -1628,7 +1629,7 @@ nav.navbar .dropdown-menu li {
 .wizard__back {
   position: absolute;
   right: 2rem;
-  bottom: -1.5rem;
+  bottom: -4.5rem;
   font-size: 0.875rem;
 }
 .wizard__back::before {
@@ -1685,8 +1686,8 @@ nav.navbar .dropdown-menu li {
   display: inline-block;
   color: #A69F99;
   position: relative;
-  font-weight: 700;
   font-size: 0.875rem;
+  padding-bottom: 0.5rem;
 }
 .wizard__steps li:not(:last-of-type) {
   padding-right: 2rem;
@@ -1715,6 +1716,7 @@ nav.navbar .dropdown-menu li {
 }
 .wizard__steps li.active {
   color: #008753;
+  font-weight: 700;
 }
 .wizard__steps li.active::before {
   background-color: #008753;
@@ -3065,6 +3067,23 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   justify-content: center;
   border-top: 2px solid #F9F8F7;
+}
+.scenario-create__info-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.scenario-create__info-message > div {
+  max-width: 42rem;
+  background-color: #F6FBFF;
+  color: #14558D;
+  padding: 0.5rem 1rem;
+}
+.scenario-create__info-message p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
 }
 .scenario-create form {
   width: 100%;
