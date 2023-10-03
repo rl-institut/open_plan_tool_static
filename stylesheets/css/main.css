@@ -1606,12 +1606,9 @@ nav.navbar .dropdown-menu li {
 .wizard {
   position: relative;
   background-color: #F4F7F9;
-  height: 5.5rem;
-  min-height: 5.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 2rem;
 }
 .wizard > div {
   display: flex;
@@ -1626,7 +1623,6 @@ nav.navbar .dropdown-menu li {
   max-width: 82rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 2rem;
   position: relative;
 }
 .wizard__back {
