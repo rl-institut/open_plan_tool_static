@@ -1,6 +1,10 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
+body {
+  min-height: 100vh;
+}
+
 .main {
   &--padding-top {
     padding-top: $main-padding-top;

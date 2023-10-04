@@ -1985,6 +1985,10 @@ nav.navbar .dropdown-menu li {
   color: #54504C;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .main--padding-top {
   padding-top: 7rem;
 }
@@ -3414,6 +3418,7 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 6rem;
+  flex: 1;
 }
 .project-setup.two-columns .left,
 .project-setup.two-columns .right {
