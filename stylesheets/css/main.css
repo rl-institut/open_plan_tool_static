@@ -2755,9 +2755,6 @@ body {
   width: 3rem;
 }
 
-.modal.modal--gui .modal-dialog {
-  min-width: 1000px;
-}
 .modal.modal--gui .modal-body .container {
   padding: 0;
 }
