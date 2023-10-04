@@ -703,6 +703,37 @@ footer button.btn:focus,
 footer button.btn:active {
   background-color: #00673D !important;
 }
+a.btn--secondary:link, a.btn--secondary:hover, a.btn--secondary:focus, a.btn--secondary:visited, a.btn--secondary:active,
+button.btn--secondary:link,
+button.btn--secondary:hover,
+button.btn--secondary:focus,
+button.btn--secondary:visited,
+button.btn--secondary:active,
+footer a.btn--secondary:link,
+footer a.btn--secondary:hover,
+footer a.btn--secondary:focus,
+footer a.btn--secondary:visited,
+footer a.btn--secondary:active,
+footer button.btn--secondary:link,
+footer button.btn--secondary:hover,
+footer button.btn--secondary:focus,
+footer button.btn--secondary:visited,
+footer button.btn--secondary:active {
+  background-color: #F2CD5D;
+  color: #54504C !important;
+}
+a.btn--secondary:hover, a.btn--secondary:focus, a.btn--secondary:active,
+button.btn--secondary:hover,
+button.btn--secondary:focus,
+button.btn--secondary:active,
+footer a.btn--secondary:hover,
+footer a.btn--secondary:focus,
+footer a.btn--secondary:active,
+footer button.btn--secondary:hover,
+footer button.btn--secondary:focus,
+footer button.btn--secondary:active {
+  background-color: #EDB72F !important;
+}
 a.btn--large,
 button.btn--large,
 footer a.btn--large,

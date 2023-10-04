@@ -2,4 +2,7 @@
 Move info text to box such as done in `scenario-creation-1.html`
 
 /* Step 3 
-Remove `btn--transparent` class from "Add consumer group" button
+Remove `btn--transparent` class from "Add consumer group" 
+
+/* Step 3 
+Add `btn--secondary` class to button "Reset the questionnaire"
