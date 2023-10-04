@@ -3452,6 +3452,7 @@ body {
 .project-setup.two-columns .right {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   padding-top: 2rem;
 }
 @media only screen and (min-width: 992px) {
@@ -3500,6 +3501,12 @@ body {
   width: calc(100% - 1.5rem);
   height: 100%;
   background-color: #E3DFDB;
+  min-height: 30rem;
+}
+@media only screen and (max-width: 992px) {
+  .project-setup.two-columns {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
