@@ -161,4 +161,57 @@
       }
     }
   }
+
+  &-business {
+    &__info {
+      padding-top: 2rem;
+
+      h3 {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      h3 span {
+        display: block;
+      }
+
+      h3 span.model-chosen {
+        display: inline-block;
+        background-color: #F2CD5D;
+        color: #54504C;
+        margin-top: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .diagramm {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+      }
+
+      .diagramm img {
+        max-width: 26rem;
+      }
+
+      .advantages {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        h4 {
+          padding: 0.5rem 1rem;
+          font-size: 1.25rem;
+        }
+
+        .pros h4 {
+          border-bottom: 4px solid #1BBB78;
+        }
+
+        .cons h4 {
+          border-bottom: 4px solid #D73B45;
+        }
+      }
+    }
+  }
 }

@@ -1905,6 +1905,47 @@ nav.navbar .dropdown-menu li {
 .cpn-economic__system img {
   max-width: 22rem;
 }
+.cpn-business__info {
+  padding-top: 2rem;
+}
+.cpn-business__info h3 {
+  font-size: 16px;
+  text-align: center;
+}
+.cpn-business__info h3 span {
+  display: block;
+}
+.cpn-business__info h3 span.model-chosen {
+  display: inline-block;
+  background-color: #F2CD5D;
+  color: #54504C;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.cpn-business__info .diagramm {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.cpn-business__info .diagramm img {
+  max-width: 26rem;
+}
+.cpn-business__info .advantages {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.cpn-business__info .advantages h4 {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+.cpn-business__info .advantages .pros h4 {
+  border-bottom: 4px solid #1BBB78;
+}
+.cpn-business__info .advantages .cons h4 {
+  border-bottom: 4px solid #D73B45;
+}
 
 .dashboard-tabs {
   display: flex;
