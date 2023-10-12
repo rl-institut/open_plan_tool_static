@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cpn {
+  .form-check-input {
+    &:checked {
+      background-color: #008753;
+      border-color: #008753;
+    }
+    
+    &:focus {
+      box-shadow: 0 0 0.25rem rgb(56 167 17 / 25%);
+    }
+  }
+
+  &-setup {
+    .form-check-input ~ div .img {
+      margin: 1rem;
+      padding: 1rem;
+      width: 6rem;
+      border-radius: $button-border-radius;
+      border: 2px solid #F9F8F7;
+      background-color: #F9F8F7;
+    }
+
+    .form-check-input:checked ~ div .img {
+      background-color: #F4FFFC;
+      border: 2px solid #008753;
+    }
+
+    .form-check-input ~ div .img span {
+      display: block;
+      width: 4em;
+      height: 4rem;
+      background-size: contain;
+    }
+
+    .form-check-input ~ div .img--diesel span {
+      background-image: url('../../assets/cpn/diesel_grey.svg');
+    }
+
+    .form-check-input:checked ~ div .img--diesel span {
+      background-image: url('../../assets/cpn/diesel_green.svg');
+    }
+
+    .form-check-input ~ div .img--pv span {
+      background-image: url('../../assets/cpn/pv_plant_grey.svg');
+    }
+
+    .form-check-input:checked ~ div .img--pv span {
+      background-image: url('../../assets/cpn/pv_plant_green.svg');
+    }
+
+    .form-check-input ~ div .img--storage span {
+      background-image: url('../../assets/cpn/bess_grey.svg');
+    }
+
+    .form-check-input:checked ~ div .img--storage span {
+      background-image: url('../../assets/cpn/bess_green.svg');
+    }
+  }
+}
