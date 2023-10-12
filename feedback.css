@@ -6,3 +6,7 @@ Remove `btn--transparent` class from "Add consumer group"
 
 /* Step 3 
 Add `btn--secondary` class to button "Reset the questionnaire"
+
+/* Step 7
+Add `cpn-accordion` CSS class to div that has `accordionQuestions` as ID.
+It should update the color of the accordion buttons to a new one, as I just did on `cpn-step.3.html' (so check there if you're not sure or if this is not working)
