@@ -4,13 +4,15 @@
 .project-setup.two-columns {
   @include flex-row-justify-center;
   padding-bottom: 6rem;
+  flex: 1;
 
   .left,
   .right {
     @include flex-row;
+    flex-grow: 1;
     padding-top: $padding-sides-large;
 
-    @media only screen and (min-width: $large-screen) {
+    @media only screen and (min-width: $medium-screen) {
       flex: 1 1 0;
     }
 
@@ -54,6 +56,11 @@
       width: calc(100% - 1.5rem);
       height: 100%;
       background-color: $primary-gray-color-2;
+      min-height: 30rem;
     }
+  }
+
+  @media only screen and (max-width: $medium-screen) {
+    flex-direction: column;
   }
 }

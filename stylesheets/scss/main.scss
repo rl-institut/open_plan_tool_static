@@ -3,6 +3,7 @@
 @use 'base/normalize';
 @use 'base/typography';
 
+@use 'components/accordion';
 @use 'components/anchors';
 @use 'components/button';
 @use 'components/components';
@@ -14,6 +15,7 @@
 @use 'components/table';
 @use 'components/nav';
 
+@use 'layouts/cpn';
 @use 'layouts/dashboard';
 @use 'layouts/empty';
 @use 'layouts/general-layout';
