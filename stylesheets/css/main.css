@@ -505,6 +505,7 @@ template {
   display: none;
 }
 
+/* ----------------------------- open_plan 2 ----------------------------- */
 body {
   font-family: lato, Arial, Helvetica, sans-serif !important;
   color: #343434;
@@ -1944,7 +1945,7 @@ nav.navbar .dropdown-menu li {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
-  color: #495965;
+  color: #6E6E6E;
   padding-top: 2rem;
 }
 .projects-empty__btn,
@@ -1984,7 +1985,7 @@ nav.navbar .dropdown-menu li {
   padding: 0 1rem;
   font-size: 1rem;
   font-weight: 300;
-  color: #495965;
+  color: #6E6E6E;
 }
 
 .main--padding-top {
@@ -2790,6 +2791,50 @@ nav.navbar .dropdown-menu li {
   max-width: calc(82rem / 2);
 }
 
+.hero2 {
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hero2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.hero2__text {
+  padding-top: 7rem;
+  padding-right: 7rem;
+}
+.hero2__text h1 {
+  text-align: left;
+  font-size: 4rem;
+  color: #343434;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 110%;
+}
+.hero2__text span {
+  display: block;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #6E6E6E;
+  margin-bottom: 2rem;
+}
+.hero2__image {
+  padding-top: 4rem;
+}
+.hero2__image img {
+  max-width: calc(82rem / 2);
+}
+.hero2 a.btn {
+  width: 100%;
+}
+
 .project {
   display: flex;
   flex-direction: row;
@@ -2881,7 +2926,7 @@ nav.navbar .dropdown-menu li {
   justify-content: flex-start;
 }
 .project__details .detail {
-  color: #495965;
+  color: #6E6E6E;
 }
 .project__details .detail:not(:last-of-type) {
   padding-right: 1.5rem;
@@ -2891,7 +2936,7 @@ nav.navbar .dropdown-menu li {
   padding-right: 0.75rem;
 }
 .project__details .detail__value:active {
-  color: #495965;
+  color: #6E6E6E;
 }
 .project__details .actions {
   display: flex;
@@ -2977,7 +3022,7 @@ nav.navbar .dropdown-menu li {
   padding-right: 2rem;
 }
 .project__scenarios .details .detail {
-  color: #495965;
+  color: #6E6E6E;
 }
 .project__scenarios .details .detail:not(:last-of-type) {
   padding-right: 1.5rem;
@@ -2987,7 +3032,7 @@ nav.navbar .dropdown-menu li {
   padding-right: 0.75rem;
 }
 .project__scenarios .details .detail__value:active {
-  color: #495965;
+  color: #6E6E6E;
 }
 .project__scenarios .actions .btn--action {
   margin-top: 0;
@@ -3168,7 +3213,7 @@ nav.navbar .dropdown-menu li {
 }
 .signup .signup-frame__subheading {
   font-size: 0.875rem;
-  color: #495965;
+  color: #6E6E6E;
   font-weight: 300;
   text-align: center;
   padding-top: 1rem;
@@ -3178,7 +3223,7 @@ nav.navbar .dropdown-menu li {
 }
 .signup .signup-frame .form-check {
   font-size: 0.875rem;
-  color: #495965;
+  color: #6E6E6E;
   font-weight: 300;
   padding-top: 1rem;
 }

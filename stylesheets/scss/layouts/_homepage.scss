@@ -38,3 +38,49 @@
     }
   }
 }
+
+// open_plan 2
+.hero2 {
+  padding-top: $top-nav-height;
+  @include flex-row-justify-center;
+
+  &> div {
+    @include section-width;
+    @include flex-row;
+  }
+
+  &__text {
+    padding-top: 7rem;
+    padding-right: 7rem;
+
+    h1 {
+      text-align: left;
+      font-size: $font-size-hero;
+      color: $primary-color-2;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      line-height: 110%;
+    }
+
+    span {
+      display: block;
+      text-align: left;
+      font-size: $font-size-medium;
+      font-weight: 300;
+      color: $text-color-secondary;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    padding-top: 4rem;
+
+    img {
+      max-width: calc(#{$section-max-width} / 2);
+    }
+  }
+
+  a.btn {
+    width: 100%;
+  }
+}
