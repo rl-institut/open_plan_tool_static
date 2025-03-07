@@ -463,3 +463,46 @@
     }
   }
 }
+
+.logos2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include flex-row-justify-center;
+  background-color: #fff;
+  text-align: center;
+
+  & > div {
+    @include section-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; // Adds spacing between logos
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & > div {
+      justify-content: center;
+    }
+
+    a {
+      width: 45%; // Two logos per row
+    }
+  }
+
+  @media (max-width: 768px) {
+    & > div {
+      flex-direction: column;
+    }
+
+    a {
+      width: 100%; // One logo per row
+    }
+  }
+}
