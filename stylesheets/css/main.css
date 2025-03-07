@@ -2879,8 +2879,8 @@ nav.navbar .dropdown-menu li {
 }
 
 .special-features2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2962,8 +2962,8 @@ nav.navbar .dropdown-menu li {
 }
 
 .features2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -3022,8 +3022,8 @@ nav.navbar .dropdown-menu li {
 }
 
 .related2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -3065,6 +3065,70 @@ nav.navbar .dropdown-menu li {
   .related2 button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+.involvement2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F3F7FC;
+  text-align: center;
+}
+.involvement2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.involvement2 h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #17405C;
+  margin-bottom: 4rem;
+}
+.involvement2__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .involvement2__cards {
+    flex-wrap: wrap;
+  }
+}
+.involvement2__card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.involvement2__card:hover {
+  transform: translateY(-5px);
+}
+.involvement2__card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.involvement2__card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .involvement2__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .involvement2__card {
+    width: 90%;
+    max-width: 400px;
   }
 }
 

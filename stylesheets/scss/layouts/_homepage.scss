@@ -141,8 +141,8 @@
 }
 
 .special-features2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include flex-row-justify-center;
   background-color: $bg-color-light;
 
@@ -224,8 +224,8 @@
 }
 
 .features2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include flex-row-justify-center;
   background-color: $bg-color-light;
 
@@ -284,8 +284,8 @@
 }
 
 .related2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include flex-row-justify-center;
   background-color: white;
   text-align: center;
@@ -328,6 +328,73 @@
     button {
       width: 100%;
       justify-content: center;
+    }
+  }
+}
+
+.involvement2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include flex-row-justify-center;
+  background-color: $bg-color-light;
+  text-align: center;
+
+  & > div {
+    @include section-width;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color-1-dark;
+    margin-bottom: 4rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    background-color: white;
+    border-radius: $button-border-radius;
+    padding: 2rem;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__card {
+      width: 90%;
+      max-width: 400px;
     }
   }
 }
