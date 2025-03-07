@@ -435,7 +435,7 @@
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       font-weight: 600;
-      color: #1e4b6d;
+      color: $primary-color-1;
       background-color: white;
       border: none;
       border-radius: $button-border-radius;
@@ -477,7 +477,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem; // Adds spacing between logos
+    gap: 2rem;
 
     a {
       display: flex;
@@ -492,7 +492,7 @@
     }
 
     a {
-      width: 45%; // Two logos per row
+      width: 45%;
     }
   }
 
@@ -502,7 +502,7 @@
     }
 
     a {
-      width: 100%; // One logo per row
+      width: 100%;
     }
   }
 }
