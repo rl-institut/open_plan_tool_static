@@ -295,12 +295,12 @@
   }
 
   &__heading {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #333;
+      padding-top: 1rem;
+      font-size: $font-size-large;
+      font-weight: 700;
     }
   }
 
@@ -365,7 +365,7 @@
     border-radius: $button-border-radius;
     padding: 2rem;
     width: 100%;
-    max-width: 320px;
+    max-width: 20rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -374,14 +374,9 @@
       transform: translateY(-5px);
     }
 
-    img {
-      width: 60px;
-      margin-bottom: 1rem;
-    }
-
     p {
       font-size: 1rem;
-      color: #333;
+      color: $primary-color-1-dark;
       margin-bottom: 1.5rem;
     }
   }
@@ -394,7 +389,77 @@
 
     &__card {
       width: 90%;
-      max-width: 400px;
+      max-width: 25rem;
+    }
+  }
+}
+
+.newsletter2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include flex-row-justify-center;
+  background-color: $primary-color-1;
+  text-align: center;
+
+  & > div {
+    @include section-width;
+  }
+
+  &__heading {
+    margin-bottom: 4rem;
+
+    h2 {
+      padding-top: 1rem;
+      font-size: $font-size-large;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    input {
+      width: 300px;
+      max-width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0px;
+      outline: none;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e4b6d;
+      background-color: white;
+      border: none;
+      border-radius: $button-border-radius;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #d2d7ea;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      width: 90%;
+    }
+
+    button {
+      width: 90%;
     }
   }
 }

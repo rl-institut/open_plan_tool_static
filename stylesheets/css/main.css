@@ -3037,12 +3037,12 @@ nav.navbar .dropdown-menu li {
   padding-right: 1rem;
 }
 .related2__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .related2__heading h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #333;
+  padding-top: 1rem;
+  font-size: 1.953rem;
+  font-weight: 700;
 }
 .related2__items {
   display: inline-flex;
@@ -3104,7 +3104,7 @@ nav.navbar .dropdown-menu li {
   border-radius: 8px;
   padding: 2rem;
   width: 100%;
-  max-width: 320px;
+  max-width: 20rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -3112,13 +3112,9 @@ nav.navbar .dropdown-menu li {
 .involvement2__card:hover {
   transform: translateY(-5px);
 }
-.involvement2__card img {
-  width: 60px;
-  margin-bottom: 1rem;
-}
 .involvement2__card p {
   font-size: 1rem;
-  color: #333;
+  color: #17405C;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
@@ -3128,7 +3124,72 @@ nav.navbar .dropdown-menu li {
   }
   .involvement2__card {
     width: 90%;
-    max-width: 400px;
+    max-width: 25rem;
+  }
+}
+
+.newsletter2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1F567D;
+  text-align: center;
+}
+.newsletter2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.newsletter2__heading {
+  margin-bottom: 4rem;
+}
+.newsletter2__heading h2 {
+  padding-top: 1rem;
+  font-size: 1.953rem;
+  font-weight: 700;
+  color: #fff;
+}
+.newsletter2__form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.newsletter2__form input {
+  width: 300px;
+  max-width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+}
+.newsletter2__form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e4b6d;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.newsletter2__form button:hover {
+  background-color: #d2d7ea;
+}
+@media (max-width: 768px) {
+  .newsletter2__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter2 input {
+    width: 90%;
+  }
+  .newsletter2 button {
+    width: 90%;
   }
 }
 
