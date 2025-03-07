@@ -2836,7 +2836,7 @@ nav.navbar .dropdown-menu li {
   width: 100%;
 }
 
-.features2 {
+.special-features2 {
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
@@ -2844,43 +2844,43 @@ nav.navbar .dropdown-menu li {
   justify-content: center;
   background-color: #F3F7FC;
 }
-.features2 > div {
+.special-features2 > div {
   width: 100%;
   max-width: 82rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.features2__heading {
+.special-features2__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding-bottom: 2rem;
 }
-.features2__heading h2 {
+.special-features2__heading h2 {
   padding-top: 1rem;
   font-size: 1.953rem;
   font-weight: 700;
 }
-.features2__items {
+.special-features2__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.features2__item {
+.special-features2__item {
   width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
 }
-.features2__item h3 {
+.special-features2__item h3 {
   padding: 1rem 0;
   font-size: 1.5rem;
   font-weight: 700;
   color: #17405C;
 }
-.features2__item p {
+.special-features2__item p {
   line-height: 170%;
 }
 
@@ -2914,6 +2914,76 @@ nav.navbar .dropdown-menu li {
   width: 100%;
 }
 
+.features2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F3F7FC;
+}
+.features2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.features2__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.features2__heading h2 {
+  padding-top: 1rem;
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+.features2__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.features2__item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+@media (max-width: 1024px) {
+  .features2__item {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .features2__item {
+    width: 100%;
+  }
+}
+.features2__item h3 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #17405C;
+}
+.features2__item p {
+  line-height: 170%;
+}
+
+@media (max-width: 1024px) {
+  .features2__item {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .features2__item {
+    width: 100%;
+  }
+}
 .project {
   display: flex;
   flex-direction: row;
