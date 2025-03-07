@@ -44,7 +44,7 @@
   padding-top: $top-nav-height;
   @include flex-row-justify-center;
 
-  &> div {
+  & > div {
     @include section-width;
     @include flex-row;
   }
@@ -52,6 +52,7 @@
   &__text {
     padding-top: 7rem;
     padding-right: 7rem;
+    padding-bottom: 4rem;
 
     h1 {
       text-align: left;
@@ -83,6 +84,59 @@
 
   a.btn {
     width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    &__image img {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & > div {
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__text {
+      padding: 2rem 0 4rem 0;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    &__image {
+      padding-bottom: 2rem;
+    }
+
+    &__image img {
+      max-width: 40%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__text {
+      padding-right: 0;
+    }
+
+    &__image img {
+      max-width: 75%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__text {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    &__image img {
+      max-width: 85%;
+    }
   }
 }
 
@@ -122,6 +176,10 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
 
     h3 {
       padding: 1rem 0;
@@ -222,17 +280,5 @@
     p {
       line-height: 170%;
     }
-  }
-}
-
-@media (max-width: 1024px) {
-  .features2__item {
-    width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  .features2__item {
-    width: 100%;
   }
 }

@@ -2808,6 +2808,7 @@ nav.navbar .dropdown-menu li {
 .hero2__text {
   padding-top: 7rem;
   padding-right: 7rem;
+  padding-bottom: 4rem;
 }
 .hero2__text h1 {
   text-align: left;
@@ -2834,6 +2835,47 @@ nav.navbar .dropdown-menu li {
 }
 .hero2 a.btn {
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .hero2__image img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .hero2 > div {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  .hero2__text {
+    padding: 2rem 0 4rem 0;
+    text-align: center;
+  }
+  .hero2__text h1 {
+    font-size: 3rem;
+  }
+  .hero2__image {
+    padding-bottom: 2rem;
+  }
+  .hero2__image img {
+    max-width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .hero2__text {
+    padding-right: 0;
+  }
+  .hero2__image img {
+    max-width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .hero2__text h1 {
+    font-size: 2rem;
+  }
+  .hero2__image img {
+    max-width: 85%;
+  }
 }
 
 .special-features2 {
@@ -2873,6 +2915,11 @@ nav.navbar .dropdown-menu li {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+@media (max-width: 1024px) {
+  .special-features2__item {
+    width: 100%;
+  }
 }
 .special-features2__item h3 {
   padding: 1rem 0;
@@ -2974,16 +3021,6 @@ nav.navbar .dropdown-menu li {
   line-height: 170%;
 }
 
-@media (max-width: 1024px) {
-  .features2__item {
-    width: 45%;
-  }
-}
-@media (max-width: 768px) {
-  .features2__item {
-    width: 100%;
-  }
-}
 .project {
   display: flex;
   flex-direction: row;
