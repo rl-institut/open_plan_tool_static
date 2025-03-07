@@ -74,6 +74,7 @@
 
   &__image {
     padding-top: 4rem;
+    padding-bottom: 4rem;
 
     img {
       max-width: calc(#{$section-max-width} / 2);
@@ -82,5 +83,55 @@
 
   a.btn {
     width: 100%;
+  }
+}
+
+.features2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include flex-row-justify-center;
+  background-color: $bg-color-light;
+
+  &> div {
+    @include section-width;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2rem;
+
+    h2 {
+      padding-top: 1rem;
+      font-size: $font-size-large;
+      font-weight: 700;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    h3 {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 700;;
+      color: $primary-color-1-dark;
+    }
+
+    p {
+      line-height: 170%;;
+    }
   }
 }
