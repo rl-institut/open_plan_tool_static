@@ -3062,7 +3062,7 @@ nav.navbar .dropdown-menu li {
     flex-direction: column;
     gap: 1rem;
   }
-  .related2 button {
+  .related2 a {
     width: 100%;
     justify-content: center;
   }
