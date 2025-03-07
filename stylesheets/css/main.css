@@ -2884,6 +2884,36 @@ nav.navbar .dropdown-menu li {
   line-height: 170%;
 }
 
+.target2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+}
+.target2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.target2__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.target2__heading h2 {
+  padding-top: 1rem;
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+.target2 img {
+  width: 100%;
+}
+
 .project {
   display: flex;
   flex-direction: row;
