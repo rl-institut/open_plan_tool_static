@@ -868,6 +868,34 @@ footer a.btn--transparent,
 footer button.btn--transparent {
   font-weight: 700;
 }
+a.btn--secondary,
+button.btn--secondary,
+footer a.btn--secondary,
+footer button.btn--secondary {
+  background-color: #E6F0F8;
+  color: #17405C;
+}
+a.btn--secondary:link, a.btn--secondary:visited,
+button.btn--secondary:link,
+button.btn--secondary:visited,
+footer a.btn--secondary:link,
+footer a.btn--secondary:visited,
+footer button.btn--secondary:link,
+footer button.btn--secondary:visited {
+  color: #17405C !important;
+}
+a.btn--secondary:hover, a.btn--secondary:focus, a.btn--secondary:active,
+button.btn--secondary:hover,
+button.btn--secondary:focus,
+button.btn--secondary:active,
+footer a.btn--secondary:hover,
+footer a.btn--secondary:focus,
+footer a.btn--secondary:active,
+footer button.btn--secondary:hover,
+footer button.btn--secondary:focus,
+footer button.btn--secondary:active {
+  background-color: #F3F7FC !important;
+}
 a.btn--action,
 button.btn--action,
 footer a.btn--action,
@@ -1733,6 +1761,36 @@ nav.navbar .dropdown-menu li {
     width: 1.25rem;
     margin-left: -2.5rem;
   }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar2 {
+    border-bottom: 1px solid #F4F7F9;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar2 .navbar-collapse {
+    padding: 2rem;
+  }
+}
+.navbar2 .nav-item a.nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+@media only screen and (max-width: 991px) {
+  .navbar2 .nav-item a.nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.navbar2 .nav-item select {
+  cursor: pointer;
 }
 
 .dashboard-tabs {
