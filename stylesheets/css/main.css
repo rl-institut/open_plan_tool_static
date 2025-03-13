@@ -1235,6 +1235,35 @@ a.dropdown-item:active {
   margin-left: 1rem;
 }
 
+.footer2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: auto;
+}
+.footer2 > div {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 601px) {
+  .footer2 > div {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer2 .footer__logo {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer2 .footer__links ul {
+    text-align: center;
+  }
+  .footer2 .footer__links ul li:first-of-type {
+    padding-left: 0;
+  }
+}
+
 form .form-control:focus {
   border-color: #1F567D;
   box-shadow: 0 0 0 0.25rem rgba(31, 86, 125, 0.1);
