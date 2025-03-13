@@ -3507,6 +3507,64 @@ nav.navbar .dropdown-menu li {
   }
 }
 
+.application2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F3F7FC;
+  text-align: center;
+}
+.application2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.application2 h2 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  color: #17405C;
+  margin-bottom: 4rem;
+}
+.application2__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .application2__cards {
+    flex-wrap: wrap;
+  }
+}
+.application2__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.application2__card:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+  .application2__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .application2__card {
+    width: 90%;
+    max-width: 25rem;
+  }
+}
+
 .newsletter2 {
   padding-top: 6rem;
   padding-bottom: 6rem;

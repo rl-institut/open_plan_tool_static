@@ -669,6 +669,65 @@
   }
 }
 
+.application2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include flex-row-justify-center;
+  background-color: $bg-color-light;
+  text-align: center;
+
+  & > div {
+    @include section-width;
+  }
+
+  h2 {
+    font-size: $font-size-large;
+    font-weight: 700;
+    color: $primary-color-1-dark;
+    margin-bottom: 4rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    border-radius: $button-border-radius;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__card {
+      width: 90%;
+      max-width: 25rem;
+    }
+  }
+}
+
 .newsletter2 {
   padding-top: 6rem;
   padding-bottom: 6rem;
