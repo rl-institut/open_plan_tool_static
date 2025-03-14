@@ -2879,14 +2879,16 @@ nav.navbar .dropdown-menu li {
 }
 
 .hero2,
-.cellular2 {
+.cellular2,
+.commune2 {
   padding-top: 4.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .hero2 > div,
-.cellular2 > div {
+.cellular2 > div,
+.commune2 > div {
   width: 100%;
   max-width: 82rem;
   padding-left: 1rem;
@@ -2895,13 +2897,15 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
 }
 .hero2__text,
-.cellular2__text {
+.cellular2__text,
+.commune2__text {
   padding-top: 7rem;
   padding-right: 7rem;
   padding-bottom: 4rem;
 }
 .hero2__text h1,
-.cellular2__text h1 {
+.cellular2__text h1,
+.commune2__text h1 {
   text-align: left;
   font-size: 4rem;
   color: #343434;
@@ -2910,7 +2914,8 @@ nav.navbar .dropdown-menu li {
   line-height: 110%;
 }
 .hero2__text span,
-.cellular2__text span {
+.cellular2__text span,
+.commune2__text span {
   display: block;
   text-align: left;
   font-size: 1.25rem;
@@ -2919,66 +2924,79 @@ nav.navbar .dropdown-menu li {
   margin-bottom: 2rem;
 }
 .hero2__image,
-.cellular2__image {
+.cellular2__image,
+.commune2__image {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .hero2__image img,
-.cellular2__image img {
+.cellular2__image img,
+.commune2__image img {
   max-width: calc(82rem / 2);
 }
 .hero2 a.btn,
-.cellular2 a.btn {
+.cellular2 a.btn,
+.commune2 a.btn {
   width: 100%;
 }
 @media (max-width: 1200px) {
   .hero2__image img,
-  .cellular2__image img {
+  .cellular2__image img,
+  .commune2__image img {
     max-width: 80%;
   }
 }
 @media (max-width: 1024px) {
   .hero2 > div,
-  .cellular2 > div {
+  .cellular2 > div,
+  .commune2 > div {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
   }
   .hero2__text,
-  .cellular2__text {
+  .cellular2__text,
+  .commune2__text {
     padding: 2rem 0 4rem 0;
     text-align: center;
   }
   .hero2__text h1,
-  .cellular2__text h1 {
+  .cellular2__text h1,
+  .commune2__text h1 {
     font-size: 3rem;
   }
   .hero2__image,
-  .cellular2__image {
+  .cellular2__image,
+  .commune2__image {
     padding-bottom: 2rem;
   }
   .hero2__image img,
-  .cellular2__image img {
+  .cellular2__image img,
+  .commune2__image img {
     max-width: 40%;
   }
 }
 @media (max-width: 768px) {
   .hero2__text,
-  .cellular2__text {
+  .cellular2__text,
+  .commune2__text {
     padding-right: 0;
   }
   .hero2__image img,
-  .cellular2__image img {
+  .cellular2__image img,
+  .commune2__image img {
     max-width: 75%;
   }
 }
 @media (max-width: 480px) {
   .hero2__text h1,
-  .cellular2__text h1 {
+  .cellular2__text h1,
+  .commune2__text h1 {
     font-size: 2rem;
   }
   .hero2__image img,
-  .cellular2__image img {
+  .cellular2__image img,
+  .commune2__image img {
     max-width: 85%;
   }
 }
@@ -3010,6 +3028,10 @@ nav.navbar .dropdown-menu li {
   .cellular2__image img {
     max-width: 26rem;
   }
+}
+
+.commune2 h1 {
+  margin-bottom: 3rem;
 }
 
 .special-features2 {
@@ -3063,6 +3085,104 @@ nav.navbar .dropdown-menu li {
 }
 .special-features2__item p {
   line-height: 170%;
+}
+
+.actors2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F3F7FC;
+}
+.actors2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.actors2__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.actors2__heading h2 {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .actors2__heading h2 {
+    font-size: 1.953rem;
+  }
+}
+.actors2__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (min-width: 1025px) {
+  .actors2__items {
+    flex-wrap: nowrap;
+  }
+}
+.actors2__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1rem 0;
+}
+@media (min-width: 768px) {
+  .actors2__item {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .actors2__item {
+    width: auto;
+    flex: 1;
+    padding: 2rem 0;
+  }
+}
+.actors2__item h3 {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #17405C;
+}
+@media (min-width: 1024px) {
+  .actors2__item h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.description2 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+}
+.description2 > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description2 p {
+  font-size: 1rem;
+  line-height: 170%;
+  max-width: 40rem;
 }
 
 .energycell2 {
