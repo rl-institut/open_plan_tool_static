@@ -44,8 +44,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Documentation</a>
             </li>
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,21 +78,35 @@
       <section class="header">
         <div>
           <div class="header__left"></div>
-          <h1 class="header__title">About</h1>
+          <h1 class="header__title">About open_plan</h1>
           <div class="header__back"></div>
         </div>
       </section>
       <section class="standard-layout">
         <div>
-          <div class="row">
-            <div class="col">
-              <h2>This is a heading</h2>
-              <h3>This is a subheading</h3>
-              <p>You can use <a href="https://getbootstrap.com/docs/5.0/layout/grid/">Bootstrap to build custom layout grids</a></p>
-            </div>
-            <div class="col">
-              <h2>This is another heading</h2>
-            </div>
+          <div class="standard-layout__paragraph">
+            <h2>open_plan project consortium</h2>
+            <p>The open_plan project consortium is composed of the <a href="https://reiner-lemoine-institut.de/" target="_blank" rel="noopener noreferrer">Reiner Lemoine Institut (RLI)</a>, <a href="https://www.dgs-berlin.de/" target="_blank" rel="noopener noreferrer">Deutsche Gesellschaft für Sonnenenergie (DGS)</a> and the <a href="https://www.pik-potsdam.de/de" target="_blank" rel="noopener noreferrer">Potsdam Institut für Klimafolgenforschung (PIK)</a>. It is funded within the framework of the "Technology-oriented systems analysis" funding area of the BMWi's 7th Energy Research Programme "Innovation for the energy transition".</p>
+          </div>
+          <div class="standard-layout__paragraph">
+            <h2>open_plan project website</h2>
+            <p>You can visit the <a href="https://open-plan-tool.org/" target="_blank" rel="noopener noreferrer">open_plan website</a> to know more about the cellular approach and the open_plan project.</p>
+          </div>
+          <div class="standard-layout__paragraph standard-layout__paragraph--foreground">
+            <h2>Feedback or question?</h2>
+            <p>You can always <a href="/en/user_feedback">leave us a comment or feedback</a> on things you would improve. You can also visit <a href="https://github.com/orgs/open-plan-tool/projects/5" target="_blank" rel="noopener noreferrer">our github project page</a> to see which bugs are being fixed and which new features are being developped.</p>
+          </div>
+          <div class="standard-layout__paragraph standard-layout__paragraph--small">
+            <h2>Github</h2>
+            <p>You can follow the development of this <a href="https://github.com/open-plan-tool/gui" target="_blank" rel="noopener noreferrer">user interface</a>, or deploy your own open-plan tool (including <a href="https://github.com/open-plan-tool/simulation-server" target="_blank" rel="noopener noreferrer">simulation server</a> and user interface) by visiting our <a href="https://github.com/open-plan-tool/gui" target="_blank" rel="noopener noreferrer">github page</a>.</p>
+          </div>
+          <div class="standard-layout__paragraph standard-layout__paragraph--small">
+            <h2>Simulation server</h2>
+            <p>Our simulations run on a server hosted at RLI, the code to setup the simulation server is licenced under MIT License and publicly available on <a href="https://github.com/open-plan-tool/simulation-server" target="_blank" rel="noopener noreferrer">our github page</a>. The simulation are perfomed with <a href="https://github.com/rl-institut/multi-vector-simulator" target="_blank" rel="noopener noreferrer">multi-vector-simulator</a>, a code using <a href="https://github.com/oemof/oemof-solph" target="_blank" rel="noopener noreferrer">oemof-soplh</a> to simulate energy system model from techno-economic parameters.</p>
+          </div>
+          <div class="standard-layout__paragraph standard-layout__paragraph--small">
+            <h2>Web app design</h2>
+            <p><a href="https://bryanlancien-ui.com/" target="_blank" rel="noopener noreferrer">Bryan Lancien</a></p>
           </div>
         </div>
       </section>

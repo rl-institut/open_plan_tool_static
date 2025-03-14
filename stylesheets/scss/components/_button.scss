@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 a.btn,
 button.btn,
 footer a.btn,
@@ -37,11 +40,15 @@ footer button.btn {
     font-size: $font-size-small;
   }
 
+  &--filled {
+    color: $white !important;
+  }
+
   &--hollow,
   &--transparent,
   &--action {
     background-color: transparent;
-    color: $primary-color-1;
+    color: $primary-color-1 !important;
 
     #{$anchor-pseudo-classes} {
       color: $primary-color-1 !important;
@@ -49,6 +56,10 @@ footer button.btn {
 
     #{$anchor-pseudo-classes-active-state} {
       background-color: $white !important;
+    }
+
+    span.icon#{$anchor-pseudo-classes-active-states} {
+      color: $white !important;
     }
   }
 
@@ -58,6 +69,19 @@ footer button.btn {
 
   &--transparent {
     font-weight: 700;
+  }
+
+  &--secondary {
+    background-color: $bg-color-secondary-btn;
+    color: $primary-color-1-dark;
+
+    #{$anchor-pseudo-classes-inactive-state} {
+      color: $primary-color-1-dark !important;
+    }
+
+    #{$anchor-pseudo-classes-active-state} {
+      background-color: $bg-color-light !important;
+    }
   }
 
   &--action {
@@ -122,6 +146,15 @@ footer button.btn {
 
     &:focus {
       box-shadow: 0 0 0 0.25rem rgba(9, 188, 138, 0.25);
+    }
+  }
+
+  &--warning {
+    @include btn-background-color($warning-color);
+    color: #553F06;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(253, 197, 52, 0.25);
     }
   }
 
