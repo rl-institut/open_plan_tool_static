@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../stylesheets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-
     <title>About - open_plan2</title>
   </head>
 
@@ -33,10 +32,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <select class="form-select" aria-label="Select between Documentation and Video-tutorials">
-                <option value="1" selected>Documentation</option>
-                <option value="2">Video-tutorials</option>
-              </select>
+              <div class="dropdown dropdown--navbar">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documentation
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Documentation</a></li>
+                  <li><a class="dropdown-item" href="#">Video-tutorials</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about/">About us</a>

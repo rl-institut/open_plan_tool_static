@@ -737,6 +737,7 @@ footer button.btn--filled {
 }
 a.btn--hollow, a.btn--transparent, a.btn--action,
 button.btn--hollow,
+.navbar2 .dropdown.dropdown--navbar button.btn,
 button.btn--transparent,
 button.btn--action,
 footer a.btn--hollow,
@@ -750,10 +751,15 @@ footer button.btn--action {
 }
 a.btn--hollow:link, a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:visited, a.btn--hollow:active, a.btn--transparent:link, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:visited, a.btn--transparent:active, a.btn--action:link, a.btn--action:hover, a.btn--action:focus, a.btn--action:visited, a.btn--action:active,
 button.btn--hollow:link,
+.navbar2 .dropdown.dropdown--navbar button.btn:link,
 button.btn--hollow:hover,
+.navbar2 .dropdown.dropdown--navbar button.btn:hover,
 button.btn--hollow:focus,
+.navbar2 .dropdown.dropdown--navbar button.btn:focus,
 button.btn--hollow:visited,
+.navbar2 .dropdown.dropdown--navbar button.btn:visited,
 button.btn--hollow:active,
+.navbar2 .dropdown.dropdown--navbar button.btn:active,
 button.btn--transparent:link,
 button.btn--transparent:hover,
 button.btn--transparent:focus,
@@ -798,8 +804,11 @@ footer button.btn--action:active {
 }
 a.btn--hollow:hover, a.btn--hollow:focus, a.btn--hollow:active, a.btn--transparent:hover, a.btn--transparent:focus, a.btn--transparent:active, a.btn--action:hover, a.btn--action:focus, a.btn--action:active,
 button.btn--hollow:hover,
+.navbar2 .dropdown.dropdown--navbar button.btn:hover,
 button.btn--hollow:focus,
+.navbar2 .dropdown.dropdown--navbar button.btn:focus,
 button.btn--hollow:active,
+.navbar2 .dropdown.dropdown--navbar button.btn:active,
 button.btn--transparent:hover,
 button.btn--transparent:focus,
 button.btn--transparent:active,
@@ -828,8 +837,11 @@ footer button.btn--action:active {
 }
 a.btn--hollow span.icon:hover, a.btn--hollow :focus, a.btn--hollow :active, a.btn--transparent span.icon:hover, a.btn--transparent :focus, a.btn--transparent :active, a.btn--action span.icon:hover, a.btn--action :focus, a.btn--action :active,
 button.btn--hollow span.icon:hover,
+.navbar2 .dropdown.dropdown--navbar button.btn span.icon:hover,
 button.btn--hollow :focus,
+.navbar2 .dropdown.dropdown--navbar button.btn :focus,
 button.btn--hollow :active,
+.navbar2 .dropdown.dropdown--navbar button.btn :active,
 button.btn--transparent span.icon:hover,
 button.btn--transparent :focus,
 button.btn--transparent :active,
@@ -858,6 +870,7 @@ footer button.btn--action :active {
 }
 a.btn--hollow,
 button.btn--hollow,
+.navbar2 .dropdown.dropdown--navbar button.btn,
 footer a.btn--hollow,
 footer button.btn--hollow {
   border: 1px solid #1F567D;
@@ -934,6 +947,7 @@ footer button.btn--action:focus {
 }
 a.btn--hollow.btn--action,
 button.btn--hollow.btn--action,
+.navbar2 .dropdown.dropdown--navbar button.btn--action.btn,
 footer a.btn--hollow.btn--action,
 footer button.btn--hollow.btn--action {
   border-color: #1F567D;
@@ -1820,6 +1834,9 @@ nav.navbar .dropdown-menu li {
 }
 .navbar2 .nav-item select {
   cursor: pointer;
+}
+.navbar2 .dropdown.dropdown--navbar button.btn {
+  color: #17405C !important;
 }
 
 .dashboard-tabs {
@@ -3599,6 +3616,9 @@ nav.navbar .dropdown-menu li {
   }
 }
 .involvement2__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   border-radius: 8px;
   padding: 2rem;
@@ -3682,6 +3702,73 @@ nav.navbar .dropdown-menu li {
   .application2__card {
     width: 90%;
     max-width: 25rem;
+  }
+}
+
+.project2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+.project2__img {
+  width: 8rem;
+  margin-bottom: 4rem;
+}
+.project2 h2 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.project2 h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.project2 p {
+  max-width: 38rem;
+}
+.project2__logos {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  text-align: center;
+}
+.project2__logos > div {
+  width: 100%;
+  max-width: 82rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.project2__logos > div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .project2__logos > div {
+    justify-content: center;
+  }
+  .project2__logos a {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .project2__logos > div {
+    flex-direction: column;
+  }
+  .project2__logos a {
+    width: 100%;
   }
 }
 

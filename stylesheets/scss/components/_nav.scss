@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../components/button' as *;
 
 nav.navbar {
   position: fixed;
@@ -255,6 +256,13 @@ nav.navbar {
 
     select {
       cursor: pointer;
+    }
+  }
+
+  .dropdown.dropdown--navbar {
+    button.btn {
+      color: #17405C !important;
+      @extend .btn--hollow;
     }
   }
 }
