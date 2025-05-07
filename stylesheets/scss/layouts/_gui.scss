@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .system-design {
   @include flex-row;
   height: calc(100vh - #{$top-nav-height} - #{$wizard-height} - #{$footer-scenario-height});
@@ -84,13 +87,46 @@
       @include flex-row;
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       padding: 1rem;
       background-color: $white;
 
       .load-scenario {
         padding-right: 1rem;
       }
+
+      .form-select {
+        font-size: $font-size-small;
+      }
+
+      button.btn {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__save {
+      @include flex-row;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+    }
+
+    #js-designSaved {
+      display: none;
+      color: $success-color;
+      font-weight: 700;
+
+      &.display {
+        display: block;
+        -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	      animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+      }
+    }
+
+    #js-saveDesign.hidden {
+      display: none;
     }
 
     &__empty-text {
@@ -247,5 +283,30 @@
 
   .row {
     margin-bottom: 1rem;
+  }
+
+  ul.nav.nav-pills {
+    padding-bottom: 1rem;
+
+    button {
+      border-radius: 0;
+      border: 1px solid $primary-gray-color-2;
+
+      &.active {
+        background-color: $primary-color-1;
+        color: $white !important;
+        border-color: $primary-color-1;
+      }
+    }
+
+    li:first-of-type button {
+      border-top-left-radius: $button-border-radius;
+      border-bottom-left-radius: $button-border-radius;
+    }
+
+    li:last-of-type button {
+      border-top-right-radius: $button-border-radius;
+      border-bottom-right-radius: $button-border-radius;
+    }
   }
 }

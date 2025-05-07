@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../stylesheets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <title>EN - open_plan2</title>
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="projects-view.html">
+          <img src="../assets/logos/open_plan_logo_horizontal.svg" alt="open_plan Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="dropdown dropdown--navbar">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documentation
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Documentation</a></li>
+                  <li><a class="dropdown-item" href="#">Video-tutorials</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about/">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact/">Contact</a>
+            </li>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="en" selected="selected">
+                    EN 
+                  </option>
+                  <option class="nav-link" value="de">
+                    DE
+                  </option>
+                </select>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users/login/">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn--small btn--secondary" href="users/signup/">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="cellular2 section" id="hero" data-aos="fade-up">
+        <div>
+          <div class="cellular2__text">
+            <h1>
+              Open-source planning tool for the energy transition
+            </h1>
+            <span>
+              With the open-plan-tool, you can plan and design energy systems in an open and free framework.
+            </span>
+            <a href="pages/signup.html" class="btn btn--medium">
+              To open-plan-tool
+            </a>
+          </div>
+          <div class="cellular2__image">
+            <img src="../assets/illustrations/cellular_bg.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="application2">
+        <div>
+          <h2>Application areas</h2>
+          <div class="application2__cards">
+            <div class="application2__card">
+              <img src="../assets/icons/i_heating_hex.png" alt="" width="60">
+              <a href="#" class="btn btn--medium btn--hollow">Municipal heating planning</a>
+            </div>
+            <div class="application2__card">
+              <img src="../assets/icons/i_cells_hex.png" alt="" width="60">
+              <a href="#" class="btn btn--medium btn--hollow">Cellular energy systems</a>
+            </div>
+            <div class="application2__card">
+              <img src="../assets/icons/i_analysis_hex.png" alt="" width="60">
+              <a href="#" class="btn btn--medium btn--hollow">General energy system analysis</a>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="newsletter2">
+        <div>
+          <div class="newsletter2__heading">
+            <h2>Register to our Newsletter</h2>
+          </div>
+          <form class="newsletter2__form" method="post" action="">
+            <span class="newsletter2__form--input">
+              <input type="text" tabindex="-1" autocomplete="false" style="display:none !important;" class="cr-nope" name="email_confirm">
+              <input class="newsletter2__form--email" type="email" placeholder="name@email.com" name="email" required="">
+              <button type="submit">Register</button>
+            </span>
+            <span class="newsletter2__form--privacy">
+              <input type="checkbox" name="accept_privacy" required="" id="id_accept_privacy">
+              <label for="id_accept_privacy">
+                I have read and accept the
+                <a target="_blank" href="/en/privacy/">privacy statement</a> from open_plan<span class="asteriskField">*</span> 
+              </label>
+            </span>
+          </form>
+        </div>
+      </section>
+      <section class="logos2">
+        <div>
+          <a href="#">
+            <img src="../assets/logos/2020-03-09_DGS.png" alt="Deutsche Gesellschaft für Sonnenenergie Logo" width="196" height="76">
+          </a>
+          <a href="#">
+            <img src="../assets/logos/rlilogo.png" alt="Reiner Lemoine Institut Logo" width="97" height="71">
+          </a>
+          <a href="#">
+            <img src="../assets/logos/logo_ifam.png" alt="Frauenhofer IFAM Logo" width="219" height="62">
+          </a>
+          <a href="#">
+            <img src="../assets/logos/EnergieLenker_logo.png" alt="energielenker Logo" width="135" height="135">
+          </a>
+          <a href="#">
+            <img src="../assets/logos/oeko_zentrum_NRW_logo.png" alt="Öko Zentrum NRW Logo" width="157" height="157">
+          </a>
+          <a href="#">
+            <img src="../assets/logos/BMWK_Fz_2017_WebSVG_en.png" alt="Federal Ministry for Economic Affairs and Climate Action Logo" width="140" height="145">
+          </a>
+        </div>
+      </section>
+    </main> 
+
+
+    <footer class="footer footer2">
+      <div>
+        <div class="footer__logo">
+          <img src="../assets/logos/open_plan_logo_horizontal.svg" alt="open_plan logo">
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">License</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../js/project.js"></script>
+  </body>
+</html>
