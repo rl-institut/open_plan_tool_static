@@ -3724,6 +3724,13 @@ nav.navbar .dropdown-menu li {
   flex-direction: column;
   align-items: center;
   padding-bottom: 6rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+@media (max-width: 768px) {
+  .project2 {
+    padding-bottom: 3rem;
+  }
 }
 .project2__img {
   width: 8rem;
