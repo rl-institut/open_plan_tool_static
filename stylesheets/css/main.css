@@ -2165,6 +2165,20 @@ nav.navbar .dropdown-menu li {
   justify-content: center;
 }
 
+.aboutus2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  background-color: #F3F7FC;
+}
+.aboutus2 h1 {
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+
 .system-design {
   display: flex;
   flex-direction: row;

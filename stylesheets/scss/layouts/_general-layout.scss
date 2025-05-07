@@ -84,3 +84,16 @@
     }
   }
 }
+
+.aboutus2 {
+  @include flex-row-justify-center;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;;
+  background-color: $bg-color-light;
+
+  h1 {
+    font-size: $font-size-large;
+    font-weight: 700;
+  }
+}
