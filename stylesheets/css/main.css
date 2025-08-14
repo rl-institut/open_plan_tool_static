@@ -2399,6 +2399,14 @@ nav.navbar .dropdown-menu li {
   height: 2rem;
   width: 2rem;
 }
+.system-design .port--empty {
+  background-image: url(../../assets/gui/port-empty.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.system-design .port--not-compatible {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(6%) saturate(5%) hue-rotate(315deg) brightness(90%) contrast(88%);
+}
 .system-design .port--electricity {
   background-image: url(../../assets/gui/port-electricity.svg);
   background-size: contain;

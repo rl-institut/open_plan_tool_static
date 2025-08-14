@@ -246,6 +246,16 @@
     }
   }
 
+  // @PF
+  // Dashed grey port -> When port can be connected but is still empty
+  .port--empty{ background-image: url(../../assets/gui/port-empty.svg); background-size: contain; background-repeat: no-repeat; }
+
+  // Faded dashed grey port -> When port is not compatible with the current connection
+  .port--not-compatible {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(6%) saturate(5%) hue-rotate(315deg) brightness(90%) contrast(88%);
+  }
+
+  // Solid color ports -> When port is connected (optional: or compatible with the current connection)
   .port--electricity  { background-image: url(../../assets/gui/port-electricity.svg); background-size: contain; background-repeat: no-repeat; }
   .port--heat  { background-image: url(../../assets/gui/port-heat.svg); background-size: contain; background-repeat: no-repeat; }
   .port--h2 { background-image: url(../../assets/gui/port-h2.svg); background-size: contain; background-repeat: no-repeat; }

@@ -468,9 +468,6 @@
             <button class="btn btn--small btn--hollow" id="js-saveDesign" type="submit">Save design</button>
             <div id="js-designSaved">Design saved!</div>
           </div>
-          <div class="gui__empty-text">
-            <span>Drag and drop components to build your energy system</span>
-          </div>
           <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
             <div class="inputs">
               <div class="input input_1 port--fuel"></div>
@@ -501,9 +498,52 @@
               </div>
             </div>
             <div class="outputs">
+              <!--  @PF
+                    Update `.port--*` on the fly with JS -->
               <div class="output output_1 port--h2"></div>
               <div class="output output_2 port--h2"></div>
               <div class="output output_3 port--h2"></div>
+              <div class="output output_4 port--empty"></div>
+            </div>
+        </div>
+        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+            <div class="inputs">
+              <div class="input input_1 port--empty"></div>
+              <div class="input input_2 port--empty"></div>
+            </div>
+            <div class="drawflow_content_node">
+              <div class="img"></div>
+              <div class="drawflow-node__name">
+                <span>
+                  Gas Boiler
+                </span>
+              </div>
+            </div>
+            <div class="outputs">
+              <div class="output output_1 port--empty"></div>
+              <div class="output output_2 port--empty"></div>
+            </div>
+        </div>
+        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 50%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+            <div class="inputs">
+              <div class="input input_1 port--empty"></div>
+              <div class="input input_2 port--empty"></div>
+            </div>
+            <div class="drawflow_content_node">
+              <div class="img"></div>
+              <div class="drawflow-node__name">
+                <span>
+                  Gas Boiler
+                </span>
+              </div>
+            </div>
+            <div class="outputs">
+              <!-- @PF
+                    Idea: When user drags a line from bus, not compatible ports fade 
+                    Compatible ports display the normal shape/color of the bus type 
+              -->
+              <div class="output output_1 port--empty port--not-compatible"></div>
+              <div class="output output_2 port--empty port--not-compatible"></div>
             </div>
         </div>
       </section>
