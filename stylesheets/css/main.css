@@ -2316,7 +2316,23 @@ nav.navbar .dropdown-menu li {
   font-weight: 300;
 }
 .system-design .drawflow .connection .main-path {
-  width: 2px;
+  width: 3px;
+}
+.system-design .drawflow .connection.connection--electricity path {
+  stroke: #FBC02D;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+.system-design .drawflow .connection.connection--heat path {
+  stroke: #55B068;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+.system-design .drawflow .connection.connection--fuel path {
+  stroke: #E28785;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+.system-design .drawflow .connection.connection--h2 path {
+  stroke: #2C92B5;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
 }
 .system-design .parent-node .drawflow-delete {
   content: "X";
