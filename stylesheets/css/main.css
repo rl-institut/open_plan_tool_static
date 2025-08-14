@@ -2360,16 +2360,20 @@ nav.navbar .dropdown-menu li {
   align-items: center;
 }
 .system-design .drawflow .drawflow-node .inputs {
-  bottom: 1.5rem;
   left: -8px;
+  top: 0;
 }
 .system-design .drawflow .drawflow-node .outputs {
-  bottom: 1.5rem;
   right: -8px;
+  top: 0;
 }
 .system-design .drawflow .drawflow-node .inputs,
 .system-design .drawflow .drawflow-node .outputs {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .system-design .drawflow .drawflow-node .inputs .input,
 .system-design .drawflow .drawflow-node .inputs .output,

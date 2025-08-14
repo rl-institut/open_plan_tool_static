@@ -202,18 +202,22 @@
     }
 
     .inputs {
-      bottom: $gui-component-position-btm;
       left: $gui-component-position-side;
+      top: 0;
     }
 
     .outputs {
-      bottom: $gui-component-position-btm;
       right: $gui-component-position-side;
+      top: 0;
     }
 
     .inputs,
     .outputs {
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
 
       .input,
       .output {
