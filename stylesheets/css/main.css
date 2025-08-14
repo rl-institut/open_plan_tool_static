@@ -2184,8 +2184,6 @@ nav.navbar .dropdown-menu li {
   flex-direction: row;
   height: calc(100vh - 4.5rem - 5.5rem - 4rem);
   border-top: 2px solid #F4F7F9;
-  /* currentColor drives stroke */
-  /* optional: larger hit-area without changing the visual size */
 }
 .system-design .components {
   width: 22rem;
@@ -2238,10 +2236,10 @@ nav.navbar .dropdown-menu li {
   border-left: 4px solid #FBC02D;
 }
 .system-design .components__content .section__component--bus-gas {
-  border-left: 4px solid #E28785;
+  border-left: 4px solid #55B068;
 }
 .system-design .components__content .section__component--bus-heat {
-  border-left: 4px solid #55B068;
+  border-left: 4px solid #E28785;
 }
 .system-design .components__content .section__component--bus-h2 {
   border-left: 4px solid #2C92B5;
@@ -2363,11 +2361,11 @@ nav.navbar .dropdown-menu li {
 }
 .system-design .drawflow .drawflow-node .inputs {
   bottom: 1.5rem;
-  left: -7px;
+  left: -8px;
 }
 .system-design .drawflow .drawflow-node .outputs {
   bottom: 1.5rem;
-  right: -7px;
+  right: -8px;
 }
 .system-design .drawflow .drawflow-node .inputs,
 .system-design .drawflow .drawflow-node .outputs {
@@ -2377,22 +2375,9 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node .inputs .output,
 .system-design .drawflow .drawflow-node .outputs .input,
 .system-design .drawflow .drawflow-node .outputs .output {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 100%;
-  margin: 0.25rem 0;
-  border: 1px solid #fff;
+  width: 1rem;
+  height: 1rem;
   cursor: pointer;
-}
-.system-design .drawflow .drawflow-node .inputs .input,
-.system-design .drawflow .drawflow-node .outputs .input {
-  background-color: #4EC4C4;
-  left: -22px;
-}
-.system-design .drawflow .drawflow-node .inputs .output,
-.system-design .drawflow .drawflow-node .outputs .output {
-  background-color: #C46A4E;
-  right: -10px;
 }
 .system-design .drawflow .drawflow-node .img {
   position: relative;
@@ -2405,26 +2390,30 @@ nav.navbar .dropdown-menu li {
   top: 1.5rem;
   right: 1.25rem;
   transform: translateY(-50%);
-  background-image: url(../../assets/gui/pv_plant.svg);
+  background-image: url(../../assets/gui/gas_boiler.svg);
   background-size: contain;
   height: 2rem;
   width: 2rem;
 }
-.system-design .port {
-  width: 14px;
-  height: 14px;
-  display: block;
-  color: #8898aa;
+.system-design .port--electricity {
+  background-image: url(../../assets/gui/port-electricity.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.system-design .port.red {
-  color: #ff6b6b;
+.system-design .port--heat {
+  background-image: url(../../assets/gui/port-heat.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.system-design .port.green {
-  color: #2ecc71;
+.system-design .port--h2 {
+  background-image: url(../../assets/gui/port-h2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.system-design .port {
-  padding: 4px;
-  box-sizing: content-box;
+.system-design .port--fuel {
+  background-image: url(../../assets/gui/port-fuel.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .modal.modal--gui .modal-dialog {

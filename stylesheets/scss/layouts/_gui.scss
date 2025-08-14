@@ -56,11 +56,11 @@
         }
 
         &--bus-gas {
-          border-left: 4px solid #E28785;
+          border-left: 4px solid #55B068;
         }
 
         &--bus-heat {
-          border-left: 4px solid #55B068;
+          border-left: 4px solid #E28785;
         }
 
         &--bus-h2 {
@@ -219,22 +219,7 @@
       .output {
         width: $gui-component-node-size;
         height: $gui-component-node-size;
-        border-radius: 100%;
-        margin: .25rem 0;
-        border: 1px solid $white;
         cursor: pointer;
-      }
-
-      .input {
-        background-color: #4EC4C4;
-        left: -22px;
-
-      }
-
-      .output {
-        background-color: #C46A4E;
-        right: -10px;
-
       }
     }
 
@@ -249,7 +234,7 @@
         top: 1.5rem;
         right: calc((4.5rem - 2rem) / 2);
         transform: translateY(-50%);
-        background-image: url(../../assets/gui/pv_plant.svg);
+        background-image: url(../../assets/gui/gas_boiler.svg);
         background-size: contain;
         height: 2rem;
         width: 2rem;
@@ -257,12 +242,10 @@
     }
   }
 
-  .port { width:14px; height:14px; display:block; color:#8898aa; }    /* currentColor drives stroke */
-  .port.red   { color:#ff6b6b; }
-  .port.green { color:#2ecc71; }
-
-  /* optional: larger hit-area without changing the visual size */
-  .port { padding:4px; box-sizing:content-box; }
+  .port--electricity  { background-image: url(../../assets/gui/port-electricity.svg); background-size: contain; background-repeat: no-repeat; }
+  .port--heat  { background-image: url(../../assets/gui/port-heat.svg); background-size: contain; background-repeat: no-repeat; }
+  .port--h2 { background-image: url(../../assets/gui/port-h2.svg); background-size: contain; background-repeat: no-repeat; }
+  .port--fuel{ background-image: url(../../assets/gui/port-fuel.svg); background-size: contain; background-repeat: no-repeat; }
 }
 
 .modal.modal--gui {
