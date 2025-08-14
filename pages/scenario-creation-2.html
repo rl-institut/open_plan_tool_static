@@ -40,7 +40,33 @@
                   <div class="col">
                     <label for="pvDevCosts" class="form-label">Development costs (EUR)</label>
                     <span class="icon icon-question" data-bs-toggle="tooltip" title="For more details about the parameters, please check the documentation"></span>
-                    <input type="number" class="form-control" id="pvDevCosts" value="857.758">
+                    <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="manual-tab" data-bs-toggle="tab" data-bs-target="#manual" type="button" role="tab" aria-controls="manual" aria-selected="true">Manual</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="select-tab" data-bs-toggle="tab" data-bs-target="#select" type="button" role="tab" aria-controls="select" aria-selected="false">Select</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Upload</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="manual" role="tabpanel" aria-labelledby="manual-tab">
+                        <input type="number" class="form-control" id="pvDevCosts" value="857.758">
+                      </div>
+                      <div class="tab-pane fade" id="select" role="tabpanel" aria-labelledby="select-tab">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                    </div>
                   </div>
                   <div class="col">
                     <label for="specCosts" class="form-label">Specific costs (EUR)</label>
@@ -123,8 +149,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -181,8 +216,29 @@
                 <h3>Providers</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/electric_grid.svg" alt="Electric grid icon">
-                <span class="name">System DSO</span>
+                <img class="img" src="../assets/gui/dso.svg" alt="">
+                <span class="name">Electricity DSO</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/gas_dso.svg" alt="">
+                <span class="name">Gas DSO</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/h2_dso.svg" alt="">
+                <span class="name">H<sub>2</sub> DSO</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/heat_dso.svg" alt="">
+                <span class="name">Heat DSO</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -193,15 +249,36 @@
                 <h3>Production</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/pv_plant.svg" alt="PV plant icon">
-                <span class="name">PV plant</span>
+                <img class="img" src="../assets/gui/pv_plant.svg" alt="">
+                <span class="name">PV Plant</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/wind_turbine.svg" alt="Wind turbine icon">
-                <span class="name">Wind plant</span>
+                <img class="img" src="../assets/gui/wind_plant.svg" alt="">
+                <span class="name">Wind Plant</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/biogas_plant.svg" alt="">
+                <span class="name">Biogas Plant</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/geothermal_conversion.svg" alt="">
+                <span class="name">Geothermal Conversion</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/solar_thermal_plant.svg" alt="">
+                <span class="name">Solar Thermal Plant</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -212,36 +289,78 @@
                 <h3>Conversion</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/transformer_in.svg" alt="Transformer station (in) icon">
-                <span class="name">Transformer station (in)</span>
+                <img class="img" src="../assets/gui/transformer_station_in.svg" alt="">
+                <span class="name">Transformer Station (in)</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/transformer_out.svg" alt="Transformer station (out) icon">
-                <span class="name">Transformer station (out)</span>
+                <img class="img" src="../assets/gui/transformer_station_out.svg" alt="">
+                <span class="name">Transformer Station (out)</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/storage_in.svg" alt="Storage charge controller (in) icon">
-                <span class="name">Storage charge controller (in)</span>
+                <img class="img" src="../assets/gui/storage_charge_controller_in.svg" alt="">
+                <span class="name">Storage Charge Controller (in)</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/storage_out.svg" alt="Storage charge controller (out) icon">
-                <span class="name">Storage charge controller (out)</span>
+                <img class="img" src="../assets/gui/storage_charge_controller_out.svg" alt="">
+                <span class="name">Storage Charge Controller (out)</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/solar_inverter.svg" alt="Solar inverter icon">
-                <span class="name">Solar inverter</span>
+                <img class="img" src="../assets/gui/solar_inverter.svg" alt="">
+                <span class="name">Solar Inverter</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/diesel.svg" alt="">
+                <span class="name">Diesel Generator</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/fuel_cell.svg" alt="">
+                <span class="name">Fuel Cell</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/gas_boiler.svg" alt="">
+                <span class="name">Gas Boiler</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/heat_pump.svg" alt="">
+                <span class="name">Heat Pump</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/chp.svg" alt="">
+                <span class="name">Combined Heat and Power</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/chp_fixed_ratio.svg" alt="">
+                <span class="name">CHP Fixed Ratio</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -252,8 +371,22 @@
                 <h3>Storage</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/battery.svg" alt="Battery icon">
-                <span class="name">Storage</span>
+                <img class="img" src="../assets/gui/bess.svg" alt="">
+                <span class="name">Electricity Storage</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/h2ess.svg" alt="">
+                <span class="name">H<sub>2</sub> Storage</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/hess.svg" alt="">
+                <span class="name">Heat Storage</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -261,11 +394,25 @@
             </div>
             <div class="section section--demand">
               <div class="section__title">
-                <h3>Consumption</h3>
+                <h3>Demand</h3>
               </div>
               <div class="section__component">
-                <img class="img" src="../assets/gui/demand.svg" alt="House with electricity and person icon">
-                <span class="name">Demand</span>
+                <img class="img" src="../assets/gui/demand.svg" alt="">
+                <span class="name">Electricity Demand</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/h2_demand.svg" alt="">
+                <span class="name">H<sub>2</sub> Demand</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component">
+                <img class="img" src="../assets/gui/heat_demand.svg" alt="">
+                <span class="name">Heat Demand</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -275,9 +422,30 @@
               <div class="section__title">
                 <h3>Bus</h3>
               </div>
-              <div class="section__component">
-                <img class="img" src="../assets/gui/power_antenna.svg" alt="Bus icon">
-                <span class="name">Bus</span>
+              <div class="section__component section__component--bus-electricity">
+                <img class="img" src="../assets/gui/bus_electricity.svg" alt="">
+                <span class="name">Electricity Bus</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component section__component--bus-heat">
+                <img class="img" src="../assets/gui/bus_heat.svg" alt="">
+                <span class="name">Heat Bus</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component section__component--bus-gas">
+                <img class="img" src="../assets/gui/bus_gas.svg" alt="">
+                <span class="name">Fuel Bus</span>
+                <span class="drag">
+                  <img src="../assets/gui/drag-circles.svg" alt="Drag element">
+                </span>
+              </div>
+              <div class="section__component section__component--bus-h2">
+                <img class="img" src="../assets/gui/bus_h2.svg" alt="">
+                <span class="name">H<sub>2</sub> Bus</span>
                 <span class="drag">
                   <img src="../assets/gui/drag-circles.svg" alt="Drag element">
                 </span>
@@ -294,26 +462,109 @@
                 <option value="2">open_plan test</option>
               </select>
             </div>
-            <button class="btn btn--small btn--hollow" type="submit">Clear design</button>
+            <button class="btn btn--small btn--transparent" type="submit">Clear design</button>
           </div>
-          <div class="gui__empty-text">
-            <span>Drag and drop components to build your energy system</span>
+          <div class="gui__save">
+            <button class="btn btn--small btn--hollow" id="js-saveDesign" type="submit">Save design</button>
+            <div id="js-designSaved">Design saved!</div>
           </div>
           <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
+            <button class="node__delete" type="button" aria-label="Delete node">
+              <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
+                <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>  
             <div class="inputs">
-              <div class="input input_1"></div>
+              <div class="input input_1 port--fuel"></div>
             </div>
             <div class="drawflow_content_node">
+              <div class="img"></div>
               <div class="drawflow-node__name">
                 <span>
-                  pv_plant_name_XYZ_
+                  Gas Boiler
                 </span>
               </div>
-              <div class="img"></div>
             </div>
             <div class="outputs">
-              <div class="output output_1"></div>
+              <div class="output output_1 port--heat"></div>
             </div>
+        </div>
+        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 50%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
+          <button class="node__delete" type="button" aria-label="Delete node">
+            <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
+              <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>  
+          <div class="inputs">
+            <div class="input input_1 port--electricity"></div>
+            <div class="input input_2 port--electricity"></div>
+          </div>
+          <div class="drawflow_content_node">
+            <div class="img"></div>
+            <div class="drawflow-node__name">
+              <span>
+                Gas Boiler
+              </span>
+            </div>
+          </div>
+          <div class="outputs">
+            <!--  @PF
+                  Update `.port--*` on the fly with JS -->
+            <div class="output output_1 port--h2"></div>
+            <div class="output output_2 port--h2"></div>
+            <div class="output output_3 port--h2"></div>
+            <div class="output output_4 port--empty"></div>
+          </div>
+        </div>
+        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+          <button class="node__delete" type="button" aria-label="Delete node">
+            <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
+              <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>    
+          <div class="inputs">
+            <div class="input input_1 port--empty"></div>
+            <div class="input input_2 port--empty"></div>
+          </div>
+          <div class="drawflow_content_node">
+            <div class="img"></div>
+            <div class="drawflow-node__name">
+              <span>
+                Gas Boiler
+              </span>
+            </div>
+          </div>
+          <div class="outputs">
+            <div class="output output_1 port--empty"></div>
+            <div class="output output_2 port--empty"></div>
+          </div>
+        </div>
+        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 50%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+          <button class="node__delete" type="button" aria-label="Delete node">
+            <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
+              <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>    
+          <div class="inputs">
+            <div class="input input_1 port--empty"></div>
+            <div class="input input_2 port--empty"></div>
+          </div>
+          <div class="drawflow_content_node">
+            <div class="img"></div>
+            <div class="drawflow-node__name">
+              <span>
+                Gas Boiler
+              </span>
+            </div>
+          </div>
+          <div class="outputs">
+            <!-- @PF
+                  Idea: When user drags a line from bus, not compatible ports fade 
+                  Compatible ports display the normal shape/color of the bus type 
+            -->
+            <div class="output output_1 port--empty port--not-compatible"></div>
+            <div class="output output_2 port--empty port--not-compatible"></div>
+          </div>
         </div>
       </section>
     </main>

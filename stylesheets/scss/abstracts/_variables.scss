@@ -15,8 +15,15 @@ $secondary-gray-color-1: #E4E4E4;
 $secondary-gray-color-2: #D6D6D6;
 
 $error-color: #9A031E;
+$error-color-bg: #FFEBED;
+$error-color-text: #AB2134;
 $success-color: #09BC8A;
+$success-color-bg: #EBFFF9;
+$success-color-text: #13825F;
 $pending-color: #EC9A29;
+$warning-bg-color: #FFF3D4;
+$warning-color: #FDC534;
+$warning-text-color: #825F08;
 $disabled-color: $primary-gray-color-3;
 
 $dashboard-profitable-value: #20A10B;
@@ -87,6 +94,7 @@ $anchors-items-dark: '.project a', '.dropdown-item', 'footer a', '.nav-link';
 
 // Layout
 $section-max-width: 82rem;
+$section-max-width-small: 50rem;
 $padding-sides-normal: 1rem;
 $padding-sides-large: 2rem;
 $padding-frames: 4rem;
@@ -99,63 +107,19 @@ $header-dashboard-margin-bottom: 1rem;
 
 // Projects
 $space-between-project-elements: 1.5rem;
+$space-between-project-elements-small: 0.5rem;
 
 // GUI
 $gui-component-radius: 8px;
-$component-border-color--providers: #A4ADFB;
-$component-border-color--production: #FFEF9F;
-$component-border-color--conversion: #7BF1A8;
-$component-border-color--storage: #90F1EF;
-$component-border-color--demand: #FFD6E0;
-$component-border-color--bus: #F4CC9E;
-$component-categories: (
-  'providers': $component-border-color--providers, 
-  'production': $component-border-color--production, 
-  'conversion': $component-border-color--conversion, 
-  'storage': $component-border-color--storage, 
-  'demand': $component-border-color--demand, 
-  'bus': $component-border-color--bus
-);
-
-$component-categories-mapping: (
-    "dso": "providers",
-    "gas_dso": "providers",
-    "h2_dso": "providers",
-    "heat_dso": "providers",
-    "pv_plant": "production",
-    "wind_plant": "production",
-    "biogas_plant": "production",
-    "geothermal_conversion": "production",
-    "solar_thermal_plant": "production",
-    "transformer_station_in": "conversion",
-    "transformer_station_out": "conversion",
-    "storage_charge_controller_in": "conversion",
-    "storage_charge_controller_out": "conversion",
-    "solar_inverter": "conversion",
-    "diesel_generator": "conversion",
-    "fuel_cell": "conversion",
-    "gas_boiler": "conversion",
-    "electrolyzer": "conversion",
-    "heat_pump": "conversion",
-    "bess": "storage",
-    "gess": "storage",
-    "h2ess": "storage",
-    "hess": "storage",
-    "demand": "demand",
-    "gas_demand": "demand",
-    "h2_demand": "demand",
-    "heat_demand": "demand",
-    "bus": "bus",
-);
 $gui-component-bg-size: 4.5rem;
 $gui-component-img-size: 3rem;
-$gui-component-node-size: 0.75rem;
-$gui-component-position-btm: 2rem;
-$gui-component-position-side: 0.9rem;
+$gui-component-node-size: 1rem;
+$gui-component-position-side: -8px;
 
 // Dashboard
 $dashboard-chart-height: 32rem;
 $dashboard-space-between-charts: 1.5rem;
+$dashboard-table-cell-padding: 0.75rem 1rem;
 
 // Simulation error
 $simulation-error-padding: 4rem;
@@ -165,3 +129,10 @@ $form-control-placeholders: '::placeholder', '::-webkit-input-placeholder', '::-
 
 // Z-index
 $z-index-nav: 9;
+
+/* ----------------------------- open_plan 2 ----------------------------- */
+$font-size-hero: 4rem;
+$text-color-secondary: #6E6E6E;
+
+$bg-color-light: #F3F7FC;
+$bg-color-secondary-btn: #E6F0F8;

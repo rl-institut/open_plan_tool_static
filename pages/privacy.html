@@ -44,8 +44,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Documentation</a>
             </li>
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,9 +84,7 @@
       </section>
       <section class="standard-layout">
         <div>
-          <div class="row">
-            <div class="col">
-              <h2>I. Name und Anschrift des Verantwortlichen</h2>
+          <h2>I. Name und Anschrift des Verantwortlichen</h2>
           <p>Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist die:</p>
 
           <p>
@@ -262,8 +269,6 @@
 
           <h3>Gültigkeit der Datenschutzerklärung</h3>
           <p>Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu verändern oder anzupassen. Diese Erklärung wurde zuletzt geändert am 05.03.2019</p>
-            </div>
-          </div>
         </div>
       </section>
     </main>
