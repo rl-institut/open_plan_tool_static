@@ -51,7 +51,7 @@
         @include user-select-none;
         cursor: move;
 
-        // @PF: If colors are not wanted for the bus components on the sidebar (just one generic bus), 
+        // @PF: If colors are not wanted for the bus components on the sidebar (just one generic bus),
         //      remove the following classes
         &--bus-electricity {
           border-left: 4px solid #FBC02D;
@@ -248,8 +248,15 @@
 
       .input,
       .output {
+        position: relative;
         width: $gui-component-node-size;
         height: $gui-component-node-size;
+        width: 1rem;
+        height: 1rem;
+        left: 0px;
+        right:0px;
+        border-radius:100%;
+        margin:.25rem 0;
         cursor: pointer;
       }
     }
@@ -259,33 +266,43 @@
       width: $gui-component-bg-size;
       height: $gui-component-bg-size;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 1.5rem;
-        right: calc((4.5rem - 2rem) / 2);
-        transform: translateY(-50%);
-        background-image: url(../../assets/gui/gas_boiler.svg);
-        background-size: contain;
-        height: 2rem;
-        width: 2rem;
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         top: 1.5rem;
+//         right: calc((4.5rem - 2rem) / 2);
+//         transform: translateY(-50%);
+//         //background-image: url(/static/assets/gui/gas_boiler.svg);
+//         background-size: contain;
+//         height: 2rem;
+//         width: 2rem;
+//       }
+    }
+
+    @each $component-name, $component-category in $component-categories-mapping {
+      &.#{$component-name} {
+        .img::before {
+          @include gui-component-image(
+            url("/static/assets/gui/#{$component-name}.svg")
+          );
+        }
       }
     }
 
     .node__delete{
-      position: absolute; 
-      top: -12px; 
+      position: absolute;
+      top: -12px;
       right: 12px;
-      width: 24px; 
+      width: 24px;
       height: 24px;
-      display: grid; 
+      display: grid;
       place-items: center;
-      border: 0; 
+      border: 0;
       border-radius: 100%;
-      background: $white; 
+      background: $white;
       color: #ef4444;
       box-shadow: 0 1px 4px rgba(0,0,0,.15);
-      opacity: 0; 
+      opacity: 0;
       transform: translateY(-6px);
       pointer-events: none;
       transition: opacity .16s ease, transform .2s cubic-bezier(.2,.7,.2,1), box-shadow .2s ease;
@@ -293,10 +310,11 @@
 
     &:hover .node__delete,
     &:focus-within .node__delete{
-      opacity: 1; 
+      opacity: 1;
       transform: translateY(0) scale(1);
       pointer-events: auto;
     }
+
 
     .node__delete:hover{ box-shadow: 0 6px 16px rgba(0,0,0,.18); }
     .node__delete:active{ transform: translateY(0) scale(.96); }
