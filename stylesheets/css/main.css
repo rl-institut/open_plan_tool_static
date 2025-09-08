@@ -2397,11 +2397,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node .outputs .input,
 .system-design .drawflow .drawflow-node .outputs .output {
   position: relative;
-  width: 1rem;
-  height: 1rem;
   width: 0.75rem;
   height: 0.75rem;
   right: 0px;
+  border-color: #495965;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -2796,25 +2795,36 @@ nav.navbar .dropdown-menu li {
 .system-design .port--not-compatible {
   filter: brightness(0) saturate(100%) invert(90%) sepia(6%) saturate(5%) hue-rotate(315deg) brightness(90%) contrast(88%);
 }
-.system-design .port--electricity {
+.system-design .drawflow-node .port--electricity {
+  border: 0;
   background-image: url(../../assets/gui/port-electricity.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.system-design .port--heat {
+.system-design .drawflow-node .port--heat {
+  border: 0;
   background-image: url(../../assets/gui/port-heat.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.system-design .port--h2 {
+.system-design .drawflow-node .port--h2 {
+  border: 0;
   background-image: url(../../assets/gui/port-h2.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.system-design .port--fuel {
+.system-design .drawflow-node .port--fuel {
+  border: 0;
   background-image: url(../../assets/gui/port-fuel.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+.system-design .drawflow-node .port--empty {
+  width: 0.625rem !important;
+  height: 0.625rem !important;
+  transform: translateX(1px);
+  border: 2px solid #495965;
+  background: none;
 }
 
 .modal.modal--gui .modal-dialog {

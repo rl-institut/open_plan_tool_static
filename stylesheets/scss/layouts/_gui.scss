@@ -248,12 +248,11 @@
 
       .input,
       .output {
-        position: relative;
-        width: $gui-component-node-size;
-        height: $gui-component-node-size;
+        position: relative;;
         width: 0.75rem;
         height: 0.75rem;
         right:0px;
+        border-color: #495965;
         border-radius:100%;
         cursor: pointer;
       }
@@ -332,10 +331,11 @@
   }
 
   // Solid color ports -> When port is connected (optional: or compatible with the current connection)
-  .port--electricity  { background-image: url(../../assets/gui/port-electricity.svg); background-size: contain; background-repeat: no-repeat; }
-  .port--heat  { background-image: url(../../assets/gui/port-heat.svg); background-size: contain; background-repeat: no-repeat; }
-  .port--h2 { background-image: url(../../assets/gui/port-h2.svg); background-size: contain; background-repeat: no-repeat; }
-  .port--fuel{ background-image: url(../../assets/gui/port-fuel.svg); background-size: contain; background-repeat: no-repeat; }
+  .drawflow-node .port--electricity  { border:0; background-image: url(../../assets/gui/port-electricity.svg); background-size: contain; background-repeat: no-repeat; }
+  .drawflow-node .port--heat  { border:0; background-image: url(../../assets/gui/port-heat.svg); background-size: contain; background-repeat: no-repeat; }
+  .drawflow-node .port--h2 { border:0; background-image: url(../../assets/gui/port-h2.svg); background-size: contain; background-repeat: no-repeat; }
+  .drawflow-node .port--fuel{ border:0; background-image: url(../../assets/gui/port-fuel.svg); background-size: contain; background-repeat: no-repeat; }
+  .drawflow-node .port--empty { width: 0.625rem !important; height: 0.625rem !important; transform: translateX(1px); border: 2px solid #495965; background: none; }
 }
 
 .modal.modal--gui {
