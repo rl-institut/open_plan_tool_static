@@ -273,25 +273,13 @@
       position: relative;
       width: $gui-component-bg-size;
       height: $gui-component-bg-size;
-
-//       &::before {
-//         content: '';
-//         position: absolute;
-//         top: 1.5rem;
-//         right: calc((4.5rem - 2rem) / 2);
-//         transform: translateY(-50%);
-//         //background-image: url(/static/assets/gui/gas_boiler.svg);
-//         background-size: contain;
-//         height: 2rem;
-//         width: 2rem;
-//       }
     }
 
     @each $component-name, $component-category in $component-categories-mapping {
       &.#{$component-name} {
         .img::before {
           @include gui-component-image(
-            url("/static/assets/gui/#{$component-name}.svg")
+            url("../../assets/gui/#{$component-name}.svg")
           );
         }
       }

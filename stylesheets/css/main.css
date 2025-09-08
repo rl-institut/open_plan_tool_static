@@ -2423,10 +2423,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.dso .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/dso.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/dso.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2434,10 +2434,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.gas_dso .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/gas_dso.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/gas_dso.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2445,10 +2445,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.h2_dso .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/h2_dso.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/h2_dso.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2456,10 +2456,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.heat_dso .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/heat_dso.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/heat_dso.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2467,10 +2467,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.pv_plant .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/pv_plant.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/pv_plant.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2478,10 +2478,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.wind_plant .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/wind_plant.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/wind_plant.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2489,10 +2489,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.biogas_plant .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/biogas_plant.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/biogas_plant.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2500,10 +2500,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.geothermal_conversion .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/geothermal_conversion.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/geothermal_conversion.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2511,10 +2511,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.solar_thermal_plant .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/solar_thermal_plant.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/solar_thermal_plant.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2522,10 +2522,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.transformer_station_in .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/transformer_station_in.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/transformer_station_in.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2533,10 +2533,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.transformer_station_out .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/transformer_station_out.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/transformer_station_out.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2544,10 +2544,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.storage_charge_controller_in .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/storage_charge_controller_in.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/storage_charge_controller_in.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2555,10 +2555,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.storage_charge_controller_out .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/storage_charge_controller_out.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/storage_charge_controller_out.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2566,10 +2566,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.solar_inverter .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/solar_inverter.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/solar_inverter.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2577,10 +2577,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.diesel_generator .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/diesel_generator.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/diesel_generator.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2588,10 +2588,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.fuel_cell .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/fuel_cell.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/fuel_cell.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2599,10 +2599,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.gas_boiler .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/gas_boiler.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/gas_boiler.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2610,10 +2610,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.electrolyzer .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/electrolyzer.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/electrolyzer.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2621,10 +2621,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.heat_pump .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/heat_pump.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/heat_pump.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2632,10 +2632,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.chp .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/chp.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/chp.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2643,10 +2643,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.chp_fixed_ratio .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/chp_fixed_ratio.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/chp_fixed_ratio.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2654,10 +2654,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.bess .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/bess.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/bess.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2665,10 +2665,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.gess .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/gess.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/gess.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2676,10 +2676,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.h2ess .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/h2ess.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/h2ess.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2687,10 +2687,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.hess .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/hess.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/hess.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2698,10 +2698,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.demand .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/demand.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/demand.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2709,10 +2709,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.gas_demand .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/gas_demand.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/gas_demand.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2720,10 +2720,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.h2_demand .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/h2_demand.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/h2_demand.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2731,10 +2731,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.heat_demand .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/heat_demand.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/heat_demand.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;
@@ -2742,10 +2742,10 @@ nav.navbar .dropdown-menu li {
 .system-design .drawflow .drawflow-node.bus .img::before {
   content: "";
   position: absolute;
-  top: calc(4.5rem / 2);
-  right: calc((4.5rem - 2rem) / 2);
-  transform: translateY(-50%);
-  background-image: url("/static/assets/gui/bus.svg");
+  top: 0.5rem;
+  right: 3px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/gui/bus.svg");
   background-size: contain;
   height: 2rem;
   width: 2rem;

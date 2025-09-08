@@ -469,7 +469,7 @@
             <button class="btn btn--small btn--hollow" id="js-saveDesign" type="submit">Save design</button>
             <div id="js-designSaved">Design saved!</div>
           </div>
-          <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
+          <div class="drawflow-node fuel_cell busnode-electricity" style="position: absolute; left: 25%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
             <button class="node__delete" type="button" aria-label="Delete node">
               <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
                 <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -482,7 +482,7 @@
               <div class="img"></div>
               <div class="drawflow-node__name">
                 <span>
-                  Gas Boiler
+                  Fuel Cell
                 </span>
               </div>
             </div>
@@ -490,7 +490,7 @@
               <div class="output output_1 port--heat"></div>
             </div>
         </div>
-        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 50%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
+        <div class="drawflow-node dso busnode-electricity" style="position: absolute; left: 50%; top: 25%" data-bs-toggle="modal" data-bs-target="#pvModal">
           <button class="node__delete" type="button" aria-label="Delete node">
             <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
               <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -504,7 +504,7 @@
             <div class="img"></div>
             <div class="drawflow-node__name">
               <span>
-                Gas Boiler
+                Grid DSO
               </span>
             </div>
           </div>
@@ -517,7 +517,7 @@
             <div class="output output_4 port--empty"></div>
           </div>
         </div>
-        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 25%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+        <div class="drawflow-node heat_dso busnode-heat" style="position: absolute; left: 25%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
           <button class="node__delete" type="button" aria-label="Delete node">
             <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
               <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -531,7 +531,7 @@
             <div class="img"></div>
             <div class="drawflow-node__name">
               <span>
-                Gas Boiler
+                Heat DSO
               </span>
             </div>
           </div>
@@ -540,7 +540,7 @@
             <div class="output output_2 port--empty"></div>
           </div>
         </div>
-        <div class="drawflow-node drawflow-node--production drawflow-node--pv" style="position: absolute; left: 50%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
+        <div class="drawflow-node chp busnode-heat" style="position: absolute; left: 50%; top: 50%" data-bs-toggle="modal" data-bs-target="#pvModal">
           <button class="node__delete" type="button" aria-label="Delete node">
             <svg viewBox="0 0 20 20" width="12" height="12" aria-hidden="true">
               <path d="M4 4 L16 16 M16 4 L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -554,7 +554,7 @@
             <div class="img"></div>
             <div class="drawflow-node__name">
               <span>
-                Gas Boiler
+                CHP
               </span>
             </div>
           </div>
