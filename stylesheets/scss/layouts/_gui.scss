@@ -251,13 +251,21 @@
         position: relative;
         width: $gui-component-node-size;
         height: $gui-component-node-size;
-        width: 1rem;
-        height: 1rem;
-        left: 0px;
+        width: 0.75rem;
+        height: 0.75rem;
         right:0px;
         border-radius:100%;
-        margin:.25rem 0;
         cursor: pointer;
+      }
+
+      .input {
+        left: 2px;
+        background-color: $white;
+      }
+
+      .output {
+        left: -14px;
+        background-color: $white;
       }
     }
 
