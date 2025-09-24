@@ -149,6 +149,10 @@ $component-categories-mapping: (
     "h2_demand": "h2_demand",
     "heat_demand": "heat_demand",
     "bus": "bus",
+    "bus_electricity": "bus_electricity",
+    "bus_gas": "bus_gas",
+    "bus_heat": "bus_heat",
+    "bus_h2": "bus_h2",
 );
 $gui-component-bg-size: 4.5rem;
 $gui-component-img-size: 2rem;

@@ -189,3 +189,32 @@
   top: 0.15rem;
   left: -1.25rem;
 }
+
+@mixin bus($bus-bg-color, $bus-color, $bus-text-color, $bus-color-disabled) {
+  background-color: $bus-bg-color;
+  border: 1px solid $bus-color;
+
+  .drawflow-node__name {
+    color: $bus-text-color;
+    font-weight: 700;
+  }
+
+  .inputs,
+  .outputs {
+    .input,
+    .output {
+      background-color: $bus-color;
+      border-color: $bus-color;
+
+      &.port--empty {
+        background-color: $white;;
+      }
+
+      &.port--not-compatible {
+        background-color: $bus-color-disabled;
+        filter: none;
+        border: none;
+      }
+    }
+  }
+}
