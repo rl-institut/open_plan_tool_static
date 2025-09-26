@@ -126,8 +126,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Documentation</a>
             </li>
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -178,187 +187,264 @@
           </div>
         </div>
       </section>
-      <section class="dashboard">
-        <div>
-          <div class="row">
-            <div class="dashboard__scenarios">
-              <div class="dashboard__select-scenarios">
-                <label for="results-scenarios" class="form-label">Scenarios</label>
-                <select name="results-scenarios" id="results-scenarios" placeholder="This is a placeholder" multiple>
-                  <option value="Dropdown item 1">A+F+G</option>
-                  <option value="Dropdown item 2">A+F+G test constraints</option>
-                  <option value="Dropdown item 3" selected>Dropdown item 3</option>
-                  <option value="Dropdown item 4" selected>Dropdown item 4</option>
-                </select>
+
+      <section>
+        <div class="dashboard-tabs">
+          <div>
+            <ul class="dashboard-tabs nav nav-tabs" id="results-analysis-links" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="single-scenario-tab" data-bs-toggle="tab" data-bs-target="#single-scenario" type="button" role="tab" aria-controls="single-scenario" aria-selected="true">Single scenario</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="comparison-tab" data-bs-toggle="tab" data-bs-target="#comparison" type="button" role="tab" aria-controls="comparison" aria-selected="false">Scenario comparison</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sensitivity-tab" data-bs-toggle="tab" data-bs-target="#sensitivity" type="button" role="tab" aria-controls="sensitivity" aria-selected="false">Sensitivity analysis</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content" id="js-db-top-section">
+          <div class="tab-pane fade show active" id="single-scenario" role="tabpanel" aria-labelledby="single-scenario-tab">
+            <div class="dashboard-options sticky-top">
+              <div>
+                <div class="row">
+                  <div class="dashboard__scenarios">
+                    <div class="dashboard__select-scenarios dashboard__select-scenarios--small">
+                      <label for="results-single-scenario" class="form-label">Scenario</label>
+                      <select name="results-single-scenario" id="results-single-scenario" placeholder="This is a placeholder">
+                        <option value="Dropdown item 1">A+F+G</option>
+                        <option value="Dropdown item 2">A+F+G test constraints</option>
+                        <option value="Dropdown item 3" selected>Dropdown item 3</option>
+                        <option value="Dropdown item 4" selected>Dropdown item 4</option>
+                      </select>
+                    </div>
+                    <div class="dashboard__btn-scenarios">
+                      <button class="btn btn--medium" type="submit">
+                        <span class="icon icon-results"></span>
+                        Show results
+                      </button>
+                    </div>
+                    <div class="dashboard__add">
+                      <button class="btn btn--small btn--transparent" type="submit">
+                        <span class="icon icon-add"></span>
+                        Add chart
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="dashboard__btn-scenarios">
-                <button class="btn btn--medium" type="submit">
-                  <span class="icon icon-export"></span>
-                  Compare results
-                </button>
+            </div>
+            <div class="dashboard">
+              <div>
+                <div class="row">
+                  <div class="col col-md-8">
+                    <div class="chart">
+                      <div class="chart__header">
+                        <div>
+                          <span class="title">KPI Comparison</span>
+                          <span class="view" data-bs-toggle="modal" data-bs-target="#KPIModal">
+                            <span class="icon icon-i_arrow_right"></span>
+                            View KPIs
+                          </span>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon icon-more"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                            <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="chart__plot">
+                        <div id="tester"></div>
+                        <div class="table-add">
+                          <span class="icon icon-add"></span>
+                          <span class="table-add__text">
+                            Add KPI
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-4">
+                    <div class="chart chart--small">
+                      <div class="chart__header">
+                        <div>
+                          <span class="title">Emission Costs</span>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon icon-more"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                            <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="chart__content">
+                        <div class="item item--best">
+                          <div class="item__name">
+                            Scenario name 5
+                          </div>
+                          <div class="item__value">
+                            500.000 EUR
+                          </div>
+                        </div>
+                        <div class="item item--worst">
+                          <div class="item__name">
+                            Scenario name 10
+                          </div>
+                          <div class="item__value">
+                            1.000.000 EUR
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chart chart--small">
+                      <div class="chart__header">
+                        <div>
+                          <span class="title">Investment Costs</span>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon icon-more"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                            <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="chart__content">
+                        <div class="item item--best">
+                          <div class="item__name">
+                            Scenario name 5
+                          </div>
+                          <div class="item__value">
+                            500.000 EUR
+                          </div>
+                        </div>
+                        <div class="item item--worst">
+                          <div class="item__name">
+                            Scenario name 10
+                          </div>
+                          <div class="item__value">
+                            1.000.000 EUR
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chart chart--small">
+                      <div class="chart__header">
+                        <div>
+                          <span class="title">Emission Costs</span>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon icon-more"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                            <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                            <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="chart__content">
+                        <div class="item item--best">
+                          <div class="item__name">
+                            Scenario name 5
+                          </div>
+                          <div class="item__value">
+                            500.000 EUR
+                          </div>
+                        </div>
+                        <div class="item item--worst">
+                          <div class="item__name">
+                            Scenario name 10
+                          </div>
+                          <div class="item__value">
+                            1.000.000 EUR
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="chart">
+                      <div class="chart__header">
+                        <div>
+                          <span class="title">Time series</span>
+                        </div>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon icon-more"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Export as .xls</a></li>
+                            <li><a class="dropdown-item" href="#">Export as PDF</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="chart__plot">
+                        <div id="tester2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col col-md-8">
-              <div class="chart">
-                <div class="chart__header">
-                  <div>
-                    <span class="title">KPI Comparison</span>
-                    <span class="view" data-bs-toggle="modal" data-bs-target="#KPIModal">
-                      <span class="icon icon-i_arrow_right"></span>
-                      View KPIs
-                    </span>
+          <div class="tab-pane fade" id="comparison" role="tabpanel" aria-labelledby="comparison-tab">
+            <div class="dashboard-options sticky-top">
+              <div>
+                <div class="row">
+                  <div class="dashboard__scenarios">
+                    <div class="dashboard__select-scenarios">
+                      <label for="results-scenarios" class="form-label"></label>
+                      <select name="results-scenarios" id="results-scenarios" placeholder="This is a placeholder" multiple>
+                        <option value="Dropdown item 1">A+F+G</option>
+                        <option value="Dropdown item 2">A+F+G test constraints</option>
+                        <option value="Dropdown item 3" selected>Dropdown item 3</option>
+                        <option value="Dropdown item 4" selected>Dropdown item 4</option>
+                      </select>
+                    </div>
+                    <div class="dashboard__btn-scenarios">
+                      <button class="btn btn--medium" type="submit">
+                        <span class="icon icon-results"></span>
+                        Compare results
+                      </button>
+                    </div>
+                    <div class="dashboard__add">
+                      <button class="btn btn--small btn--transparent" type="submit">
+                        <span class="icon icon-add"></span>
+                        Add chart
+                      </button>
+                    </div>
                   </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="icon icon-more"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
-                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chart__plot">
-                  <div id="tester"></div>
                 </div>
               </div>
             </div>
-            <div class="col col-md-4">
-              <div class="chart chart--small">
-                <div class="chart__header">
-                  <div>
-                    <span class="title">Emission Costs</span>
-                  </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="icon icon-more"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
-                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chart__content">
-                  <div class="item item--best">
-                    <div class="item__name">
-                      Scenario name 5
-                    </div>
-                    <div class="item__value">
-                      500.000 EUR
-                    </div>
-                  </div>
-                  <div class="item item--worst">
-                    <div class="item__name">
-                      Scenario name 10
-                    </div>
-                    <div class="item__value">
-                      1.000.000 EUR
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="chart chart--small">
-                <div class="chart__header">
-                  <div>
-                    <span class="title">Investment Costs</span>
-                  </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="icon icon-more"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
-                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chart__content">
-                  <div class="item item--best">
-                    <div class="item__name">
-                      Scenario name 5
-                    </div>
-                    <div class="item__value">
-                      500.000 EUR
-                    </div>
-                  </div>
-                  <div class="item item--worst">
-                    <div class="item__name">
-                      Scenario name 10
-                    </div>
-                    <div class="item__value">
-                      1.000.000 EUR
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="chart chart--small">
-                <div class="chart__header">
-                  <div>
-                    <span class="title">Emission Costs</span>
-                  </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="icon icon-more"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
-                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chart__content">
-                  <div class="item item--best">
-                    <div class="item__name">
-                      Scenario name 5
-                    </div>
-                    <div class="item__value">
-                      500.000 EUR
-                    </div>
-                  </div>
-                  <div class="item item--worst">
-                    <div class="item__name">
-                      Scenario name 10
-                    </div>
-                    <div class="item__value">
-                      1.000.000 EUR
-                    </div>
-                  </div>
+            <div class="dashboard">
+              <div>
+                <div class="row">
+                  Test
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="chart">
-                <div class="chart__header">
-                  <div>
-                    <span class="title">Time series</span>
-                  </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle btn--transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="icon icon-more"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Export as .xls</a></li>
-                      <li><a class="dropdown-item" href="#">Export as PDF</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="chart__plot">
-                  <div id="tester2"></div>
+          <div class="tab-pane fade" id="sensitivity" role="tabpanel" aria-labelledby="sensitivity-tab">
+            <div class="dashboard">
+              <div>
+                <div class="row">
+                  Test
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row dashboard__create">
-            <div class="col">
-              <button class="btn btn--medium" type="submit">
-                <span class="icon icon-add"></span>
-                Create graph
-              </button>
             </div>
           </div>
         </div>
@@ -393,11 +479,60 @@
         allowHTML: true
       });
 
+      var thirdElement = new Choices('#results-single-scenario', { 
+        allowHTML: true,
+        itemSelectText: '',
+      });
+
+      // Plotly
+      const energyColors = {
+        electricity: 'rgb(255, 215, 0)',
+        gas: 'rgb(250, 135, 117)',
+        hydrogen: 'rgb(234, 95, 148)',
+        heat: 'rgb(205, 52, 181)',
+        fossil: 'rgb(0, 0, 255)'
+      }
+
+      const energyColorsOpacity = {
+        electricity: 'rgba(255, 215, 0, 0.15)',
+        gas: 'rgba(250, 135, 117, 0.15)',
+        hydrogen: 'rgba(234, 95, 148, 0.15)',
+        heat: 'rgba(205, 52, 181, 0.15)',
+        fossil: 'rgba(0, 0, 255, 0.15)'
+      }
+
+      var data = {
+        type: "sankey",
+        orientation: "h",
+        node: {
+          pad: 15,
+          thickness: 30,
+          line: {
+            color: "black",
+            width: 0
+          },
+        label: ["Electricity", "Gas", "Hydrogen", "Heat", "Fossil fuel", "Electricity"],
+        color: [energyColors.electricity, energyColors.gas, energyColors.hydrogen, energyColors.heat, energyColors.fossil, energyColors.electricity]
+            },
+        link: {
+          color: [energyColorsOpacity.electricity, energyColorsOpacity.gas, energyColorsOpacity.electricity, energyColorsOpacity.hydrogen, energyColorsOpacity.heat, energyColorsOpacity.heat],
+          source: [0,1,0,2,3,3],
+          target: [2,3,3,4,4,5],
+          value:  [8,4,2,8,4,2]
+        }
+      }
+
+      var data = [data]
+
+      var layout = {
+        title: "Basic Sankey",
+        font: {
+          size: 10
+        }
+      }
+
       TESTER = document.getElementById('tester');
-      Plotly.newPlot( TESTER, [{
-      x: [1, 2, 3, 4, 5],
-      y: [1, 2, 4, 8, 16] }], {
-      margin: { t: 0 } } );
+      Plotly.newPlot(TESTER, data, layout)
 
       TESTER2 = document.getElementById('tester2');
       Plotly.newPlot( TESTER2, [{

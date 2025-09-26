@@ -32,8 +32,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item locale">
-              <a class="nav-link" href="#">DE</a>
+            <li class="nav-item dropdown locale" id="language-switcher">
+              <form action="/i18n/setlang/" method="post">
+                <select class="selectpicker " name="language" onchange="this.form.submit()">
+                  <option class="nav-link" value="de" selected="selected">
+                    Deutsch 
+                  </option>
+                  <option class="nav-link" value="en">
+                    English
+                  </option>
+                </select>
+              </form>
             </li>
             <li class="nav-item dropdown profile">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -80,24 +89,77 @@
         <div class="simulation__heading" aria-hidden="true">
         </div>
         <div class="simulation__content">
-          <h2>Simulation error</h2>
-          <div class="simulation__id">
-            <a href="#">ef2c8f69-39df-40fe-afa4-7bc01298a8a6</a>
-          </div>
+          <h2>Simulation existing, but scenario parameter changed</h2>
           <div class="simulation__feedback">
-            <div class="item item--error">
-              <p>The following input parameters contain errors:</p>
-              <ul>
-                <li>Specific costs (€) <a href="#">Scenario Setup</a></li>
-                <li>Installed capacity (kW) <a href="#">Scenario Setup</a></li>
-                <li>Degree of self-sufficiency (factor) <a href="#">Constraints</a></li>
-              </ul>
+            <div class="simulation__alert simulation__alert--info">
+              <span>Your energy system is complete. Typically 1 year simulation will last a few minutes.</span>
             </div>
-            <div class="item item--warning">
-              <p>The following input parameters are different than the simulated ones:</p>
-              <ul>
-                <li>Evaluated period (day) <a href="#">Scenario Setup</a></li>
-              </ul>
+            <div class="simulation__alert simulation__alert--warning">
+              <span>If you rerun the simulation the previous results will be lost.</span>
+            </div>
+            <div class="simulation__actions">
+              <div>
+                <a class="btn btn--medium" href="#">Reset changes</a>
+              </div>
+              <div>
+                <a class="btn btn--medium btn--hollow" href="#">Copy to a new scenario</a>
+              </div>
+            </div>
+          </div>
+          <div class="simulation__changed">
+            <p>Changed parameters</p>
+            <div class="table-changed">
+              <div class="table-changed__item">
+                <div class="table-changed__header">
+                  Project
+                </div>
+              </div>
+              <div class="table-changed__item">
+                <div class="table-changed__header">
+                  Scenario
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">evaluated period</div>
+                  <div class="value">4 --> 5</div>
+                </div>
+              </div>
+              <div class="table-changed__item">
+                <div class="table-changed__header">
+                  Asset
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">rgas(renewable_share)</div>
+                  <div class="value">0.0 --> 0.3</div>
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">chp_fixed_ratio(capex_var)</div>
+                  <div class="value">2000.0 --> 2003.0</div>
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">chp_fixed_ratio(efficiency)</div>
+                  <div class="value">0.7 --> 0.7</div>
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">chp_fixed_ratio(efficiency_multiple_etc_thisisatest_etcetcetc)</div>
+                  <div class="value">0.3 --> 0.3</div>
+                </div>
+              </div>
+            </div>
+            <div class="table-changed">
+              <div class="table-changed__item">
+                <div class="table-changed__header table-changed__header--create">
+                  Created
+                </div>
+              </div>
+              <div class="table-changed__item">
+                <div class="table-changed__header table-changed__header--delete">
+                  Deleted
+                </div>
+                <div class="table-changed__content">
+                  <div class="key">evaluated period</div>
+                  <div class="value">4 --> 5</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +168,18 @@
 
     <footer class="simulation-footer">
       <div>
-        <a class="btn btn--medium btn--hollow" href="#">Send feedback</a>
+        <div class="simulation-footer__btn">
+          <a class="btn btn--medium btn--transparent" href="#">Previous</a>
+          <button class="btn btn--medium btn--warning" href="#">Rerun simulation</button>
+          <div class="form-check simulation-footer__check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Include LP file (advanced users)
+            </label>
+          </div>
+        </div>
+        <button class="btn btn--medium btn--hollow simulation-footer__btn--absolute" href="#">Sensitivity analysis</button>
+      </div>
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

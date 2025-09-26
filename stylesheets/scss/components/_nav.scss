@@ -1,3 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../components/button' as *;
+
 nav.navbar {
   position: fixed;
   width: 100%;
@@ -57,6 +61,15 @@ nav.navbar {
         position: absolute;
         top: 0.5rem;
         left: 1.1rem;
+      }
+
+      select {
+        width: auto;
+        border: none;
+        margin: 0.6rem 0 0 1.25rem;
+        padding-right: 0.25rem;
+        color: $primary-color-1;
+        background-color: $white;
       }
     }
 
@@ -119,8 +132,7 @@ nav.navbar {
   &__back {
     position: absolute;
     right: 2rem;
-    top: 3rem;
-    bottom: $padding-sides-normal;
+    bottom: -1.5rem;
     font-size: $font-size-small;
 
     &::before {
@@ -209,6 +221,48 @@ nav.navbar {
         width: 1.25rem;
         margin-left: -2.5rem;
       }
+    }
+  }
+}
+
+// open_plan 2
+.navbar2 {
+  @media only screen and (max-width: 991px) {
+    border-bottom: 1px solid $primary-gray-color-1;
+  }
+
+  .navbar-collapse {
+    @media only screen and (max-width: 991px) {
+      padding: 2rem;
+    }
+  }
+
+  .nav-item {
+    a.nav-link {
+      @media only screen and (max-width: 991px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    select {
+      cursor: pointer;
+    }
+  }
+
+  .dropdown.dropdown--navbar {
+    button.btn {
+      color: #17405C !important;
+      @extend .btn--hollow;
     }
   }
 }
