@@ -2380,6 +2380,7 @@ nav.navbar .dropdown-menu li {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 .system-design .drawflow .drawflow-node .drawflow_content_node {
   height: 100%;
